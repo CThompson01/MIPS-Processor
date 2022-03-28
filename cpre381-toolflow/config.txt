@@ -1,0 +1,4 @@
+Python_TLA Path = /usr/local/mentor/calibre/bin/python3
+ModelSim Path = /usr/local/mentor/questasim/bin/
+Quartus Path = internal/quartus
+
