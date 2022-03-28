@@ -39,8 +39,8 @@ Eaddersub
 Z6 w1648493477
 Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 1461
-Z9 d/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel
+!i122 1487
+Z9 d/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/single-cycle-mips-processor-group-1_02/cpre381-toolflow/internal/boilerplate_src/TopLevel
 Z10 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/AdderSub.vhd
 Z11 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/AdderSub.vhd
 l0
@@ -49,9 +49,9 @@ Vh^fO0[ca34gH9:@N=K]WU3
 !s100 zbTSFNlAAR2UEcbbN1P?N2
 Z12 OL;C;2021.2;73
 32
-Z13 !s110 1648493529
+Z13 !s110 1648495342
 !i10b 1
-Z14 !s108 1648493529.000000
+Z14 !s108 1648495342.000000
 Z15 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/AdderSub.vhd|
 Z16 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/AdderSub.vhd|
 !i113 0
@@ -61,7 +61,7 @@ Astructural
 R7
 R8
 DEx4 work 8 addersub 0 22 h^fO0[ca34gH9:@N=K]WU3
-!i122 1461
+!i122 1487
 l42
 L15 49
 VNAaH?amQl7;Kglb8E01MN0
@@ -80,7 +80,7 @@ Ealu
 Z19 w1648493517
 R7
 R8
-!i122 1456
+!i122 1482
 R9
 Z20 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/ALU.vhd
 Z21 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/ALU.vhd
@@ -102,7 +102,7 @@ Astruct
 R7
 R8
 DEx4 work 3 alu 0 22 Y9j63S1=ZQV7^9TB0X73d2
-!i122 1456
+!i122 1482
 l81
 L16 134
 VV7Kz7A[_DaeG=XzKg1^^O2
@@ -139,66 +139,67 @@ R18
 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/alu.vhd
 w1636347686
 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/alu.vhd
+Z26 d/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel
 Ealu_mux
-Z26 w1647271136
+Z27 w1647271136
 R7
 R8
-!i122 1464
+!i122 1490
 R9
-Z27 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/alu_mux.vhd
-Z28 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/alu_mux.vhd
+Z28 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/alu_mux.vhd
+Z29 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/alu_mux.vhd
 l0
 L4 1
 VLJG2hmUnU3]<9^Z;b]aEL0
 !s100 OfG[;H0d6C05JZjSf:heb3
 R12
 33
-R13
+Z30 !s110 1648495343
 !i10b 1
-R14
-Z29 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/alu_mux.vhd|
-Z30 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/alu_mux.vhd|
+Z31 !s108 1648495343.000000
+Z32 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/alu_mux.vhd|
+Z33 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/alu_mux.vhd|
 !i113 0
-Z31 o-work work -2008 -explicit
+Z34 o-work work -2008 -explicit
 R18
 Astruct
 R7
 R8
 DEx4 work 7 alu_mux 0 22 LJG2hmUnU3]<9^Z;b]aEL0
-!i122 1464
+!i122 1490
 l18
 L17 23
 VdVMge4<?cW:WhD6^MEBNm2
 !s100 0gHdS@S?D<DLlaRmn:8a61
 R12
 33
-R13
-!i10b 1
-R14
-R29
 R30
-!i113 0
+!i10b 1
 R31
+R32
+R33
+!i113 0
+R34
 R18
 Eandg2
-Z32 w1575884876
+Z35 w1575884876
 R7
 R8
-!i122 1450
+!i122 1476
 R9
-Z33 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/andg2.vhd
-Z34 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/andg2.vhd
+Z36 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/andg2.vhd
+Z37 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/andg2.vhd
 l0
-Z35 L23 1
+Z38 L23 1
 VlRF1X2AR494<^2b5EczMG2
 !s100 YT?bGzEmcFo:DlnoC^B4_0
 R12
 32
-Z36 !s110 1648493528
+Z39 !s110 1648495341
 !i10b 1
-Z37 !s108 1648493528.000000
-Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/andg2.vhd|
-Z39 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/andg2.vhd|
+Z40 !s108 1648495341.000000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/andg2.vhd|
+Z42 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/andg2.vhd|
 !i113 0
 R17
 R18
@@ -206,29 +207,29 @@ Adataflow
 R7
 R8
 DEx4 work 5 andg2 0 22 lRF1X2AR494<^2b5EczMG2
-!i122 1450
+!i122 1476
 l32
-Z40 L31 6
+Z43 L31 6
 V;W?oPbX<ObC2SkM60=NoE2
 !s100 I`@Z@UBObS]<7m8bPgKUS1
 R12
 32
-R36
-!i10b 1
-R37
-R38
 R39
+!i10b 1
+R40
+R41
+R42
 !i113 0
 R17
 R18
 Eandg_n
-Z41 w1636237834
+Z44 w1636237834
 R7
 R8
-!i122 1458
+!i122 1484
 R9
-Z42 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/andg_N.vhd
-Z43 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/andg_N.vhd
+Z45 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/andg_N.vhd
+Z46 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/andg_N.vhd
 l0
 L4 1
 V:OeIZRXkzY`lLA7_z9ecj1
@@ -238,8 +239,8 @@ R12
 R13
 !i10b 1
 R14
-Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/andg_N.vhd|
-Z45 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/andg_N.vhd|
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/andg_N.vhd|
+Z48 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/andg_N.vhd|
 !i113 0
 R17
 R18
@@ -247,9 +248,9 @@ Astructural
 R7
 R8
 DEx4 work 6 andg_n 0 22 :OeIZRXkzY`lLA7_z9ecj1
-!i122 1458
+!i122 1484
 l18
-Z46 L11 13
+Z49 L11 13
 VAdG5SgW8Pl6LO=l4WQlYW3
 !s100 9jkG`D9OLzT=4KlMRA1YI1
 R12
@@ -257,15 +258,15 @@ R12
 R13
 !i10b 1
 R14
-R44
-R45
+R47
+R48
 !i113 0
 R17
 R18
 Parraytype
 R7
 R8
-!i122 1451
+!i122 1477
 w1633031358
 R9
 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/arraytype.vhd
@@ -276,33 +277,33 @@ V806W_bRZeN76@HA4]AE^31
 !s100 7QFPOT<2201gTX^eXMeFV3
 R12
 32
-R36
+R39
 !i10b 1
-R37
+R40
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/arraytype.vhd|
 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/arraytype.vhd|
 !i113 0
 R17
 R18
 Ebarrelshifter
-Z47 w1647014268
+Z50 w1647014268
 R7
 R8
-!i122 1462
+!i122 1488
 R9
-Z48 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/barrelShifter.vhd
-Z49 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/barrelShifter.vhd
+Z51 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/barrelShifter.vhd
+Z52 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/barrelShifter.vhd
 l0
 L4 1
 VHXOE06X7JHCX_mIAikkmZ3
 !s100 ?jAN7mPBD7QkWd:mh630_2
 R12
 32
-R13
+R30
 !i10b 1
 R14
-Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/barrelShifter.vhd|
-Z51 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/barrelShifter.vhd|
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/barrelShifter.vhd|
+Z54 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/barrelShifter.vhd|
 !i113 0
 R17
 R18
@@ -310,18 +311,18 @@ Astructural
 R7
 R8
 DEx4 work 13 barrelshifter 0 22 HXOE06X7JHCX_mIAikkmZ3
-!i122 1462
+!i122 1488
 l49
 L12 164
 V5kAIBYn2Q5R5bMbKa=gU`3
 !s100 47jZYgiSUzI5:Lf8CePX43
 R12
 32
-R13
+R30
 !i10b 1
 R14
-R50
-R51
+R53
+R54
 !i113 0
 R17
 R18
@@ -330,7 +331,7 @@ w1646960429
 R7
 R8
 !i122 255
-R9
+R26
 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/bit_reverse.vhd
 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/bit_reverse.vhd
 l0
@@ -348,24 +349,24 @@ R25
 R17
 R18
 Ebitreverser
-Z52 w1647015136
+Z55 w1647015136
 R7
 R8
-!i122 1463
+!i122 1489
 R9
-Z53 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/bitReverser.vhd
-Z54 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/bitReverser.vhd
+Z56 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/bitReverser.vhd
+Z57 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/bitReverser.vhd
 l0
 L4 1
 V5Dj_?CnKMD`iCTJGPDh;l2
 !s100 eO9cl[Ka>Xo17?jWamkzm1
 R12
 32
-R13
+R30
 !i10b 1
-R14
-Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/bitReverser.vhd|
-Z56 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/bitReverser.vhd|
+R31
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/bitReverser.vhd|
+Z59 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/bitReverser.vhd|
 !i113 0
 R17
 R18
@@ -373,40 +374,40 @@ Astructural
 R7
 R8
 DEx4 work 11 bitreverser 0 22 5Dj_?CnKMD`iCTJGPDh;l2
-!i122 1463
+!i122 1489
 l20
 L11 20
 VmGLG3V_`D_>6VJLoAAXm22
 !s100 z]8o@@eWK@_Z@32HK7WZ?1
 R12
 32
-R13
+R30
 !i10b 1
-R14
-R55
-R56
+R31
+R58
+R59
 !i113 0
 R17
 R18
 Econtrollogic
-Z57 w1648163527
+Z60 w1648163527
 R7
 R8
-!i122 1467
+!i122 1493
 R9
-Z58 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/controllogic.vhd
-Z59 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/controllogic.vhd
+Z61 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/controllogic.vhd
+Z62 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/controllogic.vhd
 l0
 L4 1
 V>0=RV9ebWb]36[`D^I@ja0
 !s100 A;m_Ul0`fFamQ5?:JCXHQ3
 R12
 32
-Z60 !s110 1648493530
+R30
 !i10b 1
-Z61 !s108 1648493530.000000
-Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/controllogic.vhd|
-Z63 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/controllogic.vhd|
+R31
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/controllogic.vhd|
+Z64 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/controllogic.vhd|
 !i113 0
 R17
 R18
@@ -414,40 +415,40 @@ Acasestatement
 R7
 R8
 DEx4 work 12 controllogic 0 22 >0=RV9ebWb]36[`D^I@ja0
-!i122 1467
+!i122 1493
 l22
 L20 318
 VQ6UCERRIBBX?6dEXGcNMT3
 !s100 3>YYz]TF5m[XDid?CCReN2
 R12
 32
-R60
+R30
 !i10b 1
-R61
-R62
+R31
 R63
+R64
 !i113 0
 R17
 R18
 Edecoder5to32
-Z64 w1645040350
+Z65 w1645040350
 R7
 R8
-!i122 1443
+!i122 1469
 R9
-Z65 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/decoder5-32.vhd
-Z66 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/decoder5-32.vhd
+Z66 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/decoder5-32.vhd
+Z67 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/decoder5-32.vhd
 l0
 L4 1
 V>fjBSNb7n=f<gJGTVL1<70
 !s100 [0VfC?8X1@o1X5iAJGomo2
 R12
 32
-Z67 !s110 1648493527
+Z68 !s110 1648495340
 !i10b 1
-Z68 !s108 1648493527.000000
-Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/decoder5-32.vhd|
-Z70 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/decoder5-32.vhd|
+Z69 !s108 1648495340.000000
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/decoder5-32.vhd|
+Z71 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/decoder5-32.vhd|
 !i113 0
 R17
 R18
@@ -455,40 +456,40 @@ Abehavioral
 R7
 R8
 DEx4 work 12 decoder5to32 0 22 >fjBSNb7n=f<gJGTVL1<70
-!i122 1443
+!i122 1469
 l25
 L13 64
 V]UB>?Y`DnQ1G:6R4n;K2o1
 !s100 ELziWe7@LW17l_n]d`cZz2
 R12
 32
-R67
-!i10b 1
 R68
+!i10b 1
 R69
 R70
+R71
 !i113 0
 R17
 R18
 Edffg
-Z71 w1577972696
+Z72 w1577972696
 R7
 R8
-!i122 1444
+!i122 1470
 R9
-Z72 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/dffg.vhd
-Z73 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/dffg.vhd
+Z73 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/dffg.vhd
+Z74 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/dffg.vhd
 l0
-R35
+R38
 VjgD_<UZ1zVBDW^mk^5TO10
 !s100 T4gcXQGMCgKJbn8XhBM;b0
 R12
 32
-R67
-!i10b 1
 R68
-Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/dffg.vhd|
-Z75 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/dffg.vhd|
+!i10b 1
+R69
+Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/dffg.vhd|
+Z76 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/dffg.vhd|
 !i113 0
 R17
 R18
@@ -496,40 +497,40 @@ Amixed
 R7
 R8
 DEx4 work 4 dffg 0 22 jgD_<UZ1zVBDW^mk^5TO10
-!i122 1444
+!i122 1470
 l37
 L33 29
 Vf;Mb[CToCHDb6>olH_6Sd3
 !s100 iOdlTUid@@]UimFK_53^C1
 R12
 32
-R67
-!i10b 1
 R68
-R74
+!i10b 1
+R69
 R75
+R76
 !i113 0
 R17
 R18
 Eextender
-Z76 w1644436640
+Z77 w1644436640
 R7
 R8
-!i122 1445
+!i122 1471
 R9
-Z77 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/extender.vhd
-Z78 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/extender.vhd
+Z78 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/extender.vhd
+Z79 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/extender.vhd
 l0
 L4 1
 VFS0JS@]Ch4HL?TJn=W^c=3
 !s100 EzNTI5ZbbcM3REl^VdBk_3
 R12
 32
-R67
+R39
 !i10b 1
-R68
-Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/extender.vhd|
-Z80 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/extender.vhd|
+R40
+Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/extender.vhd|
+Z81 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/extender.vhd|
 !i113 0
 R17
 R18
@@ -537,165 +538,165 @@ Adata
 R7
 R8
 DEx4 work 8 extender 0 22 FS0JS@]Ch4HL?TJn=W^c=3
-!i122 1445
+!i122 1471
 l16
 L11 22
 VZ2@16ANGz0WM8AU>:X7192
 !s100 m4MEfg2a1<ee6`T7iO;YQ3
 R12
 32
-R67
+R39
 !i10b 1
-R68
-R79
+R40
 R80
+R81
 !i113 0
 R17
 R18
 Efull_adder_n
-Z81 w1648493429
+Z82 w1648493429
 R7
 R8
-!i122 1466
+!i122 1492
 R9
-Z82 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/Adder_N.vhd
-Z83 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/Adder_N.vhd
+Z83 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/Adder_N.vhd
+Z84 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/Adder_N.vhd
 l0
 L4 1
 V2fA[^8PLmVMN6mnDih=A^0
 !s100 X8;VTkSPgO?S^]kRLQ<Cj2
 R12
 33
-R60
+R30
 !i10b 1
-R61
-Z84 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/Adder_N.vhd|
-Z85 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/Adder_N.vhd|
-!i113 0
 R31
+Z85 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/Adder_N.vhd|
+Z86 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/Adder_N.vhd|
+!i113 0
+R34
 R18
 Astructural
 R7
 R8
 DEx4 work 12 full_adder_n 0 22 2fA[^8PLmVMN6mnDih=A^0
-!i122 1466
+!i122 1492
 l23
 L14 22
 VjBF_A=RMGZ51VPIcziF;;0
 !s100 ^NPW@TfVLXVK9g<W1zD5<1
 R12
 33
-R60
+R30
 !i10b 1
-R61
-R84
-R85
-!i113 0
 R31
+R85
+R86
+!i113 0
+R34
 R18
 Einvg
-R32
+R35
 R7
 R8
-!i122 1452
+!i122 1478
 R9
-Z86 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/invg.vhd
-Z87 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/invg.vhd
+Z87 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/invg.vhd
+Z88 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/invg.vhd
 l0
-R35
+R38
 VV5ABnOY1@C84YczbbMJm43
 !s100 _XK?_^5z0Rm1<k12?;5R?2
 R12
 33
-R36
+R39
 !i10b 1
-R37
-Z88 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/invg.vhd|
-Z89 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/invg.vhd|
+R40
+Z89 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/invg.vhd|
+Z90 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/invg.vhd|
 !i113 0
-R31
+R34
 R18
 Adataflow
 R7
 R8
 DEx4 work 4 invg 0 22 V5ABnOY1@C84YczbbMJm43
-!i122 1452
+!i122 1478
 l31
 L30 6
 V?c8XNF03kj`aK82C8lK7Y1
 !s100 bk7I76o8e1LURdoZEQb8H0
 R12
 33
-R36
+R39
 !i10b 1
-R37
-R88
+R40
 R89
+R90
 !i113 0
-R31
+R34
 R18
 Emem
-Z90 w1645019564
-Z91 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z91 w1645019564
+Z92 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R7
 R8
-!i122 1446
+!i122 1472
 R9
-Z92 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mem.vhd
-Z93 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mem.vhd
+Z93 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mem.vhd
+Z94 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mem.vhd
 l0
 L8 1
 VCIA?Dj3Mm_l0m@`CClQMl0
 !s100 fRlcaiTJZJ1H;nZh;8=LI3
 R12
 32
-R67
+R39
 !i10b 1
-R68
-Z94 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mem.vhd|
-Z95 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mem.vhd|
+R40
+Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mem.vhd|
+Z96 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mem.vhd|
 !i113 0
 R17
 R18
 Artl
-R91
+R92
 R7
 R8
 DEx4 work 3 mem 0 22 CIA?Dj3Mm_l0m@`CClQMl0
-!i122 1446
+!i122 1472
 l37
 L27 24
 VH8m[_WC46V;E>EkG3<H:a0
 !s100 OI8_3><BhDkT3l3n8`OXd3
 R12
 32
-R67
+R39
 !i10b 1
-R68
-R94
+R40
 R95
+R96
 !i113 0
 R17
 R18
 Emux2t1
-Z96 w1631209806
+Z97 w1631209806
 R7
 R8
-!i122 1453
+!i122 1479
 R9
-Z97 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux2t1.vhd
-Z98 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux2t1.vhd
+Z98 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux2t1.vhd
+Z99 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux2t1.vhd
 l0
 L4 1
 VMKI14g=cUeW5OQ0LI5>^N0
 !s100 ;hinaeZf=Yj3D2^cihgiU1
 R12
 32
-R36
+R13
 !i10b 1
-R37
-Z99 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux2t1.vhd|
-Z100 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux2t1.vhd|
+R40
+Z100 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux2t1.vhd|
+Z101 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux2t1.vhd|
 !i113 0
 R17
 R18
@@ -703,40 +704,40 @@ Astructural
 R7
 R8
 DEx4 work 6 mux2t1 0 22 MKI14g=cUeW5OQ0LI5>^N0
-!i122 1453
+!i122 1479
 l26
 L12 21
 Vio08XUX<V2ACY]J6gO5<F1
 !s100 VklG0W]JXz48[[iek<;nZ0
 R12
 32
-R36
+R13
 !i10b 1
-R37
-R99
+R40
 R100
+R101
 !i113 0
 R17
 R18
 Emux2t1_n
-Z101 w1645644970
+Z102 w1645644970
 R7
 R8
-!i122 1454
+!i122 1480
 R9
-Z102 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux2t1_N.vhd
-Z103 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux2t1_N.vhd
+Z103 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux2t1_N.vhd
+Z104 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux2t1_N.vhd
 l0
 L21 1
 Vj4KY:hV0kO?@RQ]2:`P[U3
 !s100 BKZeKCAB2i6lge3>7TA3d3
 R12
 32
-R36
+R13
 !i10b 1
-R37
-Z104 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux2t1_N.vhd|
-Z105 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux2t1_N.vhd|
+R14
+Z105 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux2t1_N.vhd|
+Z106 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux2t1_N.vhd|
 !i113 0
 R17
 R18
@@ -744,40 +745,40 @@ Astructural
 R7
 R8
 DEx4 work 8 mux2t1_n 0 22 j4KY:hV0kO?@RQ]2:`P[U3
-!i122 1454
+!i122 1480
 l39
 L30 21
 Vm1NdN>M>eeiaAFIM^6c8A1
 !s100 W>5MMWO2LBg`K8[P>h>Ye1
 R12
 32
-R36
+R13
 !i10b 1
-R37
-R104
+R14
 R105
+R106
 !i113 0
 R17
 R18
 Emux32to1
-Z106 w1632425874
+Z107 w1632425874
 R7
 R8
-!i122 1447
+!i122 1473
 R9
-Z107 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux32to1.vhd
-Z108 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux32to1.vhd
+Z108 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux32to1.vhd
+Z109 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux32to1.vhd
 l0
 L4 1
 V^SJI:_[o0^YcR?=iZidgD3
 !s100 0Z2e64JU^HjHS?PSVVKd<1
 R12
 32
-R36
+R39
 !i10b 1
-R37
-Z109 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux32to1.vhd|
-Z110 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux32to1.vhd|
+R40
+Z110 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux32to1.vhd|
+Z111 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/mux32to1.vhd|
 !i113 0
 R17
 R18
@@ -785,40 +786,40 @@ Abehavioral
 R7
 R8
 DEx4 work 8 mux32to1 0 22 ^SJI:_[o0^YcR?=iZidgD3
-!i122 1447
+!i122 1473
 l44
 L43 39
 V9`=1:FRiacR[7OCjcI;3O3
 !s100 6d]Ab]FO<cHKi6BjciWgM3
 R12
 32
-R36
+R39
 !i10b 1
-R37
-R109
+R40
 R110
+R111
 !i113 0
 R17
 R18
 Emuxnt1_n
-Z111 w1646957957
+Z112 w1646957957
 R7
 R8
 !i122 316
-R9
-Z112 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/muxNt1_N.vhd
-Z113 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/muxNt1_N.vhd
+R26
+Z113 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/muxNt1_N.vhd
+Z114 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/muxNt1_N.vhd
 l0
 L4 1
 Vz;JAbjIEA2nRoLSBFzmOd3
 !s100 G80CUl:?RAmzcKZW97dT83
 R12
 32
-Z114 !s110 1646965522
+Z115 !s110 1646965522
 !i10b 1
-Z115 !s108 1646965522.000000
-Z116 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/muxNt1_N.vhd|
-Z117 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/muxNt1_N.vhd|
+Z116 !s108 1646965522.000000
+Z117 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/muxNt1_N.vhd|
+Z118 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/muxNt1_N.vhd|
 !i113 0
 R17
 R18
@@ -833,22 +834,22 @@ V@23H[jlDb:>d2JeS;kRL83
 !s100 KMC;H7TIQ4YON8hKz?MA70
 R12
 32
-R114
-!i10b 1
 R115
+!i10b 1
 R116
 R117
+R118
 !i113 0
 R17
 R18
 Eonescomp
-Z118 w1631213124
+Z119 w1631213124
 R7
 R8
-!i122 1457
+!i122 1483
 R9
-Z119 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/1scomp.vhd
-Z120 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/1scomp.vhd
+Z120 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/1scomp.vhd
+Z121 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/1scomp.vhd
 l0
 L4 1
 Vj1aH[VL7=C6CKHbSh^QL[2
@@ -858,8 +859,8 @@ R12
 R13
 !i10b 1
 R14
-Z121 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/1scomp.vhd|
-Z122 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/1scomp.vhd|
+Z122 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/1scomp.vhd|
+Z123 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/1scomp.vhd|
 !i113 0
 R17
 R18
@@ -867,7 +868,7 @@ Astructural
 R7
 R8
 DEx4 work 8 onescomp 0 22 j1aH[VL7=C6CKHbSh^QL[2
-!i122 1457
+!i122 1483
 l16
 L10 15
 VYF<5RI9F>FC:5CcEE^elX2
@@ -877,30 +878,30 @@ R12
 R13
 !i10b 1
 R14
-R121
 R122
+R123
 !i113 0
 R17
 R18
 Eorg2
-R32
+R35
 R7
 R8
-!i122 1455
+!i122 1481
 R9
-Z123 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/org2.vhd
-Z124 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/org2.vhd
+Z124 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/org2.vhd
+Z125 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/org2.vhd
 l0
-R35
+R38
 VB2]3[a<V5f9`9eUg6`KhC1
 !s100 bGQ1F9eW^Q17OoL9h4g7z2
 R12
 32
 R13
 !i10b 1
-R37
-Z125 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/org2.vhd|
-Z126 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/org2.vhd|
+R14
+Z126 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/org2.vhd|
+Z127 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/org2.vhd|
 !i113 0
 R17
 R18
@@ -908,29 +909,29 @@ Adataflow
 R7
 R8
 DEx4 work 4 org2 0 22 B2]3[a<V5f9`9eUg6`KhC1
-!i122 1455
+!i122 1481
 l32
-R40
+R43
 VkAR2[YaYRaj6fWNP]W0nE3
 !s100 h5_AzR3TdRA0a_K=dQ>mI2
 R12
 32
 R13
 !i10b 1
-R37
-R125
+R14
 R126
+R127
 !i113 0
 R17
 R18
 Eorg_n
-R41
+R44
 R7
 R8
-!i122 1459
+!i122 1485
 R9
-Z127 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/org_N.vhd
-Z128 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/org_N.vhd
+Z128 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/org_N.vhd
+Z129 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/org_N.vhd
 l0
 L4 1
 V3jG`8KJ3^0HA0O20Y@fcD0
@@ -940,8 +941,8 @@ R12
 R13
 !i10b 1
 R14
-Z129 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/org_N.vhd|
-Z130 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/org_N.vhd|
+Z130 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/org_N.vhd|
+Z131 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/org_N.vhd|
 !i113 0
 R17
 R18
@@ -949,9 +950,9 @@ Astructural
 R7
 R8
 DEx4 work 5 org_n 0 22 3jG`8KJ3^0HA0O20Y@fcD0
-!i122 1459
+!i122 1485
 l18
-R46
+R49
 VDN;cYVfgLHN0MG4Ca7j6f2
 !s100 iXZ3lX^iFVIckWen;GGT31
 R12
@@ -959,71 +960,71 @@ R12
 R13
 !i10b 1
 R14
-R129
 R130
+R131
 !i113 0
 R17
 R18
 Eprogramcounter
-Z131 w1648167097
+Z132 w1648167097
 R7
 R8
-!i122 1468
+!i122 1494
 R9
-Z132 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/programcounter.vhd
-Z133 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/programcounter.vhd
+Z133 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/programcounter.vhd
+Z134 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/programcounter.vhd
 l0
 L4 1
 Vnb66cQkEo`QB>L]mI^3ZR2
 !s100 5hF3_IL8j]1dB;0MLd;fh3
 R12
 33
-R60
+R30
 !i10b 1
-R61
-Z134 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/programcounter.vhd|
-Z135 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/programcounter.vhd|
-!i113 0
 R31
+Z135 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/programcounter.vhd|
+Z136 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/programcounter.vhd|
+!i113 0
+R34
 R18
 Astructural
 R7
 R8
-Z136 DEx4 work 14 programcounter 0 22 nb66cQkEo`QB>L]mI^3ZR2
-!i122 1468
+DEx4 work 14 programcounter 0 22 nb66cQkEo`QB>L]mI^3ZR2
+!i122 1494
 l13
-Z137 L11 16
-Z138 VK]D6_^CHSTVdA4B:kMN0Y0
-Z139 !s100 YKnEEa17:?83;;ZeI2a0f2
+L11 16
+VK]D6_^CHSTVdA4B:kMN0Y0
+!s100 YKnEEa17:?83;;ZeI2a0f2
 R12
 33
-R60
+R30
 !i10b 1
-R61
-R134
-R135
-!i113 0
 R31
+R135
+R136
+!i113 0
+R34
 R18
 Eregister1
-Z140 w1644434494
+Z137 w1644434494
 R7
 R8
-!i122 1448
+!i122 1474
 R9
-Z141 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/register.vhd
-Z142 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/register.vhd
+Z138 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/register.vhd
+Z139 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/register.vhd
 l0
 L4 1
 V_BLz2WlAH^I2mGAeG==6Q0
 !s100 V<G>G7iZk:QlM`J4jbzYh3
 R12
 32
-R36
+R39
 !i10b 1
-R37
-Z143 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/register.vhd|
-Z144 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/register.vhd|
+R40
+Z140 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/register.vhd|
+Z141 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/register.vhd|
 !i113 0
 R17
 R18
@@ -1031,83 +1032,83 @@ Astructural
 R7
 R8
 DEx4 work 9 register1 0 22 _BLz2WlAH^I2mGAeG==6Q0
-!i122 1448
+!i122 1474
 l24
 L14 21
 Vbnd3N3E_HbRmCJ6X`b<=G1
 !s100 1U^fJjjSM`3Qez<86mCIK0
 R12
 32
-R36
+R39
 !i10b 1
-R37
-R143
-R144
+R40
+R140
+R141
 !i113 0
 R17
 R18
 Eregisterfile
-Z145 w1633032626
-Z146 DPx4 work 9 arraytype 0 22 806W_bRZeN76@HA4]AE^31
+Z142 w1633032626
+Z143 DPx4 work 9 arraytype 0 22 806W_bRZeN76@HA4]AE^31
 R7
 R8
-!i122 1449
+!i122 1475
 R9
-Z147 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/registerfile.vhd
-Z148 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/registerfile.vhd
+Z144 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/registerfile.vhd
+Z145 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/registerfile.vhd
 l0
 L5 1
 VSm;ElzOFH]EoJ12RWDhVC0
 !s100 38ZIBN7D4cG=[jSceAeUP3
 R12
 32
-R36
+R39
 !i10b 1
-R37
-Z149 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/registerfile.vhd|
-Z150 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/registerfile.vhd|
+R40
+Z146 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/registerfile.vhd|
+Z147 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/registerfile.vhd|
 !i113 0
 R17
 R18
 Astructural
-R146
+R143
 R7
 R8
 DEx4 work 12 registerfile 0 22 Sm;ElzOFH]EoJ12RWDhVC0
-!i122 1449
+!i122 1475
 l78
 L19 149
 V18dJaJ4Yf]UJ9Vk:^^C=P3
 !s100 lSgVPnVIlS6RWW3QJVjM`1
 R12
 32
-R36
+R39
 !i10b 1
-R37
-R149
-R150
+R40
+R146
+R147
 !i113 0
 R17
 R18
 Eslt_n
-Z151 w1647263874
+Z148 w1647263874
 R7
 R8
-!i122 1465
+!i122 1491
 R9
-Z152 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/slt.vhd
-Z153 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/slt.vhd
+Z149 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/slt.vhd
+Z150 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/slt.vhd
 l0
 L4 1
 VnPIlEGcd^4h?M>8nAKY7b3
 !s100 _C`XME@m8U2SY1H14PL?e2
 R12
 32
-R60
+R30
 !i10b 1
-R14
-Z154 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/slt.vhd|
-Z155 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/slt.vhd|
+R31
+Z151 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/slt.vhd|
+Z152 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/slt.vhd|
 !i113 0
 R17
 R18
@@ -1115,48 +1116,70 @@ Astructural
 R7
 R8
 DEx4 work 5 slt_n 0 22 nPIlEGcd^4h?M>8nAKY7b3
-!i122 1465
+!i122 1491
 l21
 L11 14
 V:M?[89O`O_:2^RgnjaWHj3
 !s100 <@m13J2RlgRH:Xn[a>J;<1
 R12
 32
-R60
+R30
 !i10b 1
-R14
-R154
-R155
+R31
+R151
+R152
+!i113 0
+R17
+R18
+Etb_alu
+w1648495303
+R7
+R8
+!i122 1495
+R9
+8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/tb_alu.vhd
+F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/tb_alu.vhd
+l0
+L4 1
+VzA[n2hAikb7<TQBn1ngMH2
+!s100 <C483Ea`2c^@TfPY2KdIg3
+R12
+32
+R30
+!i10b 1
+R31
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/tb_alu.vhd|
+!s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/tb_alu.vhd|
 !i113 0
 R17
 R18
 Etb_barrelshift
-Z156 w1636252235
-Z157 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
-Z158 DPx4 ieee 16 std_logic_textio 0 22 8]8<fKiYoHe;_IDO3kmNH2
+Z153 w1636252235
+Z154 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+Z155 DPx4 ieee 16 std_logic_textio 0 22 8]8<fKiYoHe;_IDO3kmNH2
 R7
 R8
 !i122 297
-R9
-Z159 8/home/zrhirst/Documents/F21/Done/Project1/single-cycle-mips-processor/components/tb_barrelShift.vhd
-Z160 F/home/zrhirst/Documents/F21/Done/Project1/single-cycle-mips-processor/components/tb_barrelShift.vhd
+R26
+Z156 8/home/zrhirst/Documents/F21/Done/Project1/single-cycle-mips-processor/components/tb_barrelShift.vhd
+Z157 F/home/zrhirst/Documents/F21/Done/Project1/single-cycle-mips-processor/components/tb_barrelShift.vhd
 l0
 L13 1
 VI6L0T6b1bMQa@gzhh]E>^1
 !s100 h0>V;ic;<k1@11keHW<jZ2
 R12
 32
-Z161 !s110 1646964477
+Z158 !s110 1646964477
 !i10b 1
-Z162 !s108 1646964477.000000
-Z163 !s90 -reportprogress|300|-work|work|/home/zrhirst/Documents/F21/Done/Project1/single-cycle-mips-processor/components/tb_barrelShift.vhd|
-Z164 !s107 /home/zrhirst/Documents/F21/Done/Project1/single-cycle-mips-processor/components/tb_barrelShift.vhd|
+Z159 !s108 1646964477.000000
+Z160 !s90 -reportprogress|300|-work|work|/home/zrhirst/Documents/F21/Done/Project1/single-cycle-mips-processor/components/tb_barrelShift.vhd|
+Z161 !s107 /home/zrhirst/Documents/F21/Done/Project1/single-cycle-mips-processor/components/tb_barrelShift.vhd|
 !i113 0
-Z165 o-work work
+Z162 o-work work
 R18
 Amixed
-R157
-R158
+R154
+R155
 R7
 R8
 DEx4 work 14 tb_barrelshift 0 22 I6L0T6b1bMQa@gzhh]E>^1
@@ -1167,33 +1190,33 @@ V0ff5G@3V[CU4_>WF0eFTZ0
 !s100 zkjUFlL@7Za6LC2M]CWgG3
 R12
 32
-R161
+R158
 !i10b 1
-R162
-R163
-R164
+R159
+R160
+R161
 !i113 0
-R165
+R162
 R18
 Etb_programcounter
-Z166 w1648168245
+Z163 w1648168245
 R7
 R8
 !i122 1442
-R9
-Z167 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/tb_programcounter.vhd
-Z168 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/tb_programcounter.vhd
+R26
+Z164 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/tb_programcounter.vhd
+Z165 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/tb_programcounter.vhd
 l0
 L4 1
 V@aEghE]c=j>n]0ifMTR3n0
 !s100 ]T0TicNH7YIbUohOfD2[22
 R12
 32
-Z169 !s110 1648168250
+Z166 !s110 1648168250
 !i10b 1
-Z170 !s108 1648168250.000000
-Z171 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/tb_programcounter.vhd|
-Z172 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/tb_programcounter.vhd|
+Z167 !s108 1648168250.000000
+Z168 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/tb_programcounter.vhd|
+Z169 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/tb_programcounter.vhd|
 !i113 0
 R17
 R18
@@ -1208,22 +1231,22 @@ VfVS9`=8E:a?a34FkN9Z6D2
 !s100 H:OnkhO879e5j<I>^<<lI3
 R12
 32
-R169
+R166
 !i10b 1
-R170
-R171
-R172
+R167
+R168
+R169
 !i113 0
 R17
 R18
 Exorg_n
-R41
+R44
 R7
 R8
-!i122 1460
+!i122 1486
 R9
-Z173 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/xorg_N.vhd
-Z174 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/xorg_N.vhd
+Z170 8/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/xorg_N.vhd
+Z171 F/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/xorg_N.vhd
 l0
 L4 1
 VGM[A`5TUQ>Go3D]A:F<Lh1
@@ -1233,18 +1256,18 @@ R12
 R13
 !i10b 1
 R14
-Z175 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/xorg_N.vhd|
-Z176 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/xorg_N.vhd|
+Z172 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/xorg_N.vhd|
+Z173 !s107 /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/cpre381-toolflow/internal/boilerplate_src/TopLevel/xorg_N.vhd|
 !i113 0
-R31
+R34
 R18
 Astructural
 R7
 R8
 DEx4 work 6 xorg_n 0 22 GM[A`5TUQ>Go3D]A:F<Lh1
-!i122 1460
+!i122 1486
 l18
-R46
+R49
 VCH1KJeE@0?F2JJJzPnh7R2
 !s100 ;4=8U1comoZkQ?1;XYcbh3
 R12
@@ -1252,8 +1275,8 @@ R12
 R13
 !i10b 1
 R14
-R175
-R176
+R172
+R173
 !i113 0
-R31
+R34
 R18
