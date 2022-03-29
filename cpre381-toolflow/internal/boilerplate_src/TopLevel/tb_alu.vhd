@@ -38,6 +38,30 @@ port map(
 	zero => s_zero
 );
 
+testing:process
+begin 
 
+wait for gCLK_HPER/2;
 
-end tb_alu;
+--carryout
+s_rd1 <= 
+s_rd2 <= 
+s_control <= 
+s_shampt <= 
+
+--overflow
+--zero
+--add
+--sub
+--slt
+--and
+--or
+--nor
+--xor
+--sll
+--srl
+--sra
+--lui
+
+end process;
+end mixes;

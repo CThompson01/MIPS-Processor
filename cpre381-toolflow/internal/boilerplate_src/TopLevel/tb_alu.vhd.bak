@@ -30,14 +30,19 @@ mapp:ALU
 port map(
 	read_data_1 => s_rd1,
 	read_data_2 => s_rd2,
-	alu_control => 
-	shampt => 
-	output => 
-	overflow => 
-	carryou => 
-	zero => 
+	alu_control => s_control,
+	shampt => s_shampt,
+	output => s_output,
+	overflow => s_overflow,
+	carryout => s_carryout,
+	zero => s_zero
 );
 
+testing:process
+begin 
+
+--testing 
 
 
-end tb_alu;
+end process;
+end mixes;
