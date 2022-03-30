@@ -109,10 +109,10 @@ architecture structure of MIPS_Processor is
 
   component programcounter is 
   port(
-	in_InstrAddress: in std_logic_vector(31 downto 0);
+	i_InstrAddress: in std_logic_vector(31 downto 0);
 	clk: in std_logic;
 	reset: in std_logic;
-	out_InstrAddress: out std_logic_vector(31 downto 0));
+	o_InstrAddress: out std_logic_vector(31 downto 0));
   end component;
 
   component full_adder_N is
@@ -136,6 +136,7 @@ architecture structure of MIPS_Processor is
 	RegDst: out std_logic;
 	extendersel: out std_logic; 
 	datasel: out std_logic; 
+	halt: out std_logic;
 	btype: out std_logic); 
   end component;
 
@@ -209,8 +210,8 @@ begin
 	clk => iCLK,
 	reset => iRST,
 	we => s_RegWr,
-	rs => s_Inst(25 downto 21);
-	rt => s_Inst(20 downto 16);
+	rs => s_Inst(25 downto 21),
+	rt => s_Inst(20 downto 16),
 	rd => s_RegWrAddr,
 	writeport => s_bmux_regfile,
 	readdata1 => s_regfile_alua,
@@ -221,8 +222,8 @@ begin
     generic map(N => 5)
     port map(
 	i_S => s_cl_regdst_rmux,
-	i_D0 => s_Inst(20 downto 16);
-	i_D1 => s_Inst(15 downto 11);
+	i_D0 => s_Inst(20 downto 16),
+	i_D1 => s_Inst(15 downto 11),
 	o_O => s_RegWrAddr
 	);
 
@@ -238,7 +239,7 @@ begin
     port map(
 	i_S => s_cl_memtoreg_bmux,
 	i_D0 => s_DMemAddr,
-	i_D1 => s_Dmem_out,
+	i_D1 => s_DMemOut,
 	o_O => s_bmux_regfile
 	);
 
@@ -249,7 +250,7 @@ begin
 	out_Imm => s_extender_fmux
 	);
 
-  alu:ALU 
+  arithmeticlogicalunit: ALU 
     port map(
 	read_data_1 => s_regfile_alua,
 	read_data_2 => s_fmux_alub,
@@ -261,11 +262,11 @@ begin
 	zero => s_alu_zero
     );
 
-  pc:programcounter
+  pc: programcounter
     port map(
 	i_InstrAddress => s_outInstAddr, 
-	i_clk => iCLK,
-	i_reset => iRST,
+	clk => iCLK,
+	reset => iRST,
 	o_InstrAddress => s_NextInstAddr 
 	);
 
@@ -304,7 +305,7 @@ begin
 	);
 
    bne: mux2t1_N
-   generic map(N => 1)
+   generic map(N => 0)
 	port map(
 	i_S => s_cl_btype,
 	i_D0 => not(s_alu_zero),
@@ -338,6 +339,7 @@ begin
 	RegDst => s_cl_regdst_rmux,
 	extendersel => s_cl_extendersel_extender,
 	datasel => open, 
+	halt => s_cl_halt,
 	btype => s_cl_btype
         );
 
