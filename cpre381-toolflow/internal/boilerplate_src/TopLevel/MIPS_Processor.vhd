@@ -162,21 +162,19 @@ signal s_cl_halt: std_logic; -- control signal from control logic for halt instr
 
 signal s_cl_alucontrol: std_logic_vector(5 downto 0); --alu control bits
 
-signal s_inst_shift2: std_logic_vector(N-1 downto 0); --shifting s_Inst for jump mux
+signal s_inst_shift2: std_logic_vector(27 downto 0); --shifting s_Inst for jump mux
 signal s_extshift: std_logic_vector(N-1 downto 0); -- shifting extender 2 for left adder
+signal s_shiftandaddress: std_logic_vector(N-1 downto 0); -- adding the address to the jump address for the mux logic
 
 signal s_bnemux_output: std_logic; --output for the mux from which bne is calculated
 signal s_and_branchmux: std_logic; --and output to the branch mux select
--- jump and branch signals
+
 signal s_ctl_jump: std_logic; -- jump output from control logic
 signal s_ctl_branch: std_logic; -- branch output from control logic
 signal s_cl_btype: std_logic; -- bne select from control logic
 
 signal s_jab_add4: std_logic_vector(N-1 downto 0); -- address from add 4 logic
-signal s_jab_add4cout: std_logic; -- cout from address add 4 logic
-
 signal s_jab_shiftadd: std_logic_vector(N-1 downto 0); -- address from shift 2 and add logic
-signal s_jab_shiftaddcout: std_logic; -- cout from address shift 2 and add logic
 
 signal s_jab_branchAddr: std_logic_vector(N-1 downto 0); -- address output from should branch mux
 signal s_outInstAddr: std_logic_vector(N-1 downto 0); -- address output from should jump mux
@@ -277,22 +275,22 @@ begin
 	i1 => x"4",
 	cin => '0',
 	output => s_jab_add4,
-	cout => s_jab_add4cout
+	cout => open
 	);
 	
   addaftershift: full_adder
 	port map(
-	i0 => s_jab_add4cout,
+	i0 => s_jab_add4,
 	i1 => s_extshift,
 	cin => '0',
 	output => s_jab_shiftadd,
-	cout => s_jab_shiftaddcout
+	cout => open
 	);
-
+ 
   branchmux: mux2t1_N
 	port map(
 	i_S => s_and_branchmux,
-	i_D0 => s_jab_add4,
+	i_D0 => s_jab_add4, 
 	i_D1 => s_jab_shiftadd,
 	o_O => s_jab_branchAddr
 	);
@@ -300,9 +298,9 @@ begin
   jumpmux: mux2t1_N
 	port map(
 	i_S => s_ctl_jump,
-	i_D0 => s_jab_branchAddr,
-	i_D1 => s_jab_jumpShift, 
-	o_O => s_outInstAddr
+	i_D0 => s_shiftandaddress,
+	i_D1 => s_jab_branchAddr,
+	o_O => s_outInstAddr 
 	);
 
    bne: mux2t1_N
@@ -321,7 +319,9 @@ begin
 	o_F => s_and_branchmux
 	);
   
-   s_inst_shift2 <= s_Inst & "00";
+   s_inst_shift2 <= s_Inst(25 downto 0) & "00"; 
+   s_shiftandaddress <= s_jab_add4(31 downto 28) & s_inst_shift2;
+
    s_extshift <= s_extender_fmux & "00";
 
    control: controllogic
@@ -337,19 +337,17 @@ begin
 	RegWrite => s_RegWr,
 	RegDst => s_cl_regdst_rmux,
 	extendersel => s_cl_extendersel_extender,
-	datasel => --wtf are these 
+	datasel => open, 
 	btype => s_cl_btype
         );
 
-	s_RegWrData <= --TODO
-		
-	s_IMemAddr <= --TODO
+   s_RegWrData <= s_DMemData;
 	
-	s_Halt <= s_cl_halt; 
+   s_Halt <= s_cl_halt; 
 	
-	s_Ovfl <= s_alu_overflow;
+   s_Ovfl <= s_alu_overflow;
 
-	oALUout <= s_DMemAddr;
+   oALUout <= s_DMemAddr;
 
 end structure;
 
