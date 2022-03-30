@@ -123,8 +123,21 @@ architecture structure of MIPS_Processor is
 		cout : out std_logic);
   end component;
 
-  --control logic
-  --jump and branch logic gates
+  component controllogic is
+  port( opcode: in std_logic_vector(5 downto 0);
+	functcode: in std_logic_vector(5 downto 0);
+	ALUsrc: out std_logic;
+	ALUcontrol: out std_logic_vector(5 downto 0);
+	MemtoReg: out std_logic;
+	Branch: out std_logic;
+	Jump: out std_logic;
+	MemWrite: out std_logic;
+	RegWrite: out std_logic;
+	RegDst: out std_logic;
+	extendersel: out std_logic; 
+	datasel: out std_logic; 
+	btype: out std_logic); 
+  end component;
 
 signal s_fmux_alub: std_logic_vector(N-1 downto 0); -- forward mux output to alu input b
 signal s_extender_fmux: std_logic_vector(N-1 downto 0); -- extender output to forward mux input D1
@@ -143,6 +156,8 @@ signal s_cl_halt: std_logic; -- control signal from control logic for halt instr
 
 signal s_cl_alucontrol: std_logic_vector(5 downto 0); --alu control bits
 
+signal s_inst_shift2: std_logic_vector(N-1 downto 0); --shifting s_Inst for jump mux
+signal s_extshift: std_logic_vector(N-1 downto 0); -- shifting extender 2 for left adder
 
 -- jump and branch signals
 signal s_ctl_jump: std_logic; -- jump output from control logic
@@ -239,18 +254,15 @@ begin
 	zero => s_alu_zero
     );
 
-
-  -- PC garbage
   pc:programcounter
     port map(
-	i_InstrAddress => s_outInstAddr, -- The next inst addr from the last cycle (not the addr we are currently going to use)
+	i_InstrAddress => s_outInstAddr, 
 	i_clk => iCLK,
 	i_reset => iRST,
-	o_InstrAddress => s_NextInstAddr -- This gets pumped through everything else and then added to to calculate next next addr
+	o_InstrAddress => s_NextInstAddr 
 	);
 
-  -- Add 4 inst addr
-  add4: full_adder_N
+  pcadd4: full_adder_N
   	port map(
 	i0 => s_NextInstAddr,
 	i1 => x"4",
@@ -259,17 +271,15 @@ begin
 	cout => s_jab_add4cout
 	);
 	
-  -- add shift left 2 thing
-  addshift: full_adder
+  addaftershift: full_adder
 	port map(
 	i0 => s_jab_add4cout,
-	i1 => s_extshift, -- TODO: make this
+	i1 => s_extshift,
 	cin => '0',
 	output => s_jab_shiftadd,
 	cout => s_jab_shiftaddcout
 	);
 
-  -- check if should branch
   branchmux: mux2t1_N
 	port map(
 	i_S => s_ctl_branch,
@@ -278,30 +288,42 @@ begin
 	o_O => s_jab_branchAddr
 	);
 
-  -- check if should jump
   jumpmux: mux2t1_N
 	port map(
 	i_S => s_ctl_jump,
 	i_D0 => s_jab_branchAddr,
-	i_D1 => s_jab_jumpShift, -- TODO: make this
+	i_D1 => s_jab_jumpShift, -- TODO: single & 
 	o_O => s_outInstAddr
 	);
 
+  --take s_Inst put to another singal nad shift left 2
+  s_inst_shift2 <= s_Inst;
+  s_extshift <= 
+
+  --control logic
+  control: controllogic
+	port map(
+	opcode => s_Inst(31 downto 26),
+	functcode => s_Inst(5 downto 0),
+	ALUsrc => s_cl_alusrc_fmux,
+	ALUcontrol => s_cl_alucontrol,
+	MemtoReg => s_cl_memtoreg_bmux,
+	Branch => s_ctl_branch,
+	Jump => s_ctl_jump,
+	MemWrite => s_DMemWr,
+	RegWrite => s_RegWr,
+	RegDst => s_cl_regdst_rmux,
+	extendersel => s_cl_extendersel_extender,
+	datasel => --wtf are these 
+	btype => -- up ^^ 
+        );
 
 
---control logic
-
-
-  -- Ensure that s_Halt is connected to an output control signal produced from decoding the Halt instruction (Opcode: 01 0100)
-
-	s_DMemWr <= --control logic
-
-	s_RegWr <= -- control logic
 	s_RegWrData <= --TODO
 		
 	s_IMemAddr <= --TODO
 	
-	s_Halt <= s_cl_halt; --control logic
+	s_Halt <= s_cl_halt; 
 	
 	s_Ovfl <= s_alu_overflow;
 
