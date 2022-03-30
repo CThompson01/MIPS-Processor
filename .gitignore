@@ -1,0 +1,6 @@
+# VHDL Garbage
+**/work
+**/*.bak
+**/*.cr.mti
+**/.nfs*
+**/*.bak
