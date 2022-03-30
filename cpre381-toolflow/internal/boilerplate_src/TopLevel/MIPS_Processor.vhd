@@ -139,6 +139,12 @@ architecture structure of MIPS_Processor is
 	btype: out std_logic); 
   end component;
 
+  component andg2 is 
+  port(i_A          : in std_logic;
+       i_B          : in std_logic;
+       o_F          : out std_logic);
+  end component;
+
 signal s_fmux_alub: std_logic_vector(N-1 downto 0); -- forward mux output to alu input b
 signal s_extender_fmux: std_logic_vector(N-1 downto 0); -- extender output to forward mux input D1
 signal s_bmux_regfile: std_logic_vector(N-1 downto 0); -- b mux to writeport of register file 
@@ -159,9 +165,12 @@ signal s_cl_alucontrol: std_logic_vector(5 downto 0); --alu control bits
 signal s_inst_shift2: std_logic_vector(N-1 downto 0); --shifting s_Inst for jump mux
 signal s_extshift: std_logic_vector(N-1 downto 0); -- shifting extender 2 for left adder
 
+signal s_bnemux_output: std_logic; --output for the mux from which bne is calculated
+signal s_and_branchmux: std_logic; --and output to the branch mux select
 -- jump and branch signals
 signal s_ctl_jump: std_logic; -- jump output from control logic
 signal s_ctl_branch: std_logic; -- branch output from control logic
+signal s_cl_btype: std_logic; -- bne select from control logic
 
 signal s_jab_add4: std_logic_vector(N-1 downto 0); -- address from add 4 logic
 signal s_jab_add4cout: std_logic; -- cout from address add 4 logic
@@ -282,7 +291,7 @@ begin
 
   branchmux: mux2t1_N
 	port map(
-	i_S => s_ctl_branch,
+	i_S => s_and_branchmux,
 	i_D0 => s_jab_add4,
 	i_D1 => s_jab_shiftadd,
 	o_O => s_jab_branchAddr
@@ -292,16 +301,30 @@ begin
 	port map(
 	i_S => s_ctl_jump,
 	i_D0 => s_jab_branchAddr,
-	i_D1 => s_jab_jumpShift, -- TODO: single & 
+	i_D1 => s_jab_jumpShift, 
 	o_O => s_outInstAddr
 	);
 
-  --take s_Inst put to another singal nad shift left 2
-  s_inst_shift2 <= s_Inst;
-  s_extshift <= 
+   bne: mux2t1_N
+   generic map(N => 1)
+	port map(
+	i_S => s_cl_btype,
+	i_D0 => not(s_alu_zero),
+	i_D1 => s_alu_zero,
+	o_O => s_bnemux_output
+	);
 
-  --control logic
-  control: controllogic
+   andg: andg2
+	port map(
+	i_A => s_ctl_branch,
+	i_B => s_bnemux_output,
+	o_F => s_and_branchmux
+	);
+  
+   s_inst_shift2 <= s_Inst & "00";
+   s_extshift <= s_extender_fmux & "00";
+
+   control: controllogic
 	port map(
 	opcode => s_Inst(31 downto 26),
 	functcode => s_Inst(5 downto 0),
@@ -315,9 +338,8 @@ begin
 	RegDst => s_cl_regdst_rmux,
 	extendersel => s_cl_extendersel_extender,
 	datasel => --wtf are these 
-	btype => -- up ^^ 
+	btype => s_cl_btype
         );
-
 
 	s_RegWrData <= --TODO
 		
