@@ -48,20 +48,112 @@ s_rd1 <=
 s_rd2 <= 
 s_control <= 
 s_shampt <= 
+--expected output = 
+wait for gCLK_HPER/2;
 
 --overflow
+s_rd1 <= 
+s_rd2 <= 
+s_control <= 
+s_shampt <= 
+--expected output = 
+wait for gCLK_HPER/2;
+
 --zero
+s_rd1 <= 
+s_rd2 <= 
+s_control <= 
+s_shampt <= 
+--expected output = 
+wait for gCLK_HPER/2;
+
 --add
+s_rd1 <= 
+s_rd2 <= 
+s_control <= 
+s_shampt <= 
+--expected output = 
+wait for gCLK_HPER/2;
+
 --sub
+s_rd1 <= 
+s_rd2 <= 
+s_control <= 
+s_shampt <= 
+--expected output = 
+wait for gCLK_HPER/2;
+
 --slt
+s_rd1 <= 
+s_rd2 <= 
+s_control <= 
+s_shampt <= 
+--expected output = 
+wait for gCLK_HPER/2;
+
 --and
+s_rd1 <= 
+s_rd2 <= 
+s_control <= 
+s_shampt <= 
+--expected output = 
+wait for gCLK_HPER/2;
+
 --or
+s_rd1 <= 
+s_rd2 <= 
+s_control <= 
+s_shampt <= 
+--expected output = 
+wait for gCLK_HPER/2;
+
 --nor
+s_rd1 <= 
+s_rd2 <= 
+s_control <= 
+s_shampt <= 
+--expected output = 
+wait for gCLK_HPER/2;
+
 --xor
+s_rd1 <= 
+s_rd2 <= 
+s_control <= 
+s_shampt <= 
+--expected output = 
+wait for gCLK_HPER/2;
+
 --sll
+s_rd1 <= 
+s_rd2 <= 
+s_control <= 
+s_shampt <= 
+--expected output = 
+wait for gCLK_HPER/2;
+
 --srl
+s_rd1 <= 
+s_rd2 <= 
+s_control <= 
+s_shampt <= 
+--expected output = 
+wait for gCLK_HPER/2;
+
 --sra
+s_rd1 <= 
+s_rd2 <= 
+s_control <= 
+s_shampt <= 
+--expected output = 
+wait for gCLK_HPER/2;
+
 --lui
+s_rd1 <= 
+s_rd2 <= 
+s_control <= 
+s_shampt <= 
+--expected output = 
+wait for gCLK_HPER/2;
 
 end process;
 end mixes;
