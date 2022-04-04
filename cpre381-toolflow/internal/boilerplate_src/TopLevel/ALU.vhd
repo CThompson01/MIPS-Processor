@@ -39,7 +39,7 @@ end component;
 component AdderSub is
 port(
 	i_A0: in std_logic_vector(N-1 downto 0);
-	i_A1: in std_logic_vector(N-1 downto 0);
+	i_B0: in std_logic_vector(N-1 downto 0);
 	i_Cin: in std_logic;
 	o_Cout: out std_logic_vector(N-1 downto 0);
 	o_overflow: out std_logic;
@@ -50,7 +50,7 @@ component slt_N is
 port(
 	A: in std_logic_vector(N-1 downto 0);
 	B: in std_logic_vector(N-1 downto 0);
-	output: out std_logic_vector(N-1 downto 0));
+	output: out std_logic);
 end component;
 
 component barrelShifter is 
@@ -78,12 +78,14 @@ end component;
 signal s_addsub_mux, s_and_mux, s_lui_mux, s_or_mux, s_xor_mux, s_or_nor_mux: std_logic_vector(N-1 downto 0);
 signal s_barrel_mux, s_slt_mux: std_logic_vector(N-1 downto 0);
 
+signal s_slt_temp: std_logic;
+
 begin 
 
 AddSub:AdderSub
 port map(
 	i_A0 => read_data_1,
-	i_A1 => read_data_2,
+	i_B0 => read_data_2,
 	i_Cin => alu_control(5),
 	o_Cout => s_addsub_mux,
 	o_overflow => overflow,
@@ -124,7 +126,7 @@ setlessthan:slt_N
 port map(
 	A => read_data_1,
 	B => read_data_2, 
-	output => s_slt_mux
+	output => s_slt_temp
 );
 
 multiplexor:alu_mux
@@ -141,6 +143,8 @@ port map(
 );
 
 s_or_nor_mux <= not(s_or_mux); 
+
+s_slt_mux <="0000000000000000000000000000000" & s_slt_temp;
 
 s_lui_mux <= read_data_2(15 downto 0) & x"0000"; 
 
