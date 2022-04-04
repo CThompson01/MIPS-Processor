@@ -47,7 +47,7 @@ wait for gCLK_HPER/2;
 s_rd1 <= 
 s_rd2 <= 
 s_control <= 
-s_shampt <= 
+s_shampt <= x"00000";
 --expected output = 
 wait for gCLK_HPER/2;
 
@@ -55,78 +55,78 @@ wait for gCLK_HPER/2;
 s_rd1 <= 
 s_rd2 <= 
 s_control <= 
-s_shampt <= 
+s_shampt <= x"00000";
 --expected output = 
 wait for gCLK_HPER/2;
 
 --zero
 s_rd1 <= 
 s_rd2 <= 
-s_control <= 
-s_shampt <= 
---expected output = 
+s_control <= x"100011";
+s_shampt <= x"00000";
+--expected output zero = 1 (subtract operation) 
 wait for gCLK_HPER/2;
 
 --add
-s_rd1 <= 
-s_rd2 <= 
-s_control <= 
-s_shampt <= 
---expected output = 
+s_rd1 <= x"00000002";
+s_rd2 <= x"00000002";
+s_control <= x"000011";
+s_shampt <= x"00000";
+--expected output = x00000004
 wait for gCLK_HPER/2;
 
 --sub
-s_rd1 <= 
-s_rd2 <= 
-s_control <= 
-s_shampt <= 
---expected output = 
+s_rd1 <= x"00000002";
+s_rd2 <= x"00000001";
+s_control <= x"100011";
+s_shampt <= x"00000";
+--expected output = x00000001
 wait for gCLK_HPER/2;
 
 --slt
 s_rd1 <= 
 s_rd2 <= 
-s_control <= 
-s_shampt <= 
+s_control <= x"100111";
+s_shampt <= x"00000";
 --expected output = 
 wait for gCLK_HPER/2;
 
 --and
-s_rd1 <= 
-s_rd2 <= 
-s_control <= 
-s_shampt <= 
---expected output = 
+s_rd1 <= x"0000000A";
+s_rd2 <= x"00000003";
+s_control <= x"101011";
+s_shampt <= x"00000";
+--expected output = x00000010
 wait for gCLK_HPER/2;
 
 --or
-s_rd1 <= 
-s_rd2 <= 
-s_control <= 
-s_shampt <= 
---expected output = 
+s_rd1 <= x"0000000a";
+s_rd2 <= x"00000003";
+s_control <= x"101111";
+s_shampt <= x"00000";
+--expected output = x00001011
 wait for gCLK_HPER/2;
 
 --nor
 s_rd1 <= 
 s_rd2 <= 
-s_control <= 
-s_shampt <= 
+s_control <= x"110011";
+s_shampt <= x"00000";
 --expected output = 
 wait for gCLK_HPER/2;
 
 --xor
-s_rd1 <= 
-s_rd2 <= 
-s_control <= 
-s_shampt <= 
---expected output = 
+s_rd1 <= x"0000000a";
+s_rd2 <= x"00000003";
+s_control <= x"110111";
+s_shampt <= x"00000";
+--expected output = x00001001
 wait for gCLK_HPER/2;
 
 --sll
 s_rd1 <= 
 s_rd2 <= 
-s_control <= 
+s_control <= x"111001";
 s_shampt <= 
 --expected output = 
 wait for gCLK_HPER/2;
@@ -134,7 +134,7 @@ wait for gCLK_HPER/2;
 --srl
 s_rd1 <= 
 s_rd2 <= 
-s_control <= 
+s_control <= x"111000";
 s_shampt <= 
 --expected output = 
 wait for gCLK_HPER/2;
@@ -142,7 +142,7 @@ wait for gCLK_HPER/2;
 --sra
 s_rd1 <= 
 s_rd2 <= 
-s_control <= 
+s_control <= x"111010";
 s_shampt <= 
 --expected output = 
 wait for gCLK_HPER/2;
@@ -150,8 +150,8 @@ wait for gCLK_HPER/2;
 --lui
 s_rd1 <= 
 s_rd2 <= 
-s_control <= 
-s_shampt <= 
+s_control <= x"011111";
+s_shampt <= x"00000";
 --expected output = 
 wait for gCLK_HPER/2;
 
