@@ -1,0 +1,15 @@
+# vsim -postsimdataflow -debugdb -c -voptargs="+acc" tb -do "../testpy/modelsim_framework.do" 
+# Start time: 14:31:53 on Apr 05,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: ../../proj/src/TopLevel/MIPS_Processor.vhd(258): (vopt-1549) At instance immediateextender the actual expression and the port 'Imm' of component 'work.MIPS_Processor(structure).extender' have different sizes:  ([16,32]).
+#         Region: /tb/MyMips/immediateextender
+# ** Warning: ../../proj/src/TopLevel/MIPS_Processor.vhd(286): (vopt-1549) At instance pcadd4 the actual expression and the port 'i1' of component 'work.MIPS_Processor(structure).full_adder_N' have different sizes:  ([4,32]).
+#         Region: /tb/MyMips/pcadd4
+# ** Error (suppressible): ../../proj/src/TopLevel/MIPS_Processor.vhd(286): (vopt-1549) At instance pcadd4 the actual expression and the port 'i1' of entity 'work.full_adder_N' have different sizes:  ([4,32]).
+#         Region: /tb/MyMips/pcadd4
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=2.
+# Error loading design
+# End time: 14:31:53 on Apr 05,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2

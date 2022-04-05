@@ -9,7 +9,9 @@ import glob
 import shutil
 import datetime
 import hashlib
-import dump_compare, mars, modelsim
+import mars, modelsim
+from dump_compare import DumpCompare
+import config_parser
 from pathlib import Path
 from updater import Updater
 
@@ -27,8 +29,8 @@ def main():
     # 7) compare output
 
     # 1) parse arguments
-    global options
     options = parse_args()
+    config, env = config_parser.read_config(options['config'])
 
     Updater();
 
@@ -57,19 +59,15 @@ def main():
     if missing_file:
         print(f'\nCould not find {missing_file}')
         print('\nprogram is exiting\n')
-        input("Press Enter to Exit...")
         exit()
 
-    if not modelsim.is_installed():
+    if not modelsim.is_installed(config, env):
         print('\nModelsim does not seem to be installed in the expected location')
-        print('\nPlease Verify the installation path in the config.txt is correct')
         print('\nProgram is exiting\n')
-        input("Press Enter to Exit...")
         exit()
 
     if not check_vhdl_present():
         print('\nOops! It doesn\'t look like you\'ve copied your processor into src')
-        input("Press Enter to Exit...")
         return
 
 
@@ -80,22 +78,22 @@ def main():
             for subdir, dirs, files in os.walk(options['asm-dir']):
                 for f in files:
                     if f.endswith('.s'):
-                        test_fail = not run_test(os.path.join(subdir, f), options)
+                        test_fail = not run_test(os.path.join(subdir, f), options, config, env)
                         print(" ")
                         if test_fail:
-                            fail_list.write('{}\n'.format(f))
+                            fail_list.write('{}\n'.format(os.path.join(subdir, f)))
                         if options['output-all'] or test_fail:
                             shutil.make_archive('output/{}'.format(pathlib.Path(f).name), 'zip', 'temp')
         elif options['asm-path'] is not None:
             f = options['asm-path']
-            test_fail = not run_test(f, options)
+            test_fail = not run_test(f, options, config, env)
             if test_fail:
                 fail_list.write('{}\n'.format(f))
             if options['output-all'] or test_fail:
                 shutil.make_archive('output/{}'.format(pathlib.Path(f).name), 'zip', 'temp')
         elif options['run-file'] is not None:
             for f in to_run:
-                test_fail = not run_test(f, options)
+                test_fail = not run_test(f, options, config, env)
                 print(" ")
                 if test_fail:
                     fail_list.write('{}\n'.format(f))
@@ -105,13 +103,10 @@ def main():
             print("No assembly file")
             exit(0)
        
-    try: 
-        input("Press Enter To Exit...")
-    except EOFError as e:
-        pass
+    pass
         
 
-def run_test(asm_Path, options):
+def run_test(asm_Path, options, config, env):
 
     shutil.rmtree('temp')
     os.makedirs('temp')
@@ -119,14 +114,14 @@ def run_test(asm_Path, options):
 
     # 3) run MARS sim
     print("Starting Mars Simulation for :",asm_Path)
-    options['asm-path'] = mars.run_sim(asm_file=asm_Path)
+    options['asm-path'] = mars.run_sim(config.mars_path, asm_file=asm_Path)
     if options['asm-path'] is None:
         return False
     
 
     # 4) compile student vhdl
     if options['compile']:
-        compile_success = modelsim.compile()
+        compile_success = modelsim.compile(config, env)
         options['compile'] = False # Don't recompile after the first compilation
         if not compile_success:
             print("Compile Failed")
@@ -135,10 +130,10 @@ def run_test(asm_Path, options):
         print('Skipping compilation')
 
     # 5) generate hex with MARS
-    mars.generate_hex(options['asm-path'] )
+    mars.generate_hex(config.mars_path, options['asm-path'] )
     
     # 6) sim student vhdl
-    sim_success = modelsim.sim(timeout=options['sim-timeout'])
+    sim_success = modelsim.sim(config, env, timeout=options['sim-timeout'])
     if not sim_success:
         return False
 
@@ -154,14 +149,7 @@ def check_vhdl_present():
     Returns True if other files exist
     '''
     
-
     src_dir = glob.glob("proj/src/**/*.vhd", recursive=True)
-
-    # print a warning if there is at least 1 non .vhdd file
-    non_vhd = next((f for f in src_dir if f.endswith('.vhdl')),None)
-    if non_vhd:
-        print('** Warining: your source directory contains a file without the .vhd extension **')
-        print(f'** {non_vhd} will be ignored because it does not have the .vhd extension **')
 
     expected = {'tb.vhd','mem.vhd','MIPS_Processor.vhd'}
 
@@ -194,6 +182,7 @@ def parse_args():
     parser.add_argument('--sim-timeout',type=check_sim_timeout, default=30, help='change the ammount of time before simulation is forcefully stopped')
     parser.add_argument('--output-all', action='store_true', help='This flag only has an effect on a batch job. This will save all output, regardless of pass or fail')
     parser.add_argument('--version', action='version', version=version)
+    parser.add_argument('-c', '--config', help='Which config to use. Default=Lab', default="Lab")
     args = parser.parse_args()
 
     options = {
@@ -204,7 +193,8 @@ def parse_args():
         'compile': args.nocompile,
         'sim-timeout': args.sim_timeout,
         'sim-timeout': args.sim_timeout,
-        'output-all' : args.output_all
+        'output-all' : args.output_all,
+        'config'     : args.config
     }
 
 
@@ -253,7 +243,7 @@ def warn_tb_checksum():
     Assumes file exists. Allows both LF and CRLF line endings.
     '''
     expected = {
-        b'\xc7\x12\x00\xc3\xaf\xe8>\r\xa3\xdd\xf4g\x90\xcde\xdf'
+        b'\xfd\xa8h HjQ\xc7\xc9\x19\xadt\x00\xcb\x18\xff'
         }
 
     # copy these lines to generate new expected checksums
@@ -283,7 +273,12 @@ def compare_dumps(options):
     def compare_out_function(compare_line): # accepts each line of compare output and saves it to an array 
         compare_output.append(compare_line)
 
-    compare_passed = dump_compare.compare(student_dump,mars_dump,max_mismatches=mismatches,outfunc=compare_out_function) # captures the output
+    dc = DumpCompare(student_dump, mars_dump, mismatches, outfunc=compare_out_function)
+    compare_passed = dc.compare()
+    dc.print_cpi()
+
+    with open('temp/cpi.txt', 'w') as f:
+        dc.write_cpi(f)
 
     # print compare to console
     for line in compare_output:

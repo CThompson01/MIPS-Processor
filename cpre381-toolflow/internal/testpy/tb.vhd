@@ -134,7 +134,7 @@ begin
           writeline(my_dump, my_line);
         end if;
         if (ovfl = '1') then
-            write(my_line, string'("Arithmetic overflow occurred!"));
+            write(my_line, string'("Arithmetic Overflow Detected"));
             writeline(my_dump, my_line);
         end if;
 

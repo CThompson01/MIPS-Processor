@@ -5,6 +5,7 @@ import datetime
 import traceback
 import build, parse_timings, generate_project as gp
 import config_parser
+import argparse
 
 no_timings_message = '''
 You're synthesis produced no timings. There are a couple reasons this could be, but first
@@ -23,22 +24,13 @@ mostly working in the test framework
 
 '''
 
-def main():
+def main(args):
 
     # create temp directory if it doesn't exist
     os.makedirs('temp',exist_ok=True)
     
-    config_parameters = config_parser.read_config()
-
-    quartus_path = '/usr/local/quartus/20.1/quartus/bin/'
-
-    for x in config_parameters:
-        if "QUARTUS PATH" in x[0].upper():
-            quartus_path = x[1]
-        if "QUARTUS_TLA PATH" in x[0].upper():
-            if os.path.isdir(x[1]):
-                quartus_path = x[1]
-
+    config_parameters, env = config_parser.read_config(args.config)
+    quartus_path = config_parameters.quartus
 
     # exit if quartus is not installed in the expected location
     if not os.path.isdir(quartus_path):
@@ -68,7 +60,7 @@ def main():
     gp.write_qpf(dir='internal/QuartusWork')
     gp.write_sdc(dir='internal/QuartusWork')
 
-    build_success = build.build_all()
+    build_success = build.build_all(config_parameters.quartus, env)
     if not build_success:
         print(no_timings_message)
         exit(1)
@@ -81,20 +73,23 @@ def main():
     print('Timing results available in temp/timing.txt')
 
 def log_exception():
-	''' Writes the last exception thrown to the error log file'''
-	
-	with open('temp/errors.log','a') as f:
-		f.write(f'\nException caught at {datetime.datetime.now()}:\n')
-		traceback.print_exc(file=f)
+    ''' Writes the last exception thrown to the error log file'''
+    
+    with open('temp/errors.log','a') as f:
+        f.write(f'\nException caught at {datetime.datetime.now()}:\n')
+        traceback.print_exc(file=f)
 
 if __name__ == '__main__':
-	try:
-		main()
-	except KeyboardInterrupt: #exit gracefully since this is common
-		exit(1)
-	# except Exception:
-	# 	log_exception()
-	# 	print('Program exited with unexpected exception.')
-	# 	print('Please post to the Project Testing Framework discussion, and attach temp/errors.log')
-		
+    try:
+        parser = argparse.ArgumentParser()
+        parser.add_argument('-c', '--config', help='Which config to use. Default=Lab', default="Lab")
+        args = parser.parse_args()
+        main(args)
+    except KeyboardInterrupt: #exit gracefully since this is common
+        exit(1)
+    except Exception:
+        log_exception()
+        print('Program exited with unexpected exception.')
+        print('Please post to the Project Testing Framework discussion, and attach temp/errors.log')
+        
         

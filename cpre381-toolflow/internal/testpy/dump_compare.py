@@ -14,6 +14,10 @@ mars_firstline_re = re.compile(r'[0-9]*\[inst #(?P<num>[0-9]+)\] (?P<instr>[0-9$
 student_firstline_re = re.compile(r'In clock cycle: (?P<cycle>[0-9]+)')
 register_write_re = re.compile(r'Register Write to Reg: (?P<reg>[0-9A-Fa-fxX]+) Val: (?P<val>[0-9A-Fa-fxX]+)')
 memory_write_re = re.compile(r'Memory Write to Addr: (?P<addr>[0-9A-Fa-fxX]+) Val: (?P<val>[0-9A-Fa-fxX]+)')
+ovf_re = re.compile(r'Arithmetic Overflow Detected')
+nop_re = re.compile(r'Register Write to Reg: 0x00.*')
+student_done_re = re.compile(r'Execution is stopping!')
+mars_done_re = re.compile(r'[inst #5] halt')
 
 def main():
     max_mismatches = 2
@@ -35,50 +39,68 @@ def main():
     print('Maximum Number of Mismatches Accepted: ' + str(max_mismatches))
     print('')
 
-    compare(student_file_path,mars_file_path,max_mismatches=max_mismatches)
+    dc = DumpCompare(student_file_path, mars_file_path, max_mismatches)
+    dc.compare()
+
+    dc.print_cpi()
+
 
 class StudentReader:
     '''
     Wraps a mars dump file object so that we can separate the skipping logic from the comparison logic
     '''
-    nop_re = re.compile(r'Register Write to Reg: 0x00.*') 
 
     def __init__(self,path):
         self.path = path
-        self.f = open(path, "a")
-        self.f.write("\n ")
-        self.f.close()
         self.f = open(path, "r")
-        self.fArr = []
+        self.buff = []
+        self.cyc_num = 0
 
-    def read_next(self,skipnop=False): # make skipnop mandatory
-        '''
-        Returns the next 2 lines of the dump (ignoring $zero writes)..
-        first return value (fline) is guarenteed nothing, and can be null
-        second return value (sline) is guarenteed to not be a $zero write, and can be null
-        third return value (tline) can be null 
-        '''
-        while True:
-            fline = self.f.readline().strip()
-            fline_search = student_firstline_re.search(fline)
-            if not fline_search and not("stop" in fline):
-                continue # if the firstline is unknown try agaim
-            #print(fline)
-            sline = self.f.readline().strip()
-            #print(sline)
-            tline = self.f.readline()
-            tline_length = len(tline)
-            tline.strip()
-            #print(tline)
-            
-            if not skipnop or not sline:
-                return fline, sline, tline
-            elif self.nop_re.fullmatch(sline):
-                self.f.seek(self.f.tell()-tline_length-1) 
-                continue # if instruction is a nop try again
-            else:
-                self.f.seek(self.f.tell()-tline_length-1) 
-                return fline, sline, tline # common case: instruction is valid        
+    def read_next(self): 
+        """
+        Reads the next instruction from the student file.
+
+        This will return either an instruction and a memory access, an
+        intruction and a register access, or an instruction, reg access, and
+        an overflow. Each return type will be a match object.
+
+        """
+
+        # Fill the buffer
+        while (len(self.buff) < 3):
+            self.buff.append(self.f.readline())
+
+        if not self.buff[0]:
+            # File is over
+            return None, None, None
+
+        cycle = student_firstline_re.search(self.buff.pop(0))
+
+        if not cycle:
+            # We didn't read a valid cycle, skip and move on
+            return self.read_next()
+
+        self.cyc_num = cycle.group("cycle")
+
+        # Do we have a register or memory write next?
+        acc = memory_write_re.search(self.buff[0])
+        if acc:
+            self.buff.pop(0)
+        else:
+            acc = register_write_re.search(self.buff[0]) # this will be None if this also fails
+            if acc:
+                self.buff.pop(0)
+
+        # Lastly, do we have overflow?
+        ovf = ovf_re.search(self.buff[0])
+        if ovf:
+            self.buff.pop(0)
+
+        # Final checks -- is it a NOP? 
+        if (not ovf and nop_re.search(acc.group())):
+            return self.read_next()
+
+        return cycle, acc, ovf
         
     def close(self):
         self.f.close()
@@ -87,226 +109,71 @@ class MarsReader:
     '''
     Wraps a mars dump file object so that we can separate the skipping logic from the comparison logic
     '''
-    # instructions to ignore in the 'instr' group of mars_firstline_re
-    ignored = ['syscall','jr ','j ','beq ','bne ','nop','halt']
-    nop_re = re.compile(r'Register Write to Reg: 0x00.*')
-    
+
     def __init__(self,path):
         self.path = path
-        self.f = open(path,"r")
-        self.fArr = []
-        #for l in self.f:
-        #    self.fArr.append(l.strip())
-        #self.f.close()
-        #self.f = open(path,"r")
+        self.f = open(path, "r")
+        self.buff = []
+        self.inst_num = 0
 
-    def read_next(self,skipnop=False):
-        '''
-        Reads the next unignored instruction (including $zero writes).
-        first return value (fline) is guarenteed to either be null or match mars_firstline_re
-        second return value (sline) is guarenteed to be non-null
-        third return value (tline) can be null
-        '''
+    def read_next(self): 
+        """
+        Reads the next instruction from the student file.
 
-        while True:
+        This will return either an instruction and a memory access, an
+        intruction and a register access, or an instruction, reg access, and
+        an overflow. Each return type will be a match object.
 
-            fline = self.f.readline().strip()
-            #print(fline)
+        """
 
-            if not fline:
-                return None, '', '' # if there is no more input, output nothing
-            
-            
-            fline_search = mars_firstline_re.search(fline)
-            if not fline_search:
-                continue # if the firstline is unknown try agaim
-            
-            
-            ignored_instr = any((x in fline_search.group('instr') for x in self.ignored))
-            if ignored_instr:
-                continue # if the firstline is an ignored instruction try again
-            
-            sline = self.f.readline().strip()
+        # Fill the buffer
+        while (len(self.buff) < 3):
+            self.buff.append(self.f.readline())
 
-            if not skipnop or not sline:
-                return fline, '', ''
-            elif self.nop_re.fullmatch(sline):
-                continue # if there is a zero register write try again
-            
-            tline = self.f.readline()
-            tline_length = len(tline)
-            tline = tline.strip()
+        if not self.buff[0]:
+            # File is over
+            return None, None, None
 
-            if not skipnop or not tline:
-                return fline, sline, ''
-                
+        inst = mars_firstline_re.search(self.buff.pop(0))
+
+        if not inst:
+            # We didn't read a valid cycle, skip and move on
+            return self.read_next()
+
+        if "halt" in inst.group("instr"):
+            # Same effect as EOF
+            return None, None, None
+
+        self.inst_num = inst.group("num")
+
+        # Do we have a register or memory write next?
+        acc = memory_write_re.search(self.buff[0])
+        if acc:
+            self.buff.pop(0)
+        else:
+            acc = register_write_re.search(self.buff[0]) # this will be None if this also fails
+            if acc:
+                self.buff.pop(0)
             else:
-                self.f.seek(self.f.tell()-tline_length-0) 
-                return fline, sline, tline # common case of both lines being valid
+                # Doesn't do anything to reg or mem (control flow)
+                return self.read_next()
+
+        # Lastly, do we have overflow?
+        ovf = ovf_re.search(self.buff[0])
+        if ovf:
+            self.buff.pop(0)
+
+        # Final checks -- is it a NOP? 
+        if (not ovf and nop_re.search(acc.group())):
+            return self.read_next()
         
+        return inst, acc, ovf
+       
     def close(self):
         self.f.close()
 
-def compare(student_file_path, mars_file_path, max_mismatches=2, outfunc=print, help=True):
-    '''
-    Compares the modelsim and mars dump files for a program
-    Returns True if sim succeeded, false otherwise
-    '''
-
-    mars_syscall = False
-    overflow_missed = False
-    cur_mismatches = 0
-    overflow_count = 0
-    
-    student_reader = StudentReader(student_file_path)
-    mars_reader = MarsReader(mars_file_path)
-    
-    while cur_mismatches < max_mismatches:
-   
-        #get mars instruction
-        mars_firstline, mars_secondline, mars_thirdline = mars_reader.read_next(skipnop=True) 
-
-        #search mars first line
-        if mars_firstline:
-            mars_firstline_search = mars_firstline_re.search(mars_firstline)
-        
-        #check whether the memory or the register file was written
-        if mars_firstline and 'Register' in mars_secondline:
-            mars_secondline_search = register_write_re.search(mars_secondline)
-            mars_reg_write = True
-        elif mars_firstline:
-            mars_secondline_search = memory_write_re.search(mars_secondline)
-            mars_reg_write = False
-        
-        # read both lines of the student dump
-        student_firstline, student_secondline, student_thirdline = student_reader.read_next(skipnop=True)
-
-        #Student does not generate any output
-        if not student_firstline:
-            cur_mismatches = cur_mismatches + 1
-            if cur_mismatches == 1:
-                outfunc('Oh no...\n')
-            outfunc('Cycle: NA')
-            outfunc('MARS Continues Execution, Student Ends Early')
-            outfunc(f'MARS instruction number: {mars_firstline_search.group("num")}\tInstruction: {mars_firstline_search.group("instr")}')
-            outfunc(f'MARS: {mars_secondline}')
-            outfunc('Student: Execution Incomplete, you probably are not generating data or stopped mid-way through execution\n')
-            outfunc('Ensure that you are using the required signals or that your branching/jump instructions are executing properly\n')
-            break
-      
-        if student_firstline == 'Execution is stopping!':
-            student_firstline = ''
-        #search student first line
-        if student_firstline:
-            student_firstline_search = student_firstline_re.search(student_firstline)
-         
-        #If arithmetic overflow occurs
-        if (student_thirdline.strip() == 'Arithmetic overflow occurred!') and (mars_thirdline.strip() == 'Arithmetic Overflow Detected'):
-            overflow_count = overflow_count + 1
-            outfunc("Arithmetic Overflow Detected Correctly in Cycle: " + student_firstline_search.group("cycle")+'\n')
-        elif (student_thirdline.strip() == 'Arithmetic overflow occurred!') and not(mars_thirdline.strip() == 'Arithmetic Overflow Detected'):
-            outfunc("Arithmetic Overflow Detected by the Student but not Mars in Cycle: " + student_firstline_search.group("cycle")+'\n')
-            overflow_missed = True
-        elif not(student_thirdline.strip() == 'Arithmetic overflow occurred!') and (mars_thirdline.strip() == 'Arithmetic Overflow Detected'):
-            outfunc("Arithmetic Overflow Detected by the Mars but not the student in Cycle: " + student_firstline_search.group("cycle")+'\n')
-            overflow_missed = True
-
-        #check whether the memory or the register file was written
-        if student_firstline and 'Register' in student_secondline:
-            student_secondline_search = register_write_re.search(student_secondline)
-            student_reg_write = True
-            
-        elif student_firstline:
-            student_secondline_search = memory_write_re.search(student_secondline)
-            student_reg_write = False
-  
-        #Student continues to execute instructions when mars has completed     
-        if (not mars_firstline and student_firstline):
-            if not (student_secondline and student_secondline == 'Register Write to Reg: 0x00 Val: 0x00000000' and mars_syscall):
-                cur_mismatches = cur_mismatches + 1
-                if cur_mismatches == 1:
-                    outfunc('Oh no...\n')
-                outfunc(f'Cycle: {student_firstline_search.group("cycle")}')
-                outfunc('MARS Stopped Execution, Student Improperly Continues')
-                outfunc('MARS instruction number: NA\tInstruction: NA')
-                outfunc('MARS: Execution Ended')
-                outfunc(f'Student: {student_secondline}\n')
-                break
-        #Student ends execution early
-        elif mars_firstline and not student_firstline:
-            cur_mismatches = cur_mismatches + 1
-            if cur_mismatches == 1:
-                outfunc('Oh no...\n')
-            outfunc('Cycle: NA')
-            outfunc('MARS Continues Execution, Student Ends Early')
-            outfunc(f'MARS instruction number: {mars_firstline_search.group("num")}\tInstruction: {mars_firstline_search.group("instr")}')
-            outfunc(f'MARS: {mars_secondline}')
-            outfunc('Student: Execution Ended\n')
-            break
-
-        #Both student and mars stop executing 
-        elif not mars_firstline and not student_firstline:
-            break
-        #Student and mars wrote to either register file or memory:
-        else:
-            if student_reg_write == mars_reg_write:
-                if mars_reg_write:
-                    if not (mars_secondline_search.group('val') == student_secondline_search.group('val') and mars_secondline_search.group('reg') == student_secondline_search.group('reg')):
-                        cur_mismatches = cur_mismatches + 1   
-                        if cur_mismatches == 1:
-                            outfunc('Oh no...\n')
-                        outfunc(f'Cycle: {student_firstline_search.group("cycle")}')
-                        outfunc('Incorrect Write to Register File')
-                        outfunc(f'MARS instruction number: {mars_firstline_search.group("num")}\tInstruction: {mars_firstline_search.group("instr")}')
-                        outfunc(f'MARS: {mars_secondline}')
-                        outfunc(f'Student: {student_secondline}\n')
-                else:
-                    if not (mars_secondline_search.group('val') == student_secondline_search.group('val') and mars_secondline_search.group('addr') == student_secondline_search.group('addr')):
-                        cur_mismatches = cur_mismatches + 1
-                        if cur_mismatches == 1:
-                            outfunc('Oh no...\n')
-                        outfunc(f'Cycle: {student_firstline_search.group("cycle")}')
-                        outfunc('Incorrect Write to Memory')
-                        outfunc(f'MARS instruction number: {mars_firstline_search.group("num")}\tInstruction: {mars_firstline_search.group("instr")}')
-                        outfunc(f'MARS: ' + mars_secondline)
-                        outfunc(f'Student: {student_secondline}\n')
-            else:
-                cur_mismatches = cur_mismatches + 1
-                if cur_mismatches == 1:
-                    outfunc('Oh no...\n')
-                outfunc(f'Cycle: {student_firstline_search.group("cycle")}')
-                outfunc('Writing to Different Components')
-                outfunc(f'MARS instruction number: {mars_firstline_search.group("num")}\tInstruction: {mars_firstline_search.group("instr")}')
-                outfunc(f'MARS: {mars_secondline}')
-                outfunc(f'Student: {student_secondline}\n')
-    
-    mars_reader.close()
-    student_reader.close()
-
-    #Print final message
-    if cur_mismatches == 0 and not overflow_missed:
-        outfunc('Victory!! Your processes matches MARS expected output with no mismatches!!')
-        return True
-    elif cur_mismatches < max_mismatches:
-        outfunc(f'Almost! your processor completed the program with  {cur_mismatches}/{max_mismatches} allowed mismatches')
-        if help:
-            outfunc(helpinfo.format(student_file_path,mars_file_path))
-        return False
-    elif overflow_missed:
-        outfunc(f'Almost! your processor completed the program with  {cur_mismatches}/{max_mismatches} allowed mismatches, and incorrectly handled overflow')
-        if help:
-            outfunc(helpinfo.format(student_file_path,mars_file_path))
-        return False
-    else:
-        outfunc(f'You have reached the maximum mismatches ({cur_mismatches})')
-        if help:
-            outfunc(helpinfo.format(student_file_path,mars_file_path))
-        return False
-
-
-
-
-helpinfo = '''
+class DumpCompare:
+    helpinfo = '''
 Helpful resources for Debugging:
 {} : output from the VHDL testbench during program execution on your processor
 {} : output from MARS containing expected output
@@ -314,15 +181,169 @@ vsim.wlf: waveform file generated by processor simulation, you can display this 
 
 '''
 
+
+    def __init__(self, student_file, mars_file, max_mismatches=3, outfunc=print):
+        self.student_reader = StudentReader(student_file)
+        self.mars_reader = MarsReader(mars_file)
+        self.student_path = student_file
+        self.mars_path = mars_file
+        self.max_mismatches = max_mismatches
+        self.outfunc = outfunc
+        self.mismatches = 0
+
+        self.inst_num = 1 # Prevents a division by zero if no instructions issue
+        self.clk_cyc = 0
+
+
+    def print_error(self, cycle, inst, expected, actual, description):
+        self.mismatches += 1
+
+        if cycle:
+            cycle_num = cycle.group('cycle')
+        else:
+            cycle_num = 'na'
+
+        if inst:
+            inst_num = inst.group('num')
+            inst = inst.group('instr')
+        else:
+            inst_num = 'na'
+            inst = 'na'
+
+        if self.mismatches == 1:
+            self.outfunc('Oh no...\n')
+        self.outfunc(f'Cycle: {cycle_num}')
+        self.outfunc(f'MARS instruction number: {inst_num}\tInstruction: {inst}')
+        self.outfunc(f'Expected:\t{expected}')
+        self.outfunc(f'Got     :\t{actual}')
+        if description:
+            self.outfunc(description)
+        self.outfunc("")
+
+    def compare(self):
+        '''
+        Compares the modelsim and mars dump files for a program
+        Returns True if sim succeeded, false otherwise
+        '''
+    
+        while self.mismatches < self.max_mismatches:
+   
+            #get mars instruction
+            m_inst, m_acc, m_ovf = self.mars_reader.read_next() 
+
+            s_cycle, s_acc, s_ovf = self.student_reader.read_next() 
+            
+            # Both end
+            if (not s_cycle) and (not m_inst):
+                break
+
+            if (not s_cycle) and m_inst:
+                self.print_error(s_cycle, m_inst, m_acc.group(), "Execution stopped",
+                    "Student execution ended prematurely")
+                break
+                
+            if s_cycle and not m_inst: 
+                self.print_error(s_cycle, m_inst, "Execution stopped", s_acc.group(),
+                    "Student execution improperly continued")
+                break
+                
+
+            if (m_acc.group() == s_acc.group()) and (type(m_ovf) == type(s_ovf)):
+                # instruction is correct
+                continue
+
+            # Something is wrong... Loop as we may need to remove NOPs
+            #
+            # The way this looping works is that we first try to determine if
+            # either MARs or the student is apparantly writing to register 0
+            # eg is it a NOP. Note... there is a case where a reg write to 
+            # zero may be triggering overflow. This should be caught by the 
+            # student as it is valid.
+            #
+            # If overflow has been possibly detected... then refresh either
+            # the mars stream or the student stream and try again, until
+            # eventually we either match or error out.
+            while True:
+                # Both end
+                if (not s_cycle) and (not m_inst):
+                    break
+
+                if not s_cycle: # Only happens at EOF
+                    self.print_error(s_cycle, m_inst, m_acc, "Execution stopped",
+                        "Student execution ended prematurely")
+                    break
+                if not m_inst: # Only happens at EOF
+                    self.print_error(s_cycle, m_inst, "Execution stopped", "Execution stopped",
+                        "Student execution ended prematurely")
+                if (m_acc.group() == s_acc.group()) and (type(m_ovf) == type(s_ovf)):
+                    # instruction is correct
+                    break
+                if m_acc.group() == s_acc.group():
+                    # Overflow is wrong, is the student a NOP?
+                    if nop_re.search(s_acc.group()):
+                        s_cycle, s_acc, s_ovf = student_reader.read_next() 
+                        continue
+                    else:
+                        exp = "Overflow" if m_ovf else "No Overflow"
+                        got = "Overflow" if s_ovf else "No Overflow"
+                        self.print_error(s_cycle, m_inst, exp, got, "Overflow is incorrect")
+                        break
+                # Is the student a NOP
+                if nop_re.search(s_acc.group()):
+                    s_cycle, s_acc, s_ovf = self.student_reader.read_next() 
+                    continue # Try again
+
+                # Is the mars a NOP
+                if nop_re.search(m_acc.group()):
+                    m_inst, m_acc, m_ovf = self.mars_reader.read_next() 
+                    continue # Try again
+                    
+                # Is the write to the wrong structure?
+                if (m_acc.re == memory_write_re) and (s_acc.re == register_write_re):
+                    # Nop?
+                    if nop_re.search(s_acc.group()):
+                        s_cyle, s_acc, s_ovf = self.student_reader.read_next() 
+                        continue
+                    self.print_error(s_cycle, m_inst, m_acc.group(), s_acc.group(), "Wrote to incorrect structure")
+                    break
+                if (s_acc.re == memory_write_re) and (m_acc.re == register_write_re):
+                    # Nop?
+                    if nop_re.search(m_acc.group()):
+                        m_inst, m_acc, m_ovf = self.mars_reader.read_next() 
+                        continue
+                    self.print_error(s_cycle, m_inst, m_acc.group(), s_acc.group(), "Wrote to incorrect structure")
+                    break
+
+                # all thats left is incorrect writes
+                self.print_error(s_cycle, m_inst, m_acc.group(), s_acc.group(), "Incorrect write")
+                break
+
+        self.inst_num = self.mars_reader.inst_num
+        self.clk_cyc = self.student_reader.cyc_num
+   
+        self.mars_reader.close()
+        self.student_reader.close()
+
+        #Print final message
+        if self.mismatches == 0:
+            self.outfunc('Victory!! Your processes matches MARS expected output with no mismatches!!')
+            return True
+        elif self.mismatches < self.max_mismatches:
+            self.outfunc(f'Almost! your processor completed the program with  {self.mismatches}/{self.max_mismatches} allowed mismatches')
+            self.outfunc(self.helpinfo.format(self.student_path, self.mars_path))
+            return False
+        else:
+            self.outfunc(f'You have reached the maximum mismatches ({self.mismatches})')
+            self.outfunc(self.helpinfo.format(self.student_path, self.mars_path))
+            return False
+
+    def print_cpi(self):
+        self.outfunc(f"Instructions: {self.inst_num:4}\tCycles: {self.clk_cyc:4}\tCPI: {int(self.clk_cyc)/int(self.inst_num):.4}")
+
+    def write_cpi(self, f):
+        f.write(f"Instructions issued: {self.inst_num}\n")
+        f.write(f"Student Processor Cycles: {self.clk_cyc}\n")
+        f.write(f"CPI: {int(self.clk_cyc)/int(self.inst_num):.4}\n")
+
 if __name__ == '__main__':
     main()
-    
-#mars output regexs
-#r'\[inst #(?P<num>[0-9]+)\] (?P<instr>[0-9$a-z ,\-\(\)]+)'
-#r'Register Write to Reg: (?P<reg>[0-9A-Fa-fx]+) Val: (?P<val>[0-9xA-Fa-f]+)'
-#r'Memory Write to Addr: (?P<addr>[0-9A-Fa-fx]+) Val: (?P<val>[0-9xA-Fa-f]+)'
-
-#student testbench output regexs
-#r'In clock cycle: (?P<cycle>[0-9]+)'
-#r'Register Write to Reg: (?P<reg>[0-9A-Fa-fx]+) Val: (?P<val>[0-9xA-Fa-f]+)'
-#r'Memory Write to Addr: (?P<addr>[0-9A-Fa-fx]+) Val: (?P<val>[0-9xA-Fa-f]+)'

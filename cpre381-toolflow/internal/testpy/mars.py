@@ -1,9 +1,7 @@
 import subprocess
 import os
 
-mars_path = 'internal/Mars/MARS_CPRE381.jar'
-
-def generate_hex(asm_file_path):
+def generate_hex(mars_path, asm_file_path):
     '''
     uses mars to generate:
         - temp/imem.hex
@@ -29,7 +27,7 @@ def generate_hex(asm_file_path):
     # I am not concerned with error codes since we have a guarentee the simulation runs from run_mars_sim()
 
     
-def run_sim(asm_file=None, timeout=30):
+def run_sim(mars_path, asm_file, timeout=30):
     '''
     Simulates Assembly file in MARS. Guarentees that a valid assembly file is given or else it
     will call continue to prompt user.
@@ -37,22 +35,15 @@ def run_sim(asm_file=None, timeout=30):
     Returns the path to the correct assembly file.
     '''
 
-    if asm_file:
-        path = asm_file
-    else:
-        print('Please provide the assembly file to run.')
-        print('Use unix style paths like: mips/addiSeq.s')
-        path = input('>').strip()
-
     # Try again if invalid file was provided
-    if not os.path.isfile(path):
-        print('Invalid path to assembly file\n')
-        return run_sim()
+    if not os.path.isfile(asm_file):
+        print(f'Invalid path to assembly file: {asm_file}\n')
+        exit(1)
 
     # open in write mode
     with open('temp/mars_dump.txt','w') as f:
         exit_code = subprocess.call(
-            ['timeout', str(timeout), 'java','-jar',mars_path,'nc', 'ar',path],
+            ['timeout', str(timeout), 'java','-jar',mars_path,'nc', 'ar',asm_file],
             stdout=f
             )
 
@@ -71,7 +62,7 @@ def run_sim(asm_file=None, timeout=30):
         return None
 
     else:
-        return path
+        return asm_file
 
 
 def check_mars_dump():

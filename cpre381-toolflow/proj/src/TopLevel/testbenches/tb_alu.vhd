@@ -41,7 +41,7 @@ port map(
 testing:process
 begin 
 
-wait for gCLK_HPER/2;
+--wait for gCLK_HPER/2;
 
 --carryout TODO 
 --s_rd1 <= 
@@ -88,7 +88,7 @@ s_rd1 <= x"00000001";
 s_rd2 <= x"00000002";
 s_control <= "100111";
 s_shampt <= "00000";
---expected output = x11111111
+--expected output = x00000001
 wait for gCLK_HPER/2;
 
 --and

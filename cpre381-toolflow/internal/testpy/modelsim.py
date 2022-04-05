@@ -5,15 +5,12 @@ import pathlib
 import re
 import shutil
 import time
-import config_parser
 from pathlib import Path
 
 # used to see if output may have timed out but outputted correctly (meaning no halt signal)
 expected_firstline = re.compile(r'In clock cycle: (?P<cycle>[0-9]+)')
 
-modelsim_path = ""
-
-def compile():
+def compile(config, env):
     '''
     Compiles everything in src into work. Assumes directory is present. Open's notepad with any compile errors
 
@@ -21,6 +18,7 @@ def compile():
     '''
 
     print('starting compilation...')
+    modelsim_path = config.modelsim
 
     # Remove the work before compilation to ensure a blank slate and prevent potential issues.
     # If work is not removed, and the last run was terminated unexpectedly, compilation errors
@@ -36,34 +34,38 @@ def compile():
     # Create work folder for compiled work
     try:
         subprocess.check_output( # use check_output to suppress any output
-            [f'{modelsim_path}/vlib','internal/ModelSimContainer/work']) 
+            [f'{modelsim_path}/vlib','internal/ModelSimContainer/work'], env=env) 
     except:
         print("could not successfully create work folder")
         return False
 
     ret = True
     if pathlib.Path("proj/src/MIPS_types.vhd").is_file():
-        ret = ret and compile_file("proj/src/MIPS_types.vhd") # Compile types first
-    ret = ret and compile_file("internal/testpy/tb.vhd") # Then the test bench
+        ret = ret and compile_file("proj/src/MIPS_types.vhd", config, env) # Compile types first
+    ret = ret and compile_file("internal/testpy/tb.vhd", config, env) # Then the test bench
 
     for f in glob.iglob("proj/src/**/*.vhd", recursive=True):
-        ret = ret and compile_file(f)
+        ret = ret and compile_file(f, config, env)
 
     return ret
 
 
-def compile_file(f):
+def compile_file(f, config, env):
     """Compiles a single file to the work directory, emmiting an error if compilation failed.
 
-    Arguments:
+    Args:
         f : File to compile
+        config: Config tuple to use
+        env: Environment to use
     """
+    modelsim_path = config.modelsim
     try:
         with open('temp/vcom_compile.log','a+') as fi:
             exit_code = subprocess.call(
                 [f'{modelsim_path}/vcom','-2008','-work','internal/ModelSimContainer/work',f],
                 stdout=fi,
-                timeout=60
+                timeout=60,
+                env=env
             )
     except subprocess.TimeoutExpired:
         print('Compilation timed out. for file {}\n'.format(f))
@@ -81,17 +83,15 @@ def compile_file(f):
     return True
 
 
-def sim(timeout=30):
+def sim(config, env, timeout=30):
     '''
     Simulates testbench. All work should be compiled before this method is called
     Returns True if the simulation was successful, otherwise False
     '''
+    modelsim_path = config.modelsim
 
     print('Starting VHDL Simulation...')
 
-    os.environ["LM_LICENSE_FILE"] = "27008@io.ece.iastate.edu:1717@io.ece.iastate.edu"
-    
-    
     # We can't use timeout here because of this bug, so use GNU timeout
     # https://bugs.python.org/issue37424
     with open('temp/vsim.log','w') as sim_log:
@@ -101,6 +101,7 @@ def sim(timeout=30):
             stderr=sim_log,
             cwd='internal/ModelSimContainer/', #Run this process in the same dir as the work folder
             # timeout=timeout # If the do file doesn't reach the 'quit' we need to manually kill the process 
+            env=env
         )
 
     # check if process exited with error.
@@ -169,28 +170,14 @@ def busy_move(src,dest,timeout=5,missingok=False):
             if time.time() - s > timeout:
                 raise e  # stop trying if we have reached the timeout
         
-def is_installed():
+def is_installed(config, env):
     '''
     Returns True if modelsim is installed on the computer in the expected location
     Checkes the config file to verify if a custom path should be used.
     '''
-
-    config_parameters = config_parser.read_config()
-    global modelsim_path
-    custom_path = False
-    custom_path_found = False
-
-    for x in config_parameters:
-        if "MODELSIM PATH" in x[0].upper():
-            modelsim_path = x[1]
-            custom_path_found = True
-
-    if custom_path_found == False:
-        modelsim_path = r'/usr/local/mentor/questasim/bin/'
-        print("Changing ModelSim Path to default : ",modelsim_path)
-    else:
-        print("ModelSim Path : ",modelsim_path)
-
+    modelsim_path = config.modelsim
+    if modelsim_path is None:
+        return False
     is_dir = os.path.isdir(modelsim_path)
 
     return is_dir

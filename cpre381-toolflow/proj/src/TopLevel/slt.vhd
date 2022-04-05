@@ -9,7 +9,7 @@ entity slt_N is
 end slt_N;
 
 architecture structural of slt_N is
-	component adder_subtractor 
+	component AdderSub 
 		port(	i_A0 : in std_logic_vector(N-1 downto 0);
 			i_B0 : in std_logic_vector(N-1 downto 0);
 			i_Cin: in std_logic;
@@ -19,6 +19,6 @@ architecture structural of slt_N is
 	signal sub_out : std_logic_vector(N-1 downto 0);
 	signal sub_cout : std_logic;
 begin
-	mapped: adder_subtractor port map (A, B, '1', sub_out, sub_cout);  
+	mapped: AdderSub port map (A, B, '1', sub_out, sub_cout);  
 	output <= sub_out(N-1); 
 end structural;

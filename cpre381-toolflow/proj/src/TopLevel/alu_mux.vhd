@@ -10,30 +10,21 @@ entity alu_mux is
 		norg: in std_logic_vector(N-1 downto 0);
 		xorg: in std_logic_vector(N-1 downto 0);
 		barrel: in std_logic_vector(N-1 downto 0);
+		lui: in std_logic_vector(N-1 downto 0);
 		sel: in std_logic_vector(2 downto 0);
 		output: out std_logic_vector(N-1 downto 0));
 end alu_mux;
 
 architecture struct of alu_mux is 
 begin 
-	case_statement:process(sel)
-	begin
-		case sel is 
-			when "000" =>
-				output <= addsub;
-			when "001" =>
-				output <= slt;
-			when "010" => 
-				output <= andg;
-			when "011" => 
-				output <= org;
-			when "100" => 
-				output <= norg;
-			when "101" => 
-				output <= xorg;
-			when "110" => 
-				output <= barrel;
-			when others => 
-		end case;
-	end process;
+	with sel select
+	output <= addsub when "000",
+		  slt when "001",
+		  andg when "010",
+		  org when "011",
+		  norg when "100",
+		  xorg when "101",
+		  barrel when "110",
+		  lui when "111",
+		  x"00000000" when others;	
 end struct;

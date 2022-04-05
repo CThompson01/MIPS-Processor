@@ -15,14 +15,14 @@ end ALU;
 
 architecture struct of ALU is 
 
-component andg2_N is 
+component andg_N is 
 port(
 	i_A: in std_logic_vector(N-1 downto 0);
 	i_B: in std_logic_vector(N-1 downto 0);
 	o_O: out std_logic_vector(N-1 downto 0));
 end component;
 
-component org2_N is 
+component org_N is 
 port(
 	i_A: in std_logic_vector(N-1 downto 0);
 	i_B: in std_logic_vector(N-1 downto 0);
@@ -71,6 +71,7 @@ port(
 	norg: in std_logic_vector(N-1 downto 0);
 	xorg: in std_logic_vector(N-1 downto 0);
 	barrel: in std_logic_vector(N-1 downto 0);
+	lui: in std_logic_vector(N-1 downto 0);
 	sel: in std_logic_vector(2 downto 0);
 	output: out std_logic_vector(N-1 downto 0));
 end component;
@@ -92,14 +93,14 @@ port map(
 	o_t => carryout
 );
 
-ander:andg2_N
+ander:andg_N
 port map(
 	i_A => read_data_1,
 	i_B => read_data_2,
 	o_O => s_and_mux
 );
 
-orer:org2_N
+orer:org_N
 port map(
 	i_A => read_data_1,
 	i_B => read_data_2,
@@ -138,11 +139,12 @@ port map(
 	norg => s_or_nor_mux,
 	xorg => s_xor_mux,
 	barrel => s_barrel_mux,
+	lui => s_lui_mux,
 	sel => alu_control(4 downto 2),
 	output => output
 );
 
-s_or_nor_mux <= not(s_or_mux); 
+s_or_nor_mux <= not(read_data_1 or read_data_2); 
 
 s_slt_mux <="0000000000000000000000000000000" & s_slt_temp;
 

@@ -14,22 +14,18 @@ C:\intelFPGA\18.1\quartus\bin64\quartus_asm --read_settings_files=off --write_se
 C:\intelFPGA\18.1\quartus\bin64\quartus_sta --sdc="qs2.sdc" qs2 --do_report_timing
 '''
 
-quartus_bin_dir = r'internal/quartus'
+def build_all(quartus, env, ddir='internal/QuartusWork'):
+    """ Builds the project and generates a timing summary
 
-config_parameters = config_parser.read_config()
+    Args:
+        quartus: Path to quartus bin directory.
+        env: Environment to use. Useful if adding a license server.
+        ddir: Directory to use as quartus working directory
 
-for x in config_parameters:
-        if "QUARTUS PATH" in x[0].upper():
-            quartus_bin_dir = x[1]
-        if "QUARTUS_TLA PATH" in x[0].upper():
-            if os.path.isdir(x[1]):
-                quartus_bin_dir = x[1]
-
-quartus_bin_dir = pathlib.Path(quartus_bin_dir).resolve()
-
-def build_all(dir='internal/QuartusWork'):
+    Returns:
+        True if success, else fail
+    """
     pname = gp.project_name
-
     starttime = dt.datetime.now()
 
     print(f'\nStarting compilation at {str(starttime)}\n')
@@ -38,10 +34,11 @@ def build_all(dir='internal/QuartusWork'):
 
         # starting mapping
         exit_code = subprocess.call(
-            [f'{quartus_bin_dir}/quartus_map','--read_settings_files=on','--write_settings_files=off',pname,'-c',pname],
-            cwd=dir,
+            [f'{quartus}/quartus_map','--read_settings_files=on','--write_settings_files=off',pname,'-c',pname],
+            cwd=ddir,
             stdout = synth_log,
-            stderr = synth_log
+            stderr = synth_log,
+            env=env
         )
 
         if exit_code != 0:
@@ -50,10 +47,11 @@ def build_all(dir='internal/QuartusWork'):
 
         # starting fitting
         exit_code = subprocess.call(
-            [f'{quartus_bin_dir}/quartus_fit','--read_settings_files=on','--write_settings_files=off',pname,'-c',pname],
-            cwd=dir,
+            [f'{quartus}/quartus_fit','--read_settings_files=on','--write_settings_files=off',pname,'-c',pname],
+            cwd=ddir,
             stdout = synth_log,
-            stderr = synth_log
+            stderr = synth_log,
+            env=env
         )
 
         if exit_code != 0:
@@ -62,10 +60,11 @@ def build_all(dir='internal/QuartusWork'):
 
         # starting assembly
         exit_code = subprocess.call(
-            [f'{quartus_bin_dir}/quartus_asm','--read_settings_files=on','--write_settings_files=off',pname,'-c',pname],
-            cwd=dir,
+            [f'{quartus}/quartus_asm','--read_settings_files=on','--write_settings_files=off',pname,'-c',pname],
+            cwd=ddir,
             stdout = synth_log,
-            stderr = synth_log
+            stderr = synth_log,
+            env=env
         )
 
         if exit_code != 0:
@@ -75,9 +74,10 @@ def build_all(dir='internal/QuartusWork'):
     # generate timing
     with open('temp/timing_dump.txt','w') as timing_log:
         exit_code = subprocess.call(
-            [f'{quartus_bin_dir}/quartus_sta',f'--sdc={pname}.sdc',pname,'--do_report_timing'],
-            cwd=dir,
-            stdout = timing_log
+            [f'{quartus}/quartus_sta',f'--sdc={pname}.sdc',pname,'--do_report_timing'],
+            cwd=ddir,
+            stdout = timing_log,
+            env=env
         )
 
         if exit_code != 0:
