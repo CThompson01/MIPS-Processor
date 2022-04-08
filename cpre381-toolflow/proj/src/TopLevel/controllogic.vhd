@@ -14,6 +14,8 @@ port(   opcode: in std_logic_vector(5 downto 0);
 	RegDst: out std_logic;
 	extendersel: out std_logic; 
 	datasel: out std_logic;
+	jaldst: out std_logic;
+	jaldata: out std_logic;
 	halt: out std_logic; 
 	btype: out std_logic); 
 end controllogic;
@@ -38,6 +40,8 @@ case opcode is
 				RegDst <= '0';
 				extendersel <= '0';
 				datasel <= '0';
+				jaldst <= '0';
+				jaldata <= '0';
 				halt <= '0';
 				btype <= '0';
 			when "100001" => --ADDU
@@ -51,6 +55,8 @@ case opcode is
 				RegDst <= '1';
 				extendersel <= '0';
 				datasel <= '0';
+				jaldst <= '0';
+				jaldata <= '0';
 				halt <= '0';
 				btype <= '0';
 			when "100100" => --AND 
@@ -64,6 +70,8 @@ case opcode is
 				RegDst <= '0';				
 				extendersel <= '0';
 				datasel <= '0';
+				jaldst <= '0';
+				jaldata <= '0';
 				halt <= '0';
 				btype <= '0';
 			when "100111" => --NOR
@@ -77,6 +85,8 @@ case opcode is
 				RegDst <= '0';	
 				extendersel <= '0';
 				datasel <= '0';
+				jaldst <= '0';
+				jaldata <= '0';
 				halt <= '0';
 				btype <= '0';
 			when "100110" => --XOR
@@ -90,6 +100,8 @@ case opcode is
 				RegDst <= '0';	
 				extendersel <= '0';
 				datasel <= '0';
+				jaldst <= '0';
+				jaldata <= '0';
 				halt <= '0';
 				btype <= '0';
 			when "100101" => --OR
@@ -103,6 +115,8 @@ case opcode is
 				RegDst <= '0';	
 				extendersel <= '0';
 				datasel <= '0';
+				jaldst <= '0';
+				jaldata <= '0';
 				halt <= '0';
 				btype <= '0';
 			when "101010" => --SLT
@@ -116,6 +130,8 @@ case opcode is
 				RegDst <= '0';	
 				extendersel <= '0';
 				datasel <= '0';
+				jaldst <= '0';
+				jaldata <= '0';
 				halt <= '0';
 				btype <= '0';
 			when "000000" => --SLL
@@ -129,6 +145,8 @@ case opcode is
 				RegDst <= '0';	
 				extendersel <= '0';
 				datasel <= '0';
+				jaldst <= '0';
+				jaldata <= '0';
 				halt <= '0';
 				btype <= '0';
 			when "000010" => --SRL
@@ -142,6 +160,8 @@ case opcode is
 				RegDst <= '0';	
 				extendersel <= '0';
 				datasel <= '0';
+				jaldst <= '0';
+				jaldata <= '0';
 				halt <= '0';
 				btype <= '0';
 			when "000011" => --SRA
@@ -155,6 +175,8 @@ case opcode is
 				RegDst <= '0';	
 				extendersel <= '0';
 				datasel <= '0';
+				jaldst <= '0';
+				jaldata <= '0';
 				halt <= '0';
 				btype <= '0';
 			when "100010" => --SUB
@@ -168,6 +190,8 @@ case opcode is
 				RegDst <= '0';	
 				extendersel <= '0';
 				datasel <= '0';
+				jaldst <= '0';
+				jaldata <= '0';
 				halt <= '0';
 				btype <= '0';
 			when "100011" => --SUBU
@@ -181,6 +205,8 @@ case opcode is
 				RegDst <= '0';	
 				extendersel <= '0';
 				datasel <= '0';
+				jaldst <= '0';
+				jaldata <= '0';
 				halt <= '0';
 				btype <= '0';
 			when others =>
@@ -198,6 +224,8 @@ case opcode is
 		RegDst <= '1';
 		extendersel <= '1';
 		datasel <= '0';
+		jaldst <= '0';
+		jaldata <= '0';
 		halt <= '0';
 		btype <= '0';
 	when "001001" => --ADDIU
@@ -211,6 +239,8 @@ case opcode is
 		RegDst <= '1';
 		extendersel <= '1';
 		datasel <= '0';
+		jaldst <= '0';
+		jaldata <= '0';
 		halt <= '0';
 		btype <= '0';
 	when "001100" => --ANDI
@@ -224,6 +254,8 @@ case opcode is
 		RegDst <= '1';	
 		extendersel <= '1';
 		datasel <= '0';
+		jaldst <= '0';
+		jaldata <= '0';
 		halt <= '0';
 		btype <= '0';
 	when "001111" => --LUI		
@@ -237,6 +269,8 @@ case opcode is
 		RegDst <= '0';
 		extendersel <= '0';
 		datasel <= '0';
+		jaldst <= '0';
+		jaldata <= '0';
 		halt <= '0';
 		btype <= '0';
 	when "100011" => --LW
@@ -250,6 +284,8 @@ case opcode is
 		RegDst <= '0';
 		extendersel <= '1';
 		datasel <= '1';
+		jaldst <= '0';
+		jaldata <= '0';
 		halt <= '0';
 		btype <= '0';
 	when "001110" => --XORI
@@ -263,6 +299,8 @@ case opcode is
 		RegDst <= '1';
 		extendersel <= '0';
 		datasel <= '0';
+		jaldst <= '0';
+		jaldata <= '0';
 		halt <= '0';
 		btype <= '0';
 	when "001101" => --ORI 
@@ -276,6 +314,8 @@ case opcode is
 		RegDst <= '1';
 		extendersel <= '1';
 		datasel <= '0';
+		jaldst <= '0';
+		jaldata <= '0';
 		halt <= '0';
 		btype <= '0';
 	when "001010" => --SLTI
@@ -289,6 +329,8 @@ case opcode is
 		RegDst <= '1';
 		extendersel <= '1';
 		datasel <= '0';
+		jaldst <= '0';
+		jaldata <= '0';
 		halt <= '0';
 		btype <= '0';
 	when "101011" => --sw
@@ -302,6 +344,8 @@ case opcode is
 		RegDst <= '0';
 		extendersel <= '1';
 		datasel <= '0';
+		jaldst <= '0';
+		jaldata <= '0';
 		halt <= '0';
 		btype <= '0';
 	when "000100" => --BEQ
@@ -315,6 +359,8 @@ case opcode is
 		RegDst <= '0';
 		extendersel <= '0';
 		datasel <= '0';
+		jaldst <= '0';
+		jaldata <= '0';
 		halt <= '0';
 		btype <= '1';
 	when "000101" => --BNE
@@ -328,6 +374,8 @@ case opcode is
 		RegDst <= '0';
 		extendersel <= '0';
 		datasel <= '0';
+		jaldst <= '0';
+		jaldata <= '0';
 		halt <= '0';
 		btype <= '0';
 	when "000010" => --J
@@ -341,6 +389,8 @@ case opcode is
 		RegDst <= '0';
 		extendersel <= '0';
 		datasel <= '0';
+		jaldst <= '0';
+		jaldata <= '0';
 		halt <= '0';
 		btype <= '0';
 	when "000011" => --JAL
@@ -354,6 +404,8 @@ case opcode is
 		RegDst <= '0';
 		extendersel <= '0';
 		datasel <= '0';
+		jaldst <= '1';
+		jaldata <= '1';
 		halt <= '0';
 		btype <= '0';
 	when "010100" => --HALT
@@ -367,6 +419,8 @@ case opcode is
 		RegDst <= '0';
 		extendersel <= '0';
 		datasel <= '0';
+		jaldst <= '0';
+		jaldata <= '0';
 		halt <= '1';
 		btype <= '0';
 	when others =>
