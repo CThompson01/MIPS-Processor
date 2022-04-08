@@ -27,7 +27,7 @@ entity MIPS_Processor is
        iInstLd         : in std_logic;
        iInstAddr       : in std_logic_vector(N-1 downto 0);
        iInstExt        : in std_logic_vector(N-1 downto 0);
-       oALUOut         : out std_logic_vector(N-1 downto 0)); -- Hook this up to the output of the ALU. It is important for synthesis that you have this output that can effectively be impacted by all other components so they are not optimized away.
+       oALUOut         : out std_logic_vector(N-1 downto 0)); 
 
 end  MIPS_Processor;
 
@@ -82,7 +82,7 @@ architecture structure of MIPS_Processor is
 
   component extender is
   port(
-	Imm: in std_logic_vector(N-1 downto 0);
+	Imm: in std_logic_vector(15 downto 0);
 	s: in std_logic;
 	out_Imm: out std_logic_vector(N-1 downto 0));
   end component;
@@ -232,8 +232,8 @@ begin
     generic map(N => 5)
     port map(
 	i_S => s_cl_regdst_rmux,
-	i_D0 => s_Inst(20 downto 16),
-	i_D1 => s_Inst(15 downto 11),
+	i_D0 => s_Inst(15 downto 11),
+	i_D1 => s_Inst(20 downto 16),
 	o_O => s_RegWrAddr
 	);
 
@@ -283,7 +283,7 @@ begin
   pcadd4: full_adder_N
   	port map(
 	i0 => s_NextInstAddr,
-	i1 => x"4",
+	i1 => x"00000004",
 	cin => '0',
 	output => s_jab_add4,
 	cout => open
@@ -310,8 +310,8 @@ begin
   jumpmux: mux2t1_N
 	port map(
 	i_S => s_ctl_jump,
-	i_D0 => s_shiftandaddress,
-	i_D1 => s_jab_branchAddr,
+	i_D0 => s_jab_branchAddr,
+	i_D1 => s_shiftandaddress,
 	o_O => s_outInstAddr 
 	);
 
@@ -335,7 +335,7 @@ begin
    s_inst_shift2 <= s_Inst(25 downto 0) & "00"; 
    s_shiftandaddress <= s_jab_add4(31 downto 28) & s_inst_shift2;
 
-   s_extshift <= s_extender_fmux & "00";
+   s_extshift <= s_extender_fmux(29 downto 0) & "00";
 
    control: controllogic
 	port map(
@@ -355,7 +355,7 @@ begin
 	btype => s_cl_btype
         );
 
-   s_RegWrData <= s_DMemData;
+   s_RegWrData <= s_bmux_regfile;
 	
    s_Halt <= s_cl_halt; 
 	
