@@ -147,6 +147,7 @@ architecture structure of MIPS_Processor is
 	datasel: out std_logic; 
 	jaldst: out std_logic;
 	jaldata: out std_logic;
+	jr: out std_logic;
 	halt: out std_logic;
 	btype: out std_logic); 
   end component;
@@ -173,11 +174,11 @@ signal s_cl_alusrc_fmux: std_logic; -- control signal for forward mux alu src
 signal s_cl_regdst_rmux: std_logic; -- control signal for register mux rdst
 signal s_cl_memtoreg_bmux: std_logic; -- control signal for backwards mux memtoreg
 signal s_cl_halt: std_logic; -- control signal from control logic for halt instruction 
-signal s_cl_jaldata: std_logic; --control signal for the jal data mux writing into writeport of registerfile
-
+signal s_cl_jaldata: std_logic; --c ontrol signal for the jal data mux writing into writeport of registerfile
+signal s_cl_jr: std_logic; -- control bit for controling the $ra being fed into the PC
 signal s_cl_alucontrol: std_logic_vector(5 downto 0); --alu control bits
 signal s_registermux_jaldstmux: std_logic_vector(4 downto 0); --connector between the register mux and jal dst mux 
-
+signal s_jumpmux_jrmux: std_logic_vector(N-1 downto 0); --connector between jump and jr mux that lead to PC input
 signal s_inst_shift2: std_logic_vector(27 downto 0); --shifting s_Inst for jump mux
 signal s_extshift: std_logic_vector(N-1 downto 0); -- shifting extender 2 for left adder
 signal s_shiftandaddress: std_logic_vector(N-1 downto 0); -- adding the address to the jump address for the mux logic
@@ -192,10 +193,9 @@ signal s_cl_jaldst: std_logic; --jal destination register logic
 
 signal s_jab_add4: std_logic_vector(N-1 downto 0); -- address from add 4 logic
 signal s_jab_shiftadd: std_logic_vector(N-1 downto 0); -- address from shift 2 and add logic
-signal s_jab_addfourmore: std_logic_vector(N-1 downto 0); --adding 4 more to pc for jal logic
 
 signal s_jab_branchAddr: std_logic_vector(N-1 downto 0); -- address output from should branch mux
-signal s_outInstAddr: std_logic_vector(N-1 downto 0); -- address output from should jump mux
+signal s_outInstAddr: std_logic_vector(N-1 downto 0); -- address output from should jr mux
 
 begin
 
@@ -269,20 +269,11 @@ begin
 	o_O => s_backwardsmux_jaldatamux
 	);
 
-  pcaddfourmoreintojal: full_adder_N
-   port map(
-	i0 => s_jab_add4,
-	i1 => x"00000004",
-	cin => '0',
-	output => s_jab_addfourmore,
-	cout => open
-   );
-
   jaldatamux: mux2t1_N
     port map(
 	i_S => s_cl_jaldata,
 	i_D0 => s_backwardsmux_jaldatamux,
-	i_D1 => s_jab_addfourmore,
+	i_D1 => s_jab_add4,
 	o_O => s_bmux_regfile
 	);
 
@@ -345,6 +336,14 @@ begin
 	i_S => s_ctl_jump,
 	i_D0 => s_jab_branchAddr,
 	i_D1 => s_shiftandaddress,
+	o_O => s_jumpmux_jrmux
+	);
+
+  jrmux: mux2t1_N 
+    port map(
+	i_S => s_cl_jr,
+	i_D0 => s_jumpmux_jrmux,
+	i_D1 => s_regfile_alua,
 	o_O => s_outInstAddr 
 	);
 
@@ -386,6 +385,7 @@ begin
 	datasel => open, 
 	jaldst => s_cl_jaldst,
 	jaldata => s_cl_jaldata,
+	jr => s_cl_jr,
 	halt => s_cl_halt,
 	btype => s_cl_btype
     );
