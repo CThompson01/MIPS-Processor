@@ -1,1 +1,1 @@
-proj/mips/grendel.s
+proj/mips/fibonacci.s

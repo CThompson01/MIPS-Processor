@@ -293,12 +293,12 @@ case opcode is
 	when "001111" => --LUI		
 		ALUsrc <= '1';
 		ALUcontrol <= "011111";
-		MemtoReg <= '1';
+		MemtoReg <= '0';
 		Branch <= '0';
 		Jump <= '0';
 		MemWrite <= '0';
 		RegWrite <= '1';
-		RegDst <= '0';
+		RegDst <= '1';
 		extendersel <= '0';
 		datasel <= '0';
 		jaldst <= '0';
