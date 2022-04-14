@@ -11,7 +11,7 @@
 jal dumb
 ori $s3 $zero 0x1234
 beq $s1, 1, jeffspizza #issue here
-#bne $s1, 0, urmom
+bne $s1, 0, urmom
 j exit
 
 urmom:

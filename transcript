@@ -13,17 +13,12 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading project Project1
+add wave -position insertpoint vsim:/tb/MyMips/*
+add wave -position insertpoint vsim1:/tb/MyMips/*
 add wave -position insertpoint  \
-vsim:/tb/MyMips/regfilemap/rs
+vsim1:/tb/MyMips/regfilemap/rs
 add wave -position insertpoint  \
-vsim:/tb/MyMips/regfilemap/rt
+vsim1:/tb/MyMips/regfilemap/rt
 add wave -position insertpoint  \
-vsim:/tb/MyMips/regfilemap/rd
-add wave -position insertpoint vsim:/tb/MyMips/registermux/*
-add wave -position insertpoint vsim:/tb/MyMips/jaldstmux/*
-add wave -position insertpoint  \
-vsim:/tb/MyMips/pc/o_InstrAddress
-add wave -position insertpoint  \
-vsim:/tb/MyMips/iCLK
-add wave -position insertpoint  \
-vsim:/tb/MyMips/IMem/q
+vsim1:/tb/MyMips/regfilemap/rd
+add wave -position insertpoint vsim1:/tb/MyMips/registermux/*
