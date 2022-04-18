@@ -26,5 +26,5 @@ begin
 		  xorg when "101",
 		  barrel when "110",
 		  lui when "111",
-		  '0' when others;	
+		  "0" when others;	
 end struct;
