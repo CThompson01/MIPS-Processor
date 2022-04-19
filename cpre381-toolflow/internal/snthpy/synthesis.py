@@ -22,6 +22,8 @@ mostly working in the test framework
 3. Your processor doesn't depend on the clock input. Perhaps you made your own clock in a
    process statment.
 
+Check temp/synth_errors.log for more information.
+
 '''
 
 def main(args):

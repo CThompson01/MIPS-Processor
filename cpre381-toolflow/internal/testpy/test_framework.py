@@ -113,10 +113,11 @@ def run_test(asm_Path, options, config, env):
     print("Running: {}".format(asm_Path))
 
     # 3) run MARS sim
-    print("Starting Mars Simulation for :",asm_Path)
+    print("Starting Mars Simulation for :",asm_Path, "...", end="")
     options['asm-path'] = mars.run_sim(config.mars_path, asm_file=asm_Path)
     if options['asm-path'] is None:
         return False
+    print("Success")
     
 
     # 4) compile student vhdl

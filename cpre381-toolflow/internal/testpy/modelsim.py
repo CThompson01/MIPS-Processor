@@ -8,7 +8,8 @@ import time
 from pathlib import Path
 
 # used to see if output may have timed out but outputted correctly (meaning no halt signal)
-expected_firstline = re.compile(r'In clock cycle: (?P<cycle>[0-9]+)')
+expected_firstline = re.compile(r'In clock cycle:')
+
 
 def compile(config, env):
     '''
@@ -90,7 +91,7 @@ def sim(config, env, timeout=30):
     '''
     modelsim_path = config.modelsim
 
-    print('Starting VHDL Simulation...')
+    print('Starting VHDL Simulation...', end="")
 
     # We can't use timeout here because of this bug, so use GNU timeout
     # https://bugs.python.org/issue37424
@@ -119,7 +120,7 @@ def sim(config, env, timeout=30):
             
             return False
 
-    if(exit_code != 0):
+    elif(exit_code != 0):
         print(f'could not simulate successfully, got exit code {exit_code}')
 
         # Use Popen to start notepad in a non-blocking manner with the sim error
@@ -132,7 +133,7 @@ def sim(config, env, timeout=30):
     busy_move('internal/ModelSimContainer/vsim.wlf', 'temp/vsim.wlf',missingok=False)
     busy_move('internal/ModelSimContainer/vsim.dbg', 'temp/vsim.dbg', missingok=True)
 
-    print('Successfully simulated program!')
+    print('Success')
     return True
 
 

@@ -15,7 +15,7 @@ entity alu_mux_simple is
 		output: out std_logic);
 end alu_mux_simple;
 
-architecture struct of alu_mux is 
+architecture struct of alu_mux_simple is 
 begin 
 	with sel select
 	output <= addsub when "000",
@@ -26,5 +26,5 @@ begin
 		  xorg when "101",
 		  barrel when "110",
 		  lui when "111",
-		  "0" when others;	
+		  '0' when others;	
 end struct;

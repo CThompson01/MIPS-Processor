@@ -29,31 +29,63 @@ slt $2, $4, $3      # $4 < $3 | 0
 slt $3, $5, $6      # $5 < $6 | 1
 
 #slti
+slti $1, $1, 5      # $1 < 5 | 1
+slti $2, $4, 2      # $4 < 2 | 0
+slti $3, $5, 14     # $5 < 14 | 1
 
 #and
+and $1, $1, $3
+and $7, $7, $8
+and $11, $10, $9
 
 #andi
+andi $2, $zero, 0x00ff
+andi $2, $3, 0x00ff
+andi $2, $3, 0
 
 #or
+or $s1, $1, $zero   # | 1
+or $s1, $1, $3      # | 0
+or $s1, $2, $zero   # | 0
+or $s1, $2, $1      # | 1
 
 #ori
-ori $s2, $zero, 0x1234
-ori $s2, 0x4321, $zero
-ori $s2, $zero, $zero
-ori $s2, $6, 0x1234
+ori $s2, $zero, 0x1234  # | 1  
+ori $s2, $zero, 0       # | 0
+ori $s2, $6, 0x1234     # | 0
 
 #nor
+nor $3, $4, $5
+nor $3, $zero, $1
+nor $3, $5, $5
 
 #xor
+xor $2, $zero, $4
+xor $3, $3, $4
+xor $3, $s2, $s1
 
 #xori
+xori $2, $2, 1
+xori $2, $2, 0
+xori $2, $zero, 0
 
 #sll
+sll $2, $2, 8
+sll $2, $2, 1
+sll $3, $3, 4
 
 #srl
+srl $3, $2, 1
+srl $3, $3, 5
+srl $3, $2, 8
 
 #sra
+sra $3, $3, 1
+sra $3, $2, 8
+sra $2, $3, 4
 
 #lui
+lui $3, 5
+lui $3, 10
 
 halt
