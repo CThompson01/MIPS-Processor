@@ -283,7 +283,7 @@ case opcode is
 		MemWrite <= '0';
 		RegWrite <= '1';
 		RegDst <= '1';	
-		extendersel <= '1';
+		extendersel <= '0';
 		datasel <= '0';
 		jaldst <= '0';
 		jaldata <= '0';
@@ -314,7 +314,7 @@ case opcode is
 		Jump <= '0';
 		MemWrite <= '0';
 		RegWrite <= '1';
-		RegDst <= '0';
+		RegDst <= '1';
 		extendersel <= '1';
 		datasel <= '1';
 		jaldst <= '0';
@@ -395,7 +395,7 @@ case opcode is
 		MemWrite <= '0';
 		RegWrite <= '0';
 		RegDst <= '0';
-		extendersel <= '0';
+		extendersel <= '1';
 		datasel <= '0';
 		jaldst <= '0';
 		jaldata <= '0';
@@ -411,7 +411,7 @@ case opcode is
 		MemWrite <= '0';
 		RegWrite <= '0';
 		RegDst <= '0';
-		extendersel <= '0';
+		extendersel <= '1';
 		datasel <= '0';
 		jaldst <= '0';
 		jaldata <= '0';

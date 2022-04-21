@@ -1,28 +1,59 @@
 #
 # Logical Jump Tests 
 #
-
-# data section
-.data
-
-# code/instruction section
 .text
 
-jal dumb
-ori $s3 $zero 0x1234
-beq $s1, 1, jeffspizza #issue here
-bne $s1, 0, urmom
-j exit
+#call the stack 5 times and return 
 
-urmom:
+addi $sp, $0, 0x7FFFF000
+
+jal call1
+
+
+halt 
+
+call1:
+    addi $sp, $sp, 4
+    sw $ra, 0($sp)
+    jal call2
+    
+    lw $ra, 0($sp)
+    addi $sp, $sp -4
+    
     jr $ra
 
-jeffspizza:
+call2:
+    addi $sp, $sp, 4
+    sw $ra, 0($sp)
+
+    jal call3
+
+    lw $ra, 0($sp)
+    addi $sp, $sp -4
+
     jr $ra
 
-dumb:
-    addi $s1, $0, 1
+call3:
+    addi $sp, $sp, 4
+    sw $ra, 0($sp)
+
+    jal call4
+
+    lw $ra, 0($sp)
+    addi $sp, $sp -4
+
     jr $ra
 
-exit:
-    halt
+call4: 
+    addi $sp, $sp, 4
+    sw $ra, 0($sp)
+
+    jal call5
+
+    lw $ra, 0($sp)
+    addi $sp, $sp -4
+
+    jr $ra
+
+call5: 
+    jr $ra

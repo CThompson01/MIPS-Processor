@@ -82,7 +82,14 @@ data_in => rd,
 en => we,
 data_out => reg_we); 
 
-reg: for i in 0 to 31 generate
+register0: register1 port map(
+we => reg_we(0),
+reset => '1', 
+clk => clk, 
+data_in => writeport,
+data_out => reg_out_arr(0));
+
+reg: for i in 1 to 31 generate
 registers: register1 port map(
 we => reg_we(i),
 reset => reset, 
