@@ -150,6 +150,7 @@ architecture structure of MIPS_Processor is
   end component;
 
   component register1 is 
+  generic (N : integer := N);
   port(we :in std_logic;
        reset :in std_logic; 
        clk :in std_logic;
@@ -178,21 +179,21 @@ signal s_cl_branchbne: std_logic; --control logic output signal
 signal s_cl_jr: std_logic; --control logic output signal 
 signal s_cl_j: std_logic; --control logic output signal 
 signal s_pcadd4register_stage2: std_logic_vector(N-1 downto 0);  --pcadd4 signal stage2
-signal s_cl_jaldatamux_stage2: std_logic; --jaldatamux select stage2
-signal s_cl_jaldatamux: std_logic; --jaldatamux select cl
-signal s_cl_bmuxselect_stage2: std_logic; --bmuxselect stage2
-signal s_cl_bmuxselect: std_logic; --bmux select
+signal s_cl_jaldatamux_stage2: std_logic_vector(0 downto 0); --jaldatamux select stage2
+signal s_cl_jaldatamux: std_logic_vector(0 downto 0); --jaldatamux select cl
+signal s_cl_bmuxselect_stage2: std_logic_vector(0 downto 0); --bmuxselect stage2
+signal s_cl_bmuxselect: std_logic_vector(0 downto 0); --bmux select
 signal s_inst_stage2: std_logic_vector(N-1 downto 0); --instruction stage2
 signal s_cl_aluopcode_stage2: std_logic_vector(5 downto 0); --alu op code stage2
 signal s_cl_aluopcode: std_logic_vector(5 downto 0); --alu op code 
 signal s_extenderoutput: std_logic_vector(N-1 downto 0); --extender component output
 signal s_extender_stage2: std_logic_vector(N-1 downto 0); --extender stage2 output
-signal s_cl_alusrc: std_logic; --alusrc cl
-signal s_cl_alusrc_stage2: std_logic; --alusrc stage2
+signal s_cl_alusrc: std_logic_vector(0 downto 0); --alusrc cl
+signal s_cl_alusrc_stage2: std_logic_vector(0 downto 0); --alusrc stage2
 signal s_rd1: std_logic_vector(N-1 downto 0); --rd1 regfile output
 signal s_rd1_stage2: std_logic_vector(N-1 downto 0); --rd1 stage2
 signal s_rd2_stage2: std_logic_vector(N-1 downto 0); --rd2 stage2 signal
-signal s_cl_dmemwrenable: std_logic; -- dmem write enable
+signal s_cl_dmemwrenable: std_logic_vector(0 downto 0); -- dmem write enable
 signal s_cl_halt: std_logic; --halt cl
 signal s_branch: std_logic; --branch calculation 
 signal s_bne: std_logic; --bne calculation
@@ -211,17 +212,18 @@ signal s_addstage2_branchmux: std_logic_vector(N-1 downto 0); --adding to mux st
 
 --stage3
 signal s_pcadd4register_stage3: std_logic_vector(N-1 downto 0); --pcadd4 signal stage3
-signal s_cl_jaldatamux_stage3: std_logic; --jaldatacl signal stage3
-signal s_cl_bmuxselect_stage3: std_logic; --bmuxcl signal stage3
-signal s_cl_dmemwr_stage3: std_logic; --dmem signal stage3
+signal s_cl_jaldatamux_stage3: std_logic_vector(0 downto 0); --jaldatacl signal stage3
+signal s_cl_bmuxselect_stage3: std_logic_vector(0 downto 0); --bmuxcl signal stage3
+signal s_cl_dmemwr_stage3: std_logic_vector(0 downto 0); --dmem signal stage3
 signal s_aluouput: std_logic_vector(N-1 downto 0); --aluoutput
 signal s_rd2_stage3: std_logic_vector(N-1 downto 0); --rd2 stage3 signal 
 signal s_alusrcmux_alu: std_logic_vector(N-1 downto 0); --alusrcmux output to alu
 
 --stage4
 signal s_pcadd4register_stage4: std_logic_vector(N-1 downto 0); --pcadd4 signal stage4
-signal s_cl_jaldatamux_stage4: std_logic; --jaldatacl signal stage4
-signal s_cl_bmuxselect_stage4: std_logic; --bmuxcl signal stage4
+signal s_dmemwrfinal: std_logic_vector(0 downto 0); --final singal dmem wr
+signal s_cl_jaldatamux_stage4: std_logic_vector(0 downto 0); --jaldatacl signal stage4
+signal s_cl_bmuxselect_stage4: std_logic_vector(0 downto 0); --bmuxcl signal stage4
 signal s_aluoutput_stage4: std_logic_vector(N-1 downto 0); --aluoutput signal stage4
 signal s_dmemoutput_stage4: std_logic_vector(N-1 downto 0); --dmemoutput signal stage4
 
@@ -308,18 +310,18 @@ begin
 		port map(
 			opcode => s_Inst(31 downto 26), 
 			functcode => s_Inst(5 downto 0),
-			ALUsrc => s_cl_alusrc,
+			ALUsrc => s_cl_alusrc(0),
 			ALUcontrol => s_cl_aluopcode,
-			MemtoReg => s_cl_bmuxselect,
+			MemtoReg => s_cl_bmuxselect(0),
 			Branch => s_cl_branch,
 			Jump => s_cl_j,
-			MemWrite => s_cl_dmemwrenable,
+			MemWrite => s_cl_dmemwrenable(0),
 			RegWrite => s_RegWr,
 			RegDst => s_cl_regdst,
 			extendersel => s_cl_extender,
 			datasel => open, 
 			jaldst => s_cl_jaldst,
-			jaldata => s_cl_jaldatamux,
+			jaldata => s_cl_jaldatamux(0),
 			jr => s_cl_jr,
 			halt => s_cl_halt,
 			btype => s_cl_btype
@@ -410,7 +412,7 @@ begin
 			readdata2 => s_rd2_stage2
 		);
 
-	s_bne <= '1' when s_rd1 != s_rd2_stage2 else '0';
+	s_bne <= '1' when s_rd1 /= s_rd2_stage2 else '0';
 
 	s_branch <= '1' when s_rd1 = s_rd2_stage2 else '0';
 	
@@ -483,7 +485,7 @@ begin
 			we => '1',
 			reset => '0',
 			clk => iCLK,
-			data_in => s_cl_dmemwrenable
+			data_in => s_cl_dmemwrenable,
 			data_out => s_cl_dmemwr_stage3
 		);
 
@@ -532,11 +534,11 @@ begin
 			zero => open
     	);
 
-	oALUout <= s_aluoutput;
+	oALUout <= s_aluouput;
 	
 	alusrcmux: mux2t1_N 
     	port map(
-			i_S => s_cl_alusrc_stage2,
+			i_S => s_cl_alusrc_stage2(0),
 			i_D0 => s_rd2_stage3,
 			i_D1 => s_extender_stage2,
 			o_O => s_alusrcmux_alu
@@ -567,7 +569,7 @@ begin
 			reset => '0',
 			clk => iCLK,
 			data_in => s_cl_dmemwr_stage3,
-			data_out => s_DMemWr
+			data_out => s_dmemwrfinal
 		);
 
 	bmuxselregisterstage3: register1  
@@ -600,6 +602,8 @@ begin
 		);
 
 	--MEM/WB
+
+	s_DmemWr <= s_dmemwrfinal(0);
 
 	DMem: mem
     	generic map(ADDR_WIDTH => ADDR_WIDTH,
@@ -664,7 +668,7 @@ begin
 
 	backwardsmux: mux2t1_N 
     	port map(
-			i_S => s_cl_bmuxselect_stage4,
+			i_S => s_cl_bmuxselect_stage4(0),
 			i_D0 => s_aluoutput_stage4,
 			i_D1 => s_aluoutput_stage4,
 			o_O => s_bmuxoutput_jaldatamux
@@ -672,7 +676,7 @@ begin
 
   	jaldatamux: mux2t1_N
 	    port map(
-			i_S => s_cl_jaldatamux_stage4,
+			i_S => s_cl_jaldatamux_stage4(0),
 			i_D0 => s_bmuxoutput_jaldatamux,
 			i_D1 => s_pcadd4register_stage4,
 			o_O => s_jaldatamux_writeport
