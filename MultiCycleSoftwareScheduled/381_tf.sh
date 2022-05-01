@@ -79,6 +79,25 @@ elif [ "$1" == "submit" ]; then
         echo -e "${RED}'proj' directory${NC}"
         exit 1
     fi
+    if [ $# == 2 ]; then
+        proj1=0
+        if [ "$2" == "sw" ]; then
+            suff="_proj2_sw"
+        elif [ "$2" == "hw" ]; then
+            suff="_proj2_hw"
+        else
+            echo -e "${RED}Argument for submit [$2] not recognized${NC}"
+            echo -e "${ORANGE}Accepted options are 'hw' or 'sw' or nothing.${NC}"
+            exit 1
+        fi
+        echo -e "${GREEN}Making Project 2 Submission${NC}"
+    else
+        proj1=1
+        suff=_proj1
+        echo -e "${GREEN}Making Project 1 Submission${NC}"
+
+    fi
+
     echo "Creating submission in submissions/"
     echo "When submitting to Canvas, please make sure to upload both the .zip"
     echo "directory and the pdf as a submission. All files needed for submisison"
@@ -88,10 +107,17 @@ elif [ "$1" == "submit" ]; then
     cp -r "proj/mips" "submissions"
     cp -r "proj/test" "submissions"
     cp  "proj/"*".pdf" "submissions"
-    (cd "submissions" && zip --quiet -r "submit.zip" *)
+    (cd "submissions" && zip --quiet -r "submit${suff}.zip" *)
     rm -rf "submissions/src"
     rm -rf "submissions/mips"
     rm -rf "submissions/test"
+    if [ $proj1 == 1 ]; then
+        mkdir -p "submissions/proj1"
+        mv "submissions/submit${suff}.zip" "submissions/proj1"
+    else
+        mkdir -p "submissions/proj2"
+        mv "submissions/submit${suff}.zip" "submissions/proj2"
+    fi
     
 else
     echo "==========================================================================================="
@@ -145,4 +171,6 @@ else
     echo -e "${ORANGE}To generate/check submission: ${NC}"
     echo " "
     echo "./381_tf.sh submit"
+    echo "./381_tf.sh submit hw"
+    echo "./381_tf.sh submit sw"
 fi

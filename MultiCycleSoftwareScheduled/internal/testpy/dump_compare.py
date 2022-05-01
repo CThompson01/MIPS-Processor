@@ -65,40 +65,44 @@ class StudentReader:
         an overflow. Each return type will be a match object.
 
         """
+        not_done = True
+        while not_done:
 
-        # Fill the buffer
-        while (len(self.buff) < 3):
-            self.buff.append(self.f.readline())
+            # Fill the buffer
+            while (len(self.buff) < 3):
+                self.buff.append(self.f.readline())
 
-        if not self.buff[0]:
-            # File is over
-            return None, None, None
+            if not self.buff[0]:
+                # File is over
+                return None, None, None
 
-        cycle = student_firstline_re.search(self.buff.pop(0))
+            cycle = student_firstline_re.search(self.buff.pop(0))
 
-        if not cycle:
-            # We didn't read a valid cycle, skip and move on
-            return self.read_next()
+            if not cycle:
+                # We didn't read a valid cycle, skip and move on
+                return self.read_next()
 
-        self.cyc_num = cycle.group("cycle")
+            self.cyc_num = cycle.group("cycle")
 
-        # Do we have a register or memory write next?
-        acc = memory_write_re.search(self.buff[0])
-        if acc:
-            self.buff.pop(0)
-        else:
-            acc = register_write_re.search(self.buff[0]) # this will be None if this also fails
+            # Do we have a register or memory write next?
+            acc = memory_write_re.search(self.buff[0])
             if acc:
                 self.buff.pop(0)
+            else:
+                acc = register_write_re.search(self.buff[0]) # this will be None if this also fails
+                if acc:
+                    self.buff.pop(0)
 
-        # Lastly, do we have overflow?
-        ovf = ovf_re.search(self.buff[0])
-        if ovf:
-            self.buff.pop(0)
+            # Lastly, do we have overflow?
+            ovf = ovf_re.search(self.buff[0])
+            if ovf:
+                self.buff.pop(0)
 
-        # Final checks -- is it a NOP? 
-        if (not ovf and nop_re.search(acc.group())):
-            return self.read_next()
+            # Final checks -- is it a NOP? 
+            if (not ovf and nop_re.search(acc.group())):
+                not_done = True
+            else:
+                not_done = False
 
         return cycle, acc, ovf
         
@@ -125,48 +129,52 @@ class MarsReader:
         an overflow. Each return type will be a match object.
 
         """
+        not_done = True
+        while not_done:
 
-        # Fill the buffer
-        while (len(self.buff) < 3):
-            self.buff.append(self.f.readline())
+            # Fill the buffer
+            while (len(self.buff) < 3):
+                self.buff.append(self.f.readline())
 
-        if not self.buff[0]:
-            # File is over
-            return None, None, None
+            if not self.buff[0]:
+                # File is over
+                return None, None, None
 
-        inst = mars_firstline_re.search(self.buff.pop(0))
+            inst = mars_firstline_re.search(self.buff.pop(0))
 
-        if not inst:
-            # We didn't read a valid cycle, skip and move on
-            return self.read_next()
+            if not inst:
+                # We didn't read a valid cycle, skip and move on
+                return self.read_next()
 
-        if "halt" in inst.group("instr"):
-            # Same effect as EOF
-            return None, None, None
+            if "halt" in inst.group("instr"):
+                # Same effect as EOF
+                return None, None, None
 
-        self.inst_num = inst.group("num")
+            self.inst_num = inst.group("num")
 
-        # Do we have a register or memory write next?
-        acc = memory_write_re.search(self.buff[0])
-        if acc:
-            self.buff.pop(0)
-        else:
-            acc = register_write_re.search(self.buff[0]) # this will be None if this also fails
+            # Do we have a register or memory write next?
+            acc = memory_write_re.search(self.buff[0])
             if acc:
                 self.buff.pop(0)
             else:
-                # Doesn't do anything to reg or mem (control flow)
-                return self.read_next()
+                acc = register_write_re.search(self.buff[0]) # this will be None if this also fails
+                if acc:
+                    self.buff.pop(0)
+                else:
+                    # Doesn't do anything to reg or mem (control flow)
+                    return self.read_next()
 
-        # Lastly, do we have overflow?
-        ovf = ovf_re.search(self.buff[0])
-        if ovf:
-            self.buff.pop(0)
+            # Lastly, do we have overflow?
+            ovf = ovf_re.search(self.buff[0])
+            if ovf:
+                self.buff.pop(0)
 
-        # Final checks -- is it a NOP? 
-        if (not ovf and nop_re.search(acc.group())):
-            return self.read_next()
-        
+            # Final checks -- is it a NOP? 
+            if (not ovf and nop_re.search(acc.group())):
+                not_done = True
+            else:
+                not_done = False
+            
         return inst, acc, ovf
        
     def close(self):
