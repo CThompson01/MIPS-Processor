@@ -3,8 +3,8 @@ Reading pref.tcl
 # 2021.2
 
 # vsim -postsimdataflow -debugdb -c -voptargs="+acc" tb -do "../testpy/modelsim_framework.do" 
-# Start time: 17:45:07 on Apr 28,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 20:16:27 on May 02,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
 # //  Questa Sim-64
 # //  Version 2021.2 linux_x86_64 Apr 14 2021
 # //
@@ -64,17 +64,11 @@ Reading pref.tcl
 #    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/DMem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/IMem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 3  Instance: /tb/MyMips/DMem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 11  Instance: /tb/MyMips/DMem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 13  Instance: /tb/MyMips/DMem
-# ** Note: Data structure takes 35033240 bytes of memory
+# ** Note: Data structure takes 35295408 bytes of memory
 #          Process time 0.16 seconds
 #          stop
-#    Time: 1120 ns  Iteration: 1  Instance: /tb
-# Break in Process P_DUMP_STATE at /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/single-cycle-mips-processor-group-1_02/cpre381-toolflow/internal/testpy/tb.vhd line 146
-# Stopped at /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/single-cycle-mips-processor-group-1_02/cpre381-toolflow/internal/testpy/tb.vhd line 146
-# End time: 17:45:09 on Apr 28,2022, Elapsed time: 0:00:02
-# Errors: 0, Warnings: 5
+#    Time: 620 ns  Iteration: 1  Instance: /tb
+# Break in Process P_DUMP_STATE at /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/internal/testpy/tb.vhd line 146
+# Stopped at /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/internal/testpy/tb.vhd line 146
+# End time: 20:16:29 on May 02,2022, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 2
