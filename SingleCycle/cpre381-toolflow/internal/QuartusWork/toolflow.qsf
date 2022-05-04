@@ -1,0 +1,46 @@
+
+#
+# CprE 381 Generated Quartus Settings File
+#
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:07:08  JANUARY 28, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name TOP_LEVEL_ENTITY MIPS_Processor
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/MIPS_types.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/1scomp.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/ALU.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/AdderSub.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/Adder_N.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/MIPS_types.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/adder.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/alu_mux.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/alu_mux_simple.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/andg2.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/andg_N.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/barrelShifter.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/bitReverser.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/controllogic.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/decoder5-32.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/dffg.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/extender.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/invg.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/mem.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/mux2t1.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/mux2t1_N.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/mux32to1.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/org2.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/org_N.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/programcounter.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/register.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/registerfile.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/slt.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/xorg2.vhd"
+set_global_assignment -name VHDL_FILE "/home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/SingleCycle/cpre381-toolflow/proj/src/TopLevel/xorg_N.vhd"

@@ -194,7 +194,7 @@ signal s_rd1: std_logic_vector(N-1 downto 0); --rd1 regfile output
 signal s_rd1_stage2: std_logic_vector(N-1 downto 0); --rd1 stage2
 signal s_rd2_stage2: std_logic_vector(N-1 downto 0); --rd2 stage2 signal
 signal s_cl_dmemwrenable: std_logic_vector(0 downto 0); -- dmem write enable
-signal s_cl_halt: std_logic; --halt cl
+signal s_cl_halt: std_logic_vector(0 downto 0); --halt cl
 signal s_branch: std_logic; --branch calculation 
 signal s_bne: std_logic; --bne calculation
 signal s_cl_extender: std_logic; -- extender cl 
@@ -209,6 +209,8 @@ signal s_cl_branch: std_logic; -- branch cl
 signal s_branchbne_jump_mux: std_logic_vector(N-1 downto 0); -- connecting signal for 1st and second layer stage2 muxes
 signal s_jump_jr_mux: std_logic_vector(N-1 downto 0); -- connecting signal for 2nd and 3rd layer stage2 muxes
 signal s_addstage2_branchmux: std_logic_vector(N-1 downto 0); --adding to mux stage 2
+signal s_jaldststage2: std_logic_vector(N-1 downto 0); --jal dst 
+signal s_regwr_vector: std_logic_vector(0 downto 0);
 
 --stage3
 signal s_pcadd4register_stage3: std_logic_vector(N-1 downto 0); --pcadd4 signal stage3
@@ -218,6 +220,9 @@ signal s_cl_dmemwr_stage3: std_logic_vector(0 downto 0); --dmem signal stage3
 signal s_aluouput: std_logic_vector(N-1 downto 0); --aluoutput
 signal s_rd2_stage3: std_logic_vector(N-1 downto 0); --rd2 stage3 signal 
 signal s_alusrcmux_alu: std_logic_vector(N-1 downto 0); --alusrcmux output to alu
+signal s_haltstage3: std_logic_vector(0 downto 0); --halt control signal 
+signal s_jaldststage3: std_logic_vector(N-1 downto 0); --jal dst 
+signal s_regwrstage3: std_logic_vector(0 downto 0); -- reg wr 
 
 --stage4
 signal s_pcadd4register_stage4: std_logic_vector(N-1 downto 0); --pcadd4 signal stage4
@@ -226,10 +231,15 @@ signal s_cl_jaldatamux_stage4: std_logic_vector(0 downto 0); --jaldatacl signal 
 signal s_cl_bmuxselect_stage4: std_logic_vector(0 downto 0); --bmuxcl signal stage4
 signal s_aluoutput_stage4: std_logic_vector(N-1 downto 0); --aluoutput signal stage4
 signal s_dmemoutput_stage4: std_logic_vector(N-1 downto 0); --dmemoutput signal stage4
+signal s_haltstage4: std_logic_vector(0 downto 0); --halt control signal 
+signal s_jaldststage4: std_logic_vector(N-1 downto 0); --jal dst 
+signal s_regwrstage4: std_logic_vector(0 downto 0); -- reg wr 
 
 --stage5
 signal s_jaldatamux_writeport: std_logic_vector(N-1 downto 0); --signal for jaldatamux to writeport of register file 
 signal s_bmuxoutput_jaldatamux: std_logic_vector(N-1 downto 0); --carry signal between bemux output and jaldata mux input0 
+signal s_regwr_fromstage5: std_logic_vector(0 downto 0); --reg wr from stage
+signal s_haltstage5: std_logic_vector(0 downto 0); -- final halt
 
 begin
 
@@ -316,18 +326,16 @@ begin
 			Branch => s_cl_branch,
 			Jump => s_cl_j,
 			MemWrite => s_cl_dmemwrenable(0),
-			RegWrite => s_RegWr,
+			RegWrite => s_regwr_vector(0),
 			RegDst => s_cl_regdst,
 			extendersel => s_cl_extender,
 			datasel => open, 
 			jaldst => s_cl_jaldst,
 			jaldata => s_cl_jaldatamux(0),
 			jr => s_cl_jr,
-			halt => s_cl_halt,
+			halt => s_cl_halt(0),
 			btype => s_cl_btype
     	);
-
-	s_Halt <= s_cl_halt;
 
 	registermux: mux2t1_N
 	    generic map(N => 5)
@@ -344,7 +352,7 @@ begin
 			i_S => s_cl_jaldst,
 			i_D0 => s_regdst_jaldatamux,
 			i_D1 => "11111",
-			o_O => s_RegWrAddr
+			o_O => s_jaldststage2
 		);
 
 	immediateextender: extender 
@@ -403,7 +411,7 @@ begin
     	port map(
 			clk => iCLK,
 			reset => iRST,
-			we => s_RegWr,
+			we => s_regwr_fromstage5(0),
 			rs => s_Inst(25 downto 21),
 			rt => s_Inst(20 downto 16),
 			rd => s_RegWrAddr,
@@ -411,6 +419,8 @@ begin
 			readdata1 => s_rd1,
 			readdata2 => s_rd2_stage2
 		);
+
+	s_RegWr <= s_regwr_fromstage5(0);
 
 	s_bne <= '1' when s_rd1 /= s_rd2_stage2 else '0';
 
@@ -422,6 +432,35 @@ begin
 			i_D0 => s_branch, 
 			i_D1 => s_bne, 
 			o_O => s_branch_bne
+		);
+
+	regwrstage2: register1 
+		generic map(N => 1)
+		port map(
+			we => '1',
+			reset => '0',
+			clk => iCLK,
+			data_in => s_regwr_vector,
+			data_out => s_regwrstage3
+		);
+
+	haltregisterstage2: register1 
+		generic map(N => 1)
+		port map(
+			we => '1',
+			reset => '0',
+			clk => iCLK,
+			data_in => s_cl_halt,
+			data_out => s_haltstage3
+		);
+
+	registerdststage2: register1 
+		port map(
+			we => '1',
+			reset => '0',
+			clk => iCLK,
+			data_in => s_jaldststage2,
+			data_out => s_jaldststage3
 		);
 
 	inststage2register: register1 
@@ -544,6 +583,35 @@ begin
 			o_O => s_alusrcmux_alu
 		);
 
+	haltregisterstage3: register1 
+		generic map(N => 1)
+		port map(
+			we => '1',
+			reset => '0',
+			clk => iCLK,
+			data_in => s_haltstage3,
+			data_out => s_haltstage4
+		);
+
+	regwrstage3: register1 
+		generic map(N => 1)
+		port map(
+			we => '1',
+			reset => '0',
+			clk => iCLK,
+			data_in => s_regwrstage3,
+			data_out => s_regwrstage4
+		);
+
+	registerdststage3: register1 
+		port map(
+			we => '1',
+			reset => '0',
+			clk => iCLK,
+			data_in => s_jaldststage3,
+			data_out => s_jaldststage4
+		);
+
 	readdata2registerstage3: register1 
 		port map(
 			we => '1',
@@ -617,6 +685,25 @@ begin
 
 	s_RegWrData <= s_DMemData;
 
+	regwrstage4: register1 
+		generic map(N => 1)
+		port map(
+			we => '1',
+			reset => '0',
+			clk => iCLK,
+			data_in => s_regwrstage4,
+			data_out => s_regwr_fromstage5
+		);
+
+	registerdststage4: register1 
+		port map(
+			we => '1',
+			reset => '0',
+			clk => iCLK,
+			data_in => s_jaldststage4,
+			data_out => s_RegWrAddr
+		);
+
 	pcplus4registerstage4: register1 
 		port map(
 			we => '1',
@@ -633,6 +720,16 @@ begin
     		clk => iCLK,
 	    	data_in => s_DmemOut,
     		data_out => s_aluoutput_stage4
+		);
+
+	haltregisterstage4: register1 
+		generic map(N => 1)
+		port map(
+			we => '1',
+			reset => '0',
+			clk => iCLK,
+			data_in => s_haltstage4,
+			data_out => s_haltstage5
 		);
 	
 	aluoutputregisterstage4: register1 
@@ -681,5 +778,15 @@ begin
 			i_D1 => s_pcadd4register_stage4,
 			o_O => s_jaldatamux_writeport
 		);
+
+	s_Halt <= s_haltstage5(0);
+
+
+
+
+
+
+
+		
 
 end structure;

@@ -1,2 +1,2 @@
 Victory!! Your processes matches MARS expected output with no mismatches!!
-Instructions: 29  	Cycles: 28  	CPI: 0.9655
+Instructions: 814 	Cycles: 814 	CPI: 1.0

@@ -1,0 +1,33 @@
+# vsim -postsimdataflow -debugdb -c -voptargs="+acc" tb -do "../testpy/modelsim_framework.do" 
+# Start time: 17:29:07 on May 04,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: ../../proj/src/TopLevel/MIPS_Processor.vhd(346): (vopt-1549) At instance registermux the actual expression and the port 'o_O' of component 'work.MIPS_Processor(structure).mux2t1_N' have different sizes:  ([6,5]).
+#         Region: /tb/MyMips/registermux
+# ** Error (suppressible): ../../proj/src/TopLevel/MIPS_Processor.vhd(346): (vopt-1549) At instance registermux the actual expression and the port 'o_O' of entity 'work.mux2t1_N' have different sizes:  ([6,5]).
+#         Region: /tb/MyMips/registermux
+# ** Warning: ../../proj/src/TopLevel/MIPS_Processor.vhd(353): (vopt-1549) At instance jaldstmux the actual expression and the port 'i_D0' of component 'work.MIPS_Processor(structure).mux2t1_N' have different sizes:  ([6,5]).
+#         Region: /tb/MyMips/jaldstmux
+# ** Error (suppressible): ../../proj/src/TopLevel/MIPS_Processor.vhd(353): (vopt-1549) At instance jaldstmux the actual expression and the port 'i_D0' of entity 'work.mux2t1_N' have different sizes:  ([6,5]).
+#         Region: /tb/MyMips/jaldstmux
+# ** Warning: ../../proj/src/TopLevel/MIPS_Processor.vhd(355): (vopt-1549) At instance jaldstmux the actual expression and the port 'o_O' of component 'work.MIPS_Processor(structure).mux2t1_N' have different sizes:  ([32,5]).
+#         Region: /tb/MyMips/jaldstmux
+# ** Error (suppressible): ../../proj/src/TopLevel/MIPS_Processor.vhd(355): (vopt-1549) At instance jaldstmux the actual expression and the port 'o_O' of entity 'work.mux2t1_N' have different sizes:  ([32,5]).
+#         Region: /tb/MyMips/jaldstmux
+# ** Warning: ../../proj/src/TopLevel/MIPS_Processor.vhd(558): (vopt-1549) At instance aluopstage2register the actual expression and the port 'data_in' of component 'work.MIPS_Processor(structure).register1' have different sizes:  ([6,5]).
+#         Region: /tb/MyMips/aluopstage2register
+# ** Error (suppressible): ../../proj/src/TopLevel/MIPS_Processor.vhd(558): (vopt-1549) At instance aluopstage2register the actual expression and the port 'data_in' of entity 'work.register1' have different sizes:  ([6,5]).
+#         Region: /tb/MyMips/aluopstage2register
+# ** Warning: ../../proj/src/TopLevel/MIPS_Processor.vhd(559): (vopt-1549) At instance aluopstage2register the actual expression and the port 'data_out' of component 'work.MIPS_Processor(structure).register1' have different sizes:  ([6,5]).
+#         Region: /tb/MyMips/aluopstage2register
+# ** Error (suppressible): ../../proj/src/TopLevel/MIPS_Processor.vhd(559): (vopt-1549) At instance aluopstage2register the actual expression and the port 'data_out' of entity 'work.register1' have different sizes:  ([6,5]).
+#         Region: /tb/MyMips/aluopstage2register
+# ** Warning: ../../proj/src/TopLevel/MIPS_Processor.vhd(704): (vopt-1549) At instance registerdststage4 the actual expression and the port 'data_out' of component 'work.MIPS_Processor(structure).register1' have different sizes:  ([5,32]).
+#         Region: /tb/MyMips/registerdststage4
+# ** Error (suppressible): ../../proj/src/TopLevel/MIPS_Processor.vhd(704): (vopt-1549) At instance registerdststage4 the actual expression and the port 'data_out' of entity 'work.register1' have different sizes:  ([5,32]).
+#         Region: /tb/MyMips/registerdststage4
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=6, Warnings=6.
+# Error loading design
+# End time: 17:29:08 on May 04,2022, Elapsed time: 0:00:01
+# Errors: 6, Warnings: 6
