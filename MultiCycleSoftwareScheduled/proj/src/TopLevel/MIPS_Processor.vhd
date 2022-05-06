@@ -201,7 +201,7 @@ signal s_cl_extender: std_logic; -- extender cl
 signal s_extshift: std_logic_vector(N-1 downto 0); -- extender output shifted
 signal s_inst_shift2: std_logic_vector(N-1 downto 0); --instruction shifted 
 signal s_cl_regdst: std_logic; --cl register dst
-signal s_regdst_jaldatamux: std_logic_vector(5 downto 0); --regdst to jaldata mux 
+signal s_regdst_jaldatamux: std_logic_vector(4 downto 0); --regdst to jaldata mux 
 signal s_cl_jaldst: std_logic; -- jal dst logic
 signal s_cl_btype: std_logic; -- btype cl
 signal s_branch_bne: std_logic; -- branchbne mux to andg
@@ -209,7 +209,7 @@ signal s_cl_branch: std_logic; -- branch cl
 signal s_branchbne_jump_mux: std_logic_vector(N-1 downto 0); -- connecting signal for 1st and second layer stage2 muxes
 signal s_jump_jr_mux: std_logic_vector(N-1 downto 0); -- connecting signal for 2nd and 3rd layer stage2 muxes
 signal s_addstage2_branchmux: std_logic_vector(N-1 downto 0); --adding to mux stage 2
-signal s_jaldststage2: std_logic_vector(N-1 downto 0); --jal dst 
+signal s_jaldststage2: std_logic_vector(4 downto 0); --jal dst 
 signal s_regwr_vector: std_logic_vector(0 downto 0);
 
 --stage3
@@ -221,7 +221,7 @@ signal s_aluouput: std_logic_vector(N-1 downto 0); --aluoutput
 signal s_rd2_stage3: std_logic_vector(N-1 downto 0); --rd2 stage3 signal 
 signal s_alusrcmux_alu: std_logic_vector(N-1 downto 0); --alusrcmux output to alu
 signal s_haltstage3: std_logic_vector(0 downto 0); --halt control signal 
-signal s_jaldststage3: std_logic_vector(N-1 downto 0); --jal dst 
+signal s_jaldststage3: std_logic_vector(4 downto 0); --jal dst 
 signal s_regwrstage3: std_logic_vector(0 downto 0); -- reg wr 
 
 --stage4
@@ -232,8 +232,9 @@ signal s_cl_bmuxselect_stage4: std_logic_vector(0 downto 0); --bmuxcl signal sta
 signal s_aluoutput_stage4: std_logic_vector(N-1 downto 0); --aluoutput signal stage4
 signal s_dmemoutput_stage4: std_logic_vector(N-1 downto 0); --dmemoutput signal stage4
 signal s_haltstage4: std_logic_vector(0 downto 0); --halt control signal 
-signal s_jaldststage4: std_logic_vector(N-1 downto 0); --jal dst 
+signal s_jaldststage4: std_logic_vector(4 downto 0); --jal dst 
 signal s_regwrstage4: std_logic_vector(0 downto 0); -- reg wr 
+signal s_aluoutput: std_logic_vector(N-1 downto 0);
 
 --stage5
 signal s_jaldatamux_writeport: std_logic_vector(N-1 downto 0); --signal for jaldatamux to writeport of register file 
@@ -299,7 +300,7 @@ begin
 	imemregiser: register1 
 		port map(
 			we => '1',
-       		reset => '0',
+       		reset => iRST,
        		clk => iCLK,
        		data_in => s_imempre_stageinst, 
        		data_out => s_Inst
@@ -308,7 +309,7 @@ begin
 	pcplus4regiserstage1: register1 
 		port map(
 			we => '1',
-    		reset => '0',
+    		reset => iRST,
     		clk => iCLK,
 	    	data_in => s_pcadder_pcmux,
     		data_out => s_pcadd4register_stage1
@@ -347,7 +348,7 @@ begin
 		);
 
 	jaldstmux: mux2t1_N 
-    	generic map(N => 5)
+	generic map(N => 5)
 		port map(
 			i_S => s_cl_jaldst,
 			i_D0 => s_regdst_jaldatamux,
@@ -398,7 +399,7 @@ begin
 			o_O => s_branchbnelogic_pcmux
 		);
 
-	s_inst_shift2 <= s_Inst(25 downto 0) & "00"; 
+	s_inst_shift2 <= s_pcadd4register_stage1(31 downto 28) & s_Inst(25 downto 0) & "00"; 
 
 	andg: andg2 
 		port map(
@@ -422,6 +423,8 @@ begin
 
 	s_RegWr <= s_regwr_fromstage5(0);
 
+	s_RegWrData <= s_jaldatamux_writeport;
+
 	s_bne <= '1' when s_rd1 /= s_rd2_stage2 else '0';
 
 	s_branch <= '1' when s_rd1 = s_rd2_stage2 else '0';
@@ -438,7 +441,7 @@ begin
 		generic map(N => 1)
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_regwr_vector,
 			data_out => s_regwrstage3
@@ -448,16 +451,17 @@ begin
 		generic map(N => 1)
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_cl_halt,
 			data_out => s_haltstage3
 		);
 
 	registerdststage2: register1 
+		generic map(N => 5)
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_jaldststage2,
 			data_out => s_jaldststage3
@@ -466,7 +470,7 @@ begin
 	inststage2register: register1 
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_Inst,
 			data_out => s_inst_stage2
@@ -475,7 +479,7 @@ begin
 	pcplus4stage2register: register1 
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_pcadd4register_stage1,
 			data_out => s_pcadd4register_stage2
@@ -484,7 +488,7 @@ begin
 	extenderstage2register: register1 
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_extenderoutput,
 			data_out => s_extender_stage2
@@ -493,7 +497,7 @@ begin
 	rd2stage2registerstage2: register1 
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_rd2_stage2,
 			data_out => s_rd2_stage3
@@ -502,7 +506,7 @@ begin
 	rd1stage2registerstage2: register1
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_rd1,
 			data_out => s_rd1_stage2
@@ -512,7 +516,7 @@ begin
 		generic map(N => 1)
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_cl_alusrc,
 			data_out => s_cl_alusrc_stage2
@@ -522,7 +526,7 @@ begin
 		generic map(N => 1)
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_cl_dmemwrenable,
 			data_out => s_cl_dmemwr_stage3
@@ -533,7 +537,7 @@ begin
 	generic map(N => 1)
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_cl_bmuxselect,
 			data_out => s_cl_bmuxselect_stage2
@@ -543,17 +547,17 @@ begin
 		generic map(N => 1)
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_cl_jaldatamux,
 			data_out => s_cl_jaldatamux_stage2
 		);
 
 	aluopstage2register: register1
-		generic map(N => 5)
+		generic map(N => 6)
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_cl_aluopcode,
 			data_out => s_cl_aluopcode_stage2
@@ -587,7 +591,7 @@ begin
 		generic map(N => 1)
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_haltstage3,
 			data_out => s_haltstage4
@@ -597,16 +601,17 @@ begin
 		generic map(N => 1)
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_regwrstage3,
 			data_out => s_regwrstage4
 		);
 
 	registerdststage3: register1 
+		generic map(N => 5)
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_jaldststage3,
 			data_out => s_jaldststage4
@@ -615,7 +620,7 @@ begin
 	readdata2registerstage3: register1 
 		port map(
 			we => '1',
-    		reset => '0',
+    		reset => iRST,
     		clk => iCLK,
 	    	data_in => s_rd2_stage3,
     		data_out => s_DMemData
@@ -624,7 +629,7 @@ begin
 	aluoutputregisterstage3: register1 
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_aluouput,
 			data_out => s_DMemAddr
@@ -634,7 +639,7 @@ begin
 		generic map(N => 1)
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_cl_dmemwr_stage3,
 			data_out => s_dmemwrfinal
@@ -644,7 +649,7 @@ begin
 		generic map(N => 1)
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_cl_bmuxselect_stage2,
 			data_out => s_cl_bmuxselect_stage3
@@ -654,7 +659,7 @@ begin
 		generic map(N => 1)
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_cl_jaldatamux_stage2,
 			data_out => s_cl_jaldatamux_stage3
@@ -663,7 +668,7 @@ begin
 	pcplus4registerstage3: register1 
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_pcadd4register_stage2,
 			data_out => s_pcadd4register_stage3
@@ -681,24 +686,23 @@ begin
              data => s_DMemData,
              we   => s_DMemWr,
              q    => s_DMemOut
-		);
-
-	s_RegWrData <= s_DMemData;
+		); 
 
 	regwrstage4: register1 
 		generic map(N => 1)
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_regwrstage4,
 			data_out => s_regwr_fromstage5
 		);
 
 	registerdststage4: register1 
+		generic map(N => 5)
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_jaldststage4,
 			data_out => s_RegWrAddr
@@ -707,7 +711,7 @@ begin
 	pcplus4registerstage4: register1 
 		port map(
 			we => '1',
-    		reset => '0',
+    		reset => iRST,
     		clk => iCLK,
 	    	data_in => s_pcadd4register_stage3,
     		data_out => s_pcadd4register_stage4
@@ -716,7 +720,7 @@ begin
 	dmemregisterstage4: register1  
 		port map(
 			we => '1',
-    		reset => '0',
+    		reset => iRST,
     		clk => iCLK,
 	    	data_in => s_DmemOut,
     		data_out => s_aluoutput_stage4
@@ -726,7 +730,7 @@ begin
 		generic map(N => 1)
 		port map(
 			we => '1',
-			reset => '0',
+			reset => iRST,
 			clk => iCLK,
 			data_in => s_haltstage4,
 			data_out => s_haltstage5
@@ -735,17 +739,17 @@ begin
 	aluoutputregisterstage4: register1 
 		port map(
 			we => '1',
-    		reset => '0',
+    		reset => iRST,
     		clk => iCLK,
 	    	data_in => s_DMemAddr,
-    		data_out => s_aluoutput_stage4
+    		data_out => s_aluoutput
 		);
 	
 	bmuxselectregisterstage4: register1  
 		generic map(N => 1)	
 		port map(
 			we => '1',
-    		reset => '0',
+    		reset => iRST,
     		clk => iCLK,
 	    	data_in => s_cl_bmuxselect_stage3,
     		data_out => s_cl_bmuxselect_stage4
@@ -755,7 +759,7 @@ begin
 		generic map(N => 1)
 		port map(
 			we => '1',
-    		reset => '0',
+    		reset => iRST,
     		clk => iCLK,
 	    	data_in => s_cl_jaldatamux_stage3,
     		data_out => s_cl_jaldatamux_stage4
@@ -766,7 +770,7 @@ begin
 	backwardsmux: mux2t1_N 
     	port map(
 			i_S => s_cl_bmuxselect_stage4(0),
-			i_D0 => s_aluoutput_stage4,
+			i_D0 => s_aluoutput,
 			i_D1 => s_aluoutput_stage4,
 			o_O => s_bmuxoutput_jaldatamux
 		);
@@ -780,13 +784,5 @@ begin
 		);
 
 	s_Halt <= s_haltstage5(0);
-
-
-
-
-
-
-
-		
 
 end structure;

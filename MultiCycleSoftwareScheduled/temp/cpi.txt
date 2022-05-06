@@ -1,0 +1,3 @@
+Instructions issued: 6
+Student Processor Cycles: 9
+CPI: 1.5
