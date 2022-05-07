@@ -1,5 +1,5 @@
 # vsim -postsimdataflow -debugdb -c -voptargs="+acc" tb -do "../testpy/modelsim_framework.do" 
-# Start time: 19:32:52 on May 05,2022
+# Start time: 10:37:37 on May 07,2022
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim-64
 # //  Version 2021.2 linux_x86_64 Apr 14 2021
@@ -63,3 +63,5 @@
 #    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/DMem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/IMem
+# End time: 10:37:49 on May 07,2022, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 2
