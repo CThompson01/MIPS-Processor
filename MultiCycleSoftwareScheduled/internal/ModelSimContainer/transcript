@@ -1,6 +1,8 @@
 # vsim -postsimdataflow -debugdb -c -voptargs="+acc" tb -do "../testpy/modelsim_framework.do" 
-# Start time: 10:37:37 on May 07,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 10:14:11 on May 13,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Note: (vopt-4301) Memory core inferred for signal 'ram' width=32, depth=1024, type=RAM at location proj/src/TopLevel/mem.vhd:35
 # //  Questa Sim-64
 # //  Version 2021.2 linux_x86_64 Apr 14 2021
 # //
@@ -63,5 +65,5 @@
 #    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/DMem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ns  Iteration: 0  Instance: /tb/MyMips/IMem
-# End time: 10:37:49 on May 07,2022, Elapsed time: 0:00:12
+# End time: 10:14:27 on May 13,2022, Elapsed time: 0:00:16
 # Errors: 0, Warnings: 2
