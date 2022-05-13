@@ -1,0 +1,1483 @@
+# //  Questa Sim-64
+# //  Version 2021.2 linux_x86_64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Project file /home/zrhirst/Documents/S22/SingleCycleMIPSProcessor/single-cycle-mips-processor-group-1_02/cpre381-toolflow/proj/src/TopLevel/Project1.mpf was not found.
+# Unable to open project.
+vlib work
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/1scomp.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:58 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/1scomp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity onescomp
+# -- Compiling architecture structural of onescomp
+# End time: 22:26:58 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/adder.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:58 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder
+# -- Compiling architecture structural of adder
+# End time: 22:26:58 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/andg2.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:58 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# End time: 22:26:58 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/andg_N.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:58 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/andg_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg_N
+# -- Compiling architecture structural of andg_N
+# End time: 22:26:58 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/extender.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:58 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/extender.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity extender
+# -- Compiling architecture data of extender
+# End time: 22:26:58 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/invg.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:58 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# End time: 22:26:59 on Apr 30,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/mux32to1.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:59 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/mux32to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux32to1
+# -- Compiling architecture behavioral of mux32to1
+# End time: 22:26:59 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/org2.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:59 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# End time: 22:26:59 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/xorg2.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:59 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# End time: 22:26:59 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/xorg_N.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:59 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/xorg_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg_N
+# -- Compiling architecture structural of xorg_N
+# End time: 22:26:59 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/slt.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:59 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/slt.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity slt_N
+# -- Compiling architecture structural of slt_N
+# End time: 22:26:59 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/registerfile.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:59 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/registerfile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.arraytype.
+# ** Error (suppressible): /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/registerfile.vhd(3): (vcom-1195) Cannot find expanded name "work.arraytype".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/registerfile.vhd(3): Unknown expanded name.
+# ** Note: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/registerfile.vhd(5): VHDL Compiler exiting
+# End time: 22:26:59 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/register.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:59 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity register1
+# -- Compiling architecture structural of register1
+# End time: 22:26:59 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/programcounter.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:59 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/programcounter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity programcounter
+# -- Compiling architecture structural of programcounter
+# End time: 22:26:59 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/org_N.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:59 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/org_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org_N
+# -- Compiling architecture structural of org_N
+# End time: 22:26:59 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/mem.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:59 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# End time: 22:26:59 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/barrelShifter.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:59 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/barrelShifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity barrelShifter
+# -- Compiling architecture structural of barrelShifter
+# End time: 22:26:59 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/Adder_N.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:59 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/Adder_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity full_adder_N
+# -- Compiling architecture structural of full_adder_N
+# End time: 22:26:59 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/AdderSub.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:59 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/AdderSub.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity AdderSub
+# -- Compiling architecture structural of AdderSub
+# End time: 22:26:59 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/ALU.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:59 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALU
+# -- Compiling architecture struct of ALU
+# End time: 22:26:59 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/alu_mux.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:26:59 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/alu_mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu_mux
+# -- Compiling architecture struct of alu_mux
+# End time: 22:27:00 on Apr 30,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/alu_mux.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:00 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/alu_mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu_mux
+# -- Compiling architecture struct of alu_mux
+# End time: 22:27:00 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/alu_mux_simple.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:00 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/alu_mux_simple.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu_mux_simple
+# -- Compiling architecture struct of alu_mux_simple
+# End time: 22:27:00 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/bitReverser.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:00 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/bitReverser.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bitReverser
+# -- Compiling architecture structural of bitReverser
+# End time: 22:27:00 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/controllogic.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:00 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/controllogic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controllogic
+# -- Compiling architecture casestatement of controllogic
+# End time: 22:27:00 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/controllogic.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:00 on Apr 30,2022
+# vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/controllogic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controllogic
+# -- Compiling architecture casestatement of controllogic
+# End time: 22:27:00 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/decoder5-32.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:00 on Apr 30,2022
+# vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/decoder5-32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder5to32
+# -- Compiling architecture behavioral of decoder5to32
+# End time: 22:27:00 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/dffg.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:00 on Apr 30,2022
+# vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/dffg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# End time: 22:27:00 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:00 on Apr 30,2022
+# vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.mips_types.
+# ** Error (suppressible): /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(21): (vcom-1195) Cannot find expanded name "work.MIPS_types".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(21): Unknown expanded name.
+# ** Note: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(23): VHDL Compiler exiting
+# End time: 22:27:00 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_types.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:00 on Apr 30,2022
+# vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package MIPS_types
+# -- Compiling package body MIPS_types
+# -- Loading package MIPS_types
+# End time: 22:27:00 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/mux2t1.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:00 on Apr 30,2022
+# vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/mux2t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1
+# -- Compiling architecture structural of mux2t1
+# End time: 22:27:00 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/mux2t1_N.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:00 on Apr 30,2022
+# vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# End time: 22:27:00 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/1scomp.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:16 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/1scomp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity onescomp
+# -- Compiling architecture structural of onescomp
+# End time: 22:27:16 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/adder.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:16 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder
+# -- Compiling architecture structural of adder
+# End time: 22:27:16 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/andg2.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:16 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# End time: 22:27:17 on Apr 30,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/andg_N.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:17 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/andg_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg_N
+# -- Compiling architecture structural of andg_N
+# End time: 22:27:17 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/extender.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:17 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/extender.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity extender
+# -- Compiling architecture data of extender
+# End time: 22:27:17 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/invg.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:17 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# End time: 22:27:17 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/mux32to1.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:17 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/mux32to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux32to1
+# -- Compiling architecture behavioral of mux32to1
+# End time: 22:27:17 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/org2.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:17 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# End time: 22:27:17 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/xorg2.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:17 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# End time: 22:27:17 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/xorg_N.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:17 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/xorg_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg_N
+# -- Compiling architecture structural of xorg_N
+# End time: 22:27:17 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/slt.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:17 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/slt.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity slt_N
+# -- Compiling architecture structural of slt_N
+# End time: 22:27:17 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/registerfile.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:17 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/registerfile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.arraytype.
+# ** Error (suppressible): /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/registerfile.vhd(3): (vcom-1195) Cannot find expanded name "work.arraytype".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/registerfile.vhd(3): Unknown expanded name.
+# ** Note: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/registerfile.vhd(5): VHDL Compiler exiting
+# End time: 22:27:17 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/register.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:17 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity register1
+# -- Compiling architecture structural of register1
+# End time: 22:27:17 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/programcounter.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:17 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/programcounter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity programcounter
+# -- Compiling architecture structural of programcounter
+# End time: 22:27:17 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/org_N.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:17 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/org_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org_N
+# -- Compiling architecture structural of org_N
+# End time: 22:27:17 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/mem.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:17 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# End time: 22:27:17 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/barrelShifter.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:17 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/barrelShifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity barrelShifter
+# -- Compiling architecture structural of barrelShifter
+# End time: 22:27:18 on Apr 30,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/Adder_N.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:18 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/Adder_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity full_adder_N
+# -- Compiling architecture structural of full_adder_N
+# End time: 22:27:18 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/AdderSub.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:18 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/AdderSub.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity AdderSub
+# -- Compiling architecture structural of AdderSub
+# End time: 22:27:18 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/ALU.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:18 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALU
+# -- Compiling architecture struct of ALU
+# End time: 22:27:18 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/alu_mux.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:18 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/alu_mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu_mux
+# -- Compiling architecture struct of alu_mux
+# End time: 22:27:18 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/alu_mux.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:18 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/alu_mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu_mux
+# -- Compiling architecture struct of alu_mux
+# End time: 22:27:18 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/alu_mux_simple.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:18 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/alu_mux_simple.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu_mux_simple
+# -- Compiling architecture struct of alu_mux_simple
+# End time: 22:27:18 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/bitReverser.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:18 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/bitReverser.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bitReverser
+# -- Compiling architecture structural of bitReverser
+# End time: 22:27:18 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/controllogic.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:18 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/controllogic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controllogic
+# -- Compiling architecture casestatement of controllogic
+# End time: 22:27:18 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/controllogic.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:18 on Apr 30,2022
+# vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/controllogic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controllogic
+# -- Compiling architecture casestatement of controllogic
+# End time: 22:27:18 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/decoder5-32.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:18 on Apr 30,2022
+# vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/decoder5-32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder5to32
+# -- Compiling architecture behavioral of decoder5to32
+# End time: 22:27:18 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/dffg.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:18 on Apr 30,2022
+# vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/dffg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# End time: 22:27:18 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:18 on Apr 30,2022
+# vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(168): near ";": (vcom-1576) expecting => or '|' or '!'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(180): (vcom-1294) Declaration with designator "s_Inst" already exists in this region.
+# ** =====> Prior declaration of "s_Inst" is at /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(38).
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(254): (vcom-1136) Unknown identifier "s_pcmux_pc".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(253): Signal "s_branchbnelogic_pcmux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(257): (vcom-1624) Component instance MIPS_Processor(structure).orglayer1 has a generic map clause and the component org_N has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(260): Signal "s_cl_branchbne" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(261): Signal "s_cl_jr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(262): Signal "s_orlayer1_orlayer2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(265): (vcom-1624) Component instance MIPS_Processor(structure).orglayer2 has a generic map clause and the component org_N has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(268): Signal "s_orlayer1_orlayer2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(269): Signal "s_cl_j" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(270): Signal "s_orgates_pcmuxselect" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(275): (vcom-1136) Unknown identifier "s_pcmux_pc".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(391): Signal "s_branchbnelogic_pcmux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(416): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(416): Signal "s_rd1" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type std.STANDARD.BOOLEAN.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(416): near "!": (vcom-1576) expecting ';'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(418): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(418): near "=": syntax error
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(426): Signal "s_branch_bne" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(474): (vcom-1624) Component instance MIPS_Processor(structure).alusrcselstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(480): Signal "s_cl_alusrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(481): Signal "s_cl_alusrc_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(491): near "data_out": (vcom-1576) expecting ',' or ')'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(495): Statement cannot be labeled.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(495): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(501): Signal "s_cl_bmuxselect" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(502): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(505): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(511): Signal "s_cl_jaldatamux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(512): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(515): (vcom-1624) Component instance MIPS_Processor(structure).aluopstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(539): (vcom-1136) Unknown identifier "s_aluoutput".
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(567): (vcom-1624) Component instance MIPS_Processor(structure).dmemwrenregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(573): Signal "s_cl_dmemwr_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(574): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(577): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(583): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(584): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(587): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(593): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(594): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(647): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(653): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(654): Signal "s_cl_bmuxselect_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(657): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(663): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(664): Signal "s_cl_jaldatamux_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(685): VHDL Compiler exiting
+# End time: 22:27:18 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 37, Warnings: 11
+vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_types.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:18 on Apr 30,2022
+# vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package MIPS_types
+# -- Compiling package body MIPS_types
+# -- Loading package MIPS_types
+# End time: 22:27:19 on Apr 30,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/mux2t1.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:19 on Apr 30,2022
+# vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/mux2t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1
+# -- Compiling architecture structural of mux2t1
+# End time: 22:27:19 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/mux2t1_N.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:27:19 on Apr 30,2022
+# vcom -reportprogress 30 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# End time: 22:27:19 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/MIPS_types.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:28:04 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/MIPS_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package MIPS_types
+# -- Compiling package arraytype
+# -- Compiling package body MIPS_types
+# -- Loading package MIPS_types
+# End time: 22:28:04 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/registerfile.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:28:23 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/registerfile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package arraytype
+# -- Compiling entity registerfile
+# -- Compiling architecture structural of registerfile
+# End time: 22:28:23 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:28:27 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(168): near ";": (vcom-1576) expecting => or '|' or '!'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(180): (vcom-1294) Declaration with designator "s_Inst" already exists in this region.
+# ** =====> Prior declaration of "s_Inst" is at /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(38).
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(254): (vcom-1136) Unknown identifier "s_pcmux_pc".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(253): Signal "s_branchbnelogic_pcmux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(257): (vcom-1624) Component instance MIPS_Processor(structure).orglayer1 has a generic map clause and the component org_N has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(260): Signal "s_cl_branchbne" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(261): Signal "s_cl_jr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(262): Signal "s_orlayer1_orlayer2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(265): (vcom-1624) Component instance MIPS_Processor(structure).orglayer2 has a generic map clause and the component org_N has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(268): Signal "s_orlayer1_orlayer2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(269): Signal "s_cl_j" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(270): Signal "s_orgates_pcmuxselect" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(275): (vcom-1136) Unknown identifier "s_pcmux_pc".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(391): Signal "s_branchbnelogic_pcmux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(416): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(416): Signal "s_rd1" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type std.STANDARD.BOOLEAN.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(416): near "!": (vcom-1576) expecting ';'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(418): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(418): near "=": syntax error
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(426): Signal "s_branch_bne" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(474): (vcom-1624) Component instance MIPS_Processor(structure).alusrcselstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(480): Signal "s_cl_alusrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(481): Signal "s_cl_alusrc_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(491): near "data_out": (vcom-1576) expecting ',' or ')'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(495): Statement cannot be labeled.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(495): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(501): Signal "s_cl_bmuxselect" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(502): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(505): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(511): Signal "s_cl_jaldatamux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(512): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(515): (vcom-1624) Component instance MIPS_Processor(structure).aluopstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(539): (vcom-1136) Unknown identifier "s_aluoutput".
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(567): (vcom-1624) Component instance MIPS_Processor(structure).dmemwrenregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(573): Signal "s_cl_dmemwr_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(574): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(577): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(583): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(584): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(587): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(593): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(594): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(647): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(653): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(654): Signal "s_cl_bmuxselect_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(657): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(663): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(664): Signal "s_cl_jaldatamux_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(685): VHDL Compiler exiting
+# End time: 22:28:27 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 37, Warnings: 11
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:31:41 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(157): near "end": (vcom-1576) expecting IDENTIFIER.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(168): near ";": (vcom-1576) expecting => or '|' or '!'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(254): (vcom-1136) Unknown identifier "s_pcmux_pc".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(253): Signal "s_branchbnelogic_pcmux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(259): (vcom-1484) Unknown formal identifier "i_A".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(260): (vcom-1484) Unknown formal identifier "i_B".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(261): (vcom-1484) Unknown formal identifier "o_O".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(266): (vcom-1484) Unknown formal identifier "i_A".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(267): (vcom-1484) Unknown formal identifier "i_B".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(268): (vcom-1484) Unknown formal identifier "o_O".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(273): (vcom-1136) Unknown identifier "s_pcmux_pc".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(389): Signal "s_branchbnelogic_pcmux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(414): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(414): Signal "s_rd1" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type std.STANDARD.BOOLEAN.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(414): near "!": (vcom-1576) expecting ';'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(416): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(416): near "=": syntax error
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(424): Signal "s_branch_bne" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(472): (vcom-1624) Component instance MIPS_Processor(structure).alusrcselstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(478): Signal "s_cl_alusrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(479): Signal "s_cl_alusrc_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(489): near "data_out": (vcom-1576) expecting ',' or ')'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(493): Statement cannot be labeled.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(493): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(499): Signal "s_cl_bmuxselect" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(500): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(503): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(509): Signal "s_cl_jaldatamux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(510): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(513): (vcom-1624) Component instance MIPS_Processor(structure).aluopstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(537): (vcom-1136) Unknown identifier "s_aluoutput".
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(565): (vcom-1624) Component instance MIPS_Processor(structure).dmemwrenregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(571): Signal "s_cl_dmemwr_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(572): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(575): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(581): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(582): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(585): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(591): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(592): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(645): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(651): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(652): Signal "s_cl_bmuxselect_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(655): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(661): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(662): Signal "s_cl_jaldatamux_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(683): VHDL Compiler exiting
+# End time: 22:31:41 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 37, Warnings: 9
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:33:18 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(157): near "end": (vcom-1576) expecting IDENTIFIER.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(168): near ";": (vcom-1576) expecting => or '|' or '!'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(254): (vcom-1136) Unknown identifier "s_pcmux_pc".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(253): Signal "s_branchbnelogic_pcmux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(259): (vcom-1484) Unknown formal identifier "i_A".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(260): (vcom-1484) Unknown formal identifier "i_B".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(261): (vcom-1484) Unknown formal identifier "o_F".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(266): (vcom-1484) Unknown formal identifier "i_A".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(267): (vcom-1484) Unknown formal identifier "i_B".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(268): (vcom-1484) Unknown formal identifier "o_F".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(273): (vcom-1136) Unknown identifier "s_pcmux_pc".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(389): Signal "s_branchbnelogic_pcmux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(414): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(414): Signal "s_rd1" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type std.STANDARD.BOOLEAN.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(414): near "!": (vcom-1576) expecting ';'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(416): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(416): near "=": syntax error
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(424): Signal "s_branch_bne" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(472): (vcom-1624) Component instance MIPS_Processor(structure).alusrcselstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(478): Signal "s_cl_alusrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(479): Signal "s_cl_alusrc_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(489): near "data_out": (vcom-1576) expecting ',' or ')'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(493): Statement cannot be labeled.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(493): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(499): Signal "s_cl_bmuxselect" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(500): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(503): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(509): Signal "s_cl_jaldatamux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(510): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(513): (vcom-1624) Component instance MIPS_Processor(structure).aluopstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(537): (vcom-1136) Unknown identifier "s_aluoutput".
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(565): (vcom-1624) Component instance MIPS_Processor(structure).dmemwrenregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(571): Signal "s_cl_dmemwr_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(572): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(575): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(581): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(582): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(585): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(591): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(592): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(645): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(651): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(652): Signal "s_cl_bmuxselect_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(655): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(661): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(662): Signal "s_cl_jaldatamux_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(683): VHDL Compiler exiting
+# End time: 22:33:18 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 37, Warnings: 9
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:33:48 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(157): near "end": (vcom-1576) expecting IDENTIFIER.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(253): Signal "s_branchbnelogic_pcmux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(259): (vcom-1484) Unknown formal identifier "i_A".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(260): (vcom-1484) Unknown formal identifier "i_B".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(261): (vcom-1484) Unknown formal identifier "o_F".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(266): (vcom-1484) Unknown formal identifier "i_A".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(267): (vcom-1484) Unknown formal identifier "i_B".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(268): (vcom-1484) Unknown formal identifier "o_F".
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(389): Signal "s_branchbnelogic_pcmux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(414): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(414): Signal "s_rd1" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type std.STANDARD.BOOLEAN.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(414): near "!": (vcom-1576) expecting ';'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(416): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(416): near "=": syntax error
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(424): Signal "s_branch_bne" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(472): (vcom-1624) Component instance MIPS_Processor(structure).alusrcselstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(478): Signal "s_cl_alusrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(479): Signal "s_cl_alusrc_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(489): near "data_out": (vcom-1576) expecting ',' or ')'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(493): Statement cannot be labeled.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(493): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(499): Signal "s_cl_bmuxselect" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(500): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(503): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(509): Signal "s_cl_jaldatamux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(510): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(513): (vcom-1624) Component instance MIPS_Processor(structure).aluopstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(537): (vcom-1136) Unknown identifier "s_aluoutput".
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(565): (vcom-1624) Component instance MIPS_Processor(structure).dmemwrenregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(571): Signal "s_cl_dmemwr_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(572): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(575): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(581): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(582): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(585): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(591): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(592): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(645): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(651): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(652): Signal "s_cl_bmuxselect_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(655): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(661): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(662): Signal "s_cl_jaldatamux_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(683): VHDL Compiler exiting
+# End time: 22:33:48 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 34, Warnings: 9
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:35:49 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(180): (vcom-1294) Declaration with designator "s_Inst" already exists in this region.
+# ** =====> Prior declaration of "s_Inst" is at /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(38).
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(253): Signal "s_branchbnelogic_pcmux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(389): Signal "s_branchbnelogic_pcmux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(414): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(414): Signal "s_rd1" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type std.STANDARD.BOOLEAN.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(414): near "!": (vcom-1576) expecting ';'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(416): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(416): near "=": syntax error
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(424): Signal "s_branch_bne" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(472): (vcom-1624) Component instance MIPS_Processor(structure).alusrcselstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(478): Signal "s_cl_alusrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(479): Signal "s_cl_alusrc_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(489): near "data_out": (vcom-1576) expecting ',' or ')'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(493): Statement cannot be labeled.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(493): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(499): Signal "s_cl_bmuxselect" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(500): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(503): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(509): Signal "s_cl_jaldatamux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(510): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(513): (vcom-1624) Component instance MIPS_Processor(structure).aluopstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(537): (vcom-1136) Unknown identifier "s_aluoutput".
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(565): (vcom-1624) Component instance MIPS_Processor(structure).dmemwrenregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(571): Signal "s_cl_dmemwr_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(572): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(575): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(581): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(582): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(585): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(591): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(592): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(645): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(651): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(652): Signal "s_cl_bmuxselect_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(655): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(661): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(662): Signal "s_cl_jaldatamux_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(683): VHDL Compiler exiting
+# End time: 22:35:49 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 28, Warnings: 9
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:36:31 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(252): Signal "s_branchbnelogic_pcmux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(388): Signal "s_branchbnelogic_pcmux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(413): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(413): Signal "s_rd1" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type std.STANDARD.BOOLEAN.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(413): near "!": (vcom-1576) expecting ';'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(415): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(415): near "=": syntax error
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(423): Signal "s_branch_bne" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(471): (vcom-1624) Component instance MIPS_Processor(structure).alusrcselstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(477): Signal "s_cl_alusrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(478): Signal "s_cl_alusrc_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(488): near "data_out": (vcom-1576) expecting ',' or ')'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(492): Statement cannot be labeled.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(492): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(498): Signal "s_cl_bmuxselect" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(499): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(502): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(508): Signal "s_cl_jaldatamux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(509): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(512): (vcom-1624) Component instance MIPS_Processor(structure).aluopstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(536): (vcom-1136) Unknown identifier "s_aluoutput".
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(564): (vcom-1624) Component instance MIPS_Processor(structure).dmemwrenregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(570): Signal "s_cl_dmemwr_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(571): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(574): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(580): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(581): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(584): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(590): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(591): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(644): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(650): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(651): Signal "s_cl_bmuxselect_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(654): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(660): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(661): Signal "s_cl_jaldatamux_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(682): VHDL Compiler exiting
+# End time: 22:36:32 on Apr 30,2022, Elapsed time: 0:00:01
+# Errors: 27, Warnings: 9
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:38:30 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(413): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(413): Signal "s_rd1" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type std.STANDARD.BOOLEAN.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(413): near "!": (vcom-1576) expecting ';'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(415): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(415): near "=": syntax error
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(423): Signal "s_branch_bne" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(471): (vcom-1624) Component instance MIPS_Processor(structure).alusrcselstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(477): Signal "s_cl_alusrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(478): Signal "s_cl_alusrc_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(488): near "data_out": (vcom-1576) expecting ',' or ')'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(492): Statement cannot be labeled.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(492): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(498): Signal "s_cl_bmuxselect" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(499): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(502): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(508): Signal "s_cl_jaldatamux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(509): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(512): (vcom-1624) Component instance MIPS_Processor(structure).aluopstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(536): (vcom-1136) Unknown identifier "s_aluoutput".
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(564): (vcom-1624) Component instance MIPS_Processor(structure).dmemwrenregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(570): Signal "s_cl_dmemwr_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(571): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(574): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(580): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(581): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(584): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(590): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(591): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(644): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(650): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(651): Signal "s_cl_bmuxselect_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(654): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(660): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(661): Signal "s_cl_jaldatamux_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(682): VHDL Compiler exiting
+# End time: 22:38:30 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 25, Warnings: 9
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:39:33 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(413): Signal "s_rd1" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type std.STANDARD.BOOLEAN.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(413): near "!": (vcom-1576) expecting ';'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(415): near "=": syntax error
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(421): Signal "s_branch" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(422): Signal "s_bne" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(423): Signal "s_branch_bne" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(471): (vcom-1624) Component instance MIPS_Processor(structure).alusrcselstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(477): Signal "s_cl_alusrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(478): Signal "s_cl_alusrc_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(488): near "data_out": (vcom-1576) expecting ',' or ')'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(492): Statement cannot be labeled.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(492): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(498): Signal "s_cl_bmuxselect" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(499): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(502): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(508): Signal "s_cl_jaldatamux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(509): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(512): (vcom-1624) Component instance MIPS_Processor(structure).aluopstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(536): (vcom-1136) Unknown identifier "s_aluoutput".
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(564): (vcom-1624) Component instance MIPS_Processor(structure).dmemwrenregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(570): Signal "s_cl_dmemwr_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(571): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(574): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(580): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(581): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(584): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(590): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(591): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(644): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(650): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(651): Signal "s_cl_bmuxselect_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(654): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(660): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(661): Signal "s_cl_jaldatamux_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(682): VHDL Compiler exiting
+# End time: 22:39:33 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 25, Warnings: 9
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:40:29 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(413): Signal "s_rd1" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type std.STANDARD.BOOLEAN.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(413): near "!": (vcom-1576) expecting ';'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(421): Signal "s_branch" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(422): Signal "s_bne" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(423): Signal "s_branch_bne" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(471): (vcom-1624) Component instance MIPS_Processor(structure).alusrcselstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(477): Signal "s_cl_alusrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(478): Signal "s_cl_alusrc_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(488): near "data_out": (vcom-1576) expecting ',' or ')'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(492): Statement cannot be labeled.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(492): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(498): Signal "s_cl_bmuxselect" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(499): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(502): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(508): Signal "s_cl_jaldatamux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(509): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(512): (vcom-1624) Component instance MIPS_Processor(structure).aluopstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(536): (vcom-1136) Unknown identifier "s_aluoutput".
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(564): (vcom-1624) Component instance MIPS_Processor(structure).dmemwrenregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(570): Signal "s_cl_dmemwr_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(571): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(574): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(580): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(581): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(584): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(590): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(591): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(644): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(650): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(651): Signal "s_cl_bmuxselect_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(654): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(660): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(661): Signal "s_cl_jaldatamux_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(682): VHDL Compiler exiting
+# End time: 22:40:29 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 24, Warnings: 9
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:42:07 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(167): (vcom-1294) Declaration with designator "mux2t1" already exists in this region.
+# ** =====> Prior declaration of "mux2t1" is at /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(91).
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(420): Signal "s_rd1" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type std.STANDARD.BOOLEAN.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(420): near "!": (vcom-1576) expecting ';'.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(477): (vcom-1624) Component instance MIPS_Processor(structure).alusrcselstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(483): Signal "s_cl_alusrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(484): Signal "s_cl_alusrc_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(494): near "data_out": (vcom-1576) expecting ',' or ')'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(498): Statement cannot be labeled.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(498): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(504): Signal "s_cl_bmuxselect" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(505): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(508): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(514): Signal "s_cl_jaldatamux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(515): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(518): (vcom-1624) Component instance MIPS_Processor(structure).aluopstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(542): (vcom-1136) Unknown identifier "s_aluoutput".
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(570): (vcom-1624) Component instance MIPS_Processor(structure).dmemwrenregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(576): Signal "s_cl_dmemwr_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(577): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(580): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(586): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(587): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(590): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(596): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(597): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(650): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(656): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(657): Signal "s_cl_bmuxselect_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(660): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(666): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(667): Signal "s_cl_jaldatamux_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(688): VHDL Compiler exiting
+# End time: 22:42:07 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 22, Warnings: 9
+vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:42:29 on Apr 30,2022
+# vcom -reportprogress 300 -work work /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(413): Signal "s_rd1" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type std.STANDARD.BOOLEAN.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(413): near "!": (vcom-1576) expecting ';'.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(470): (vcom-1624) Component instance MIPS_Processor(structure).alusrcselstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(476): Signal "s_cl_alusrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(477): Signal "s_cl_alusrc_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(487): near "data_out": (vcom-1576) expecting ',' or ')'.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(491): Statement cannot be labeled.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(491): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(497): Signal "s_cl_bmuxselect" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(498): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(501): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(507): Signal "s_cl_jaldatamux" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(508): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(511): (vcom-1624) Component instance MIPS_Processor(structure).aluopstage2register has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(535): (vcom-1136) Unknown identifier "s_aluoutput".
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(563): (vcom-1624) Component instance MIPS_Processor(structure).dmemwrenregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(569): Signal "s_cl_dmemwr_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(570): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(573): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(579): Signal "s_cl_bmuxselect_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(580): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(583): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxregisterstage3 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(589): Signal "s_cl_jaldatamux_stage2" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(590): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(643): (vcom-1624) Component instance MIPS_Processor(structure).bmuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(649): Signal "s_cl_bmuxselect_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(650): Signal "s_cl_bmuxselect_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Warning: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(653): (vcom-1624) Component instance MIPS_Processor(structure).jaldatamuxselectregisterstage4 has a generic map clause and the component register1 has no generics.
+# Generic map will be ignored.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(659): Signal "s_cl_jaldatamux_stage3" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(660): Signal "s_cl_jaldatamux_stage4" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/zrhirst/Documents/S22/Projects/single-cycle-mips-processor-group-1_02/MultiCycleSoftwareScheduled/proj/src/TopLevel/MIPS_Processor.vhd(681): VHDL Compiler exiting
+# End time: 22:42:29 on Apr 30,2022, Elapsed time: 0:00:00
+# Errors: 21, Warnings: 9
