@@ -149,20 +149,41 @@ architecture structure of MIPS_Processor is
 	   o_F : out std_logic);
   end component;
 
-  component register1 is 
-  generic (N : integer := N);
-  port(we :in std_logic;
-       reset :in std_logic; 
-       clk :in std_logic;
-       data_in :in std_logic_vector(n-1 downto 0);
-       data_out :out std_logic_vector(n-1 downto 0));
-  end component; 
+	component register1 is 
+		generic (N : integer := N);
+		port(we :in std_logic;
+       		reset :in std_logic; 
+      		clk :in std_logic;
+			data_in :in std_logic_vector(n-1 downto 0);
+			data_out :out std_logic_vector(n-1 downto 0));
+	end component; 
   
-  component mux2t1 is
-  port(
+	component mux2t1 is
+	port(
 		i_D0,i_D1 : in std_logic;
 		i_S : in std_logic;
 		o_O : out std_logic);
+	end component;
+
+	component forwardingUnit is
+		generic(N : integer := N);
+		port(EXMEMrd : in std_logic_vector(N-1 downto 0);
+			EXMEMregwrite : in std_logic;
+			MEMWBrd : in std_logic_vector(N-1 downto 0);
+			MEMWBregwrite : in std_logic;
+			IDEXrs : in std_logic_vector(N-1 downto 0);
+			IDEXrt : in std_logic_vector(N-1 downto 0);
+			forwardA : out std_logic_vector(1 downto 0);
+			forwardB : out std_logic_vector(1 downto 0));
+	end component;
+
+	component hazardUnit is
+		generic(N : integer := 32);
+		port(IDEXmemread : in std_logic;
+			IDEXrt : in std_logic_vector(N-1 downto 0);
+			IFIDrs : in std_logic_vector(N-1 downto 0);
+			IFIDrt : in std_logic_vector(N-1 downto 0);
+			stall : out std_logic);
 	end component;
 
 --stage1
